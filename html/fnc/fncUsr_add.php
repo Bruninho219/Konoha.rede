@@ -1,30 +1,31 @@
 <?php
-	$_POST['usr_nome'];
-	$_POST['usr_snome'];
-	$_POST['usr_tel'];
-	$_POST['usr_email'];
-	$_POST['usr_pass1'];
-	$_POST['usr_pass2'];
-	$_POST['usr_dir'];
+	var unick = $_POST['usr_nick'];
+	var unome = $_POST['usr_nome'];
+	var usnome = $_POST['usr_snome'];
+	var utel = $_POST['usr_tel'];
+	var uemail = $_POST['usr_email'];
+	var upass1 = $_POST['usr_pass1'];
+	var upass2 = $_POST['usr_pass2'];
+	var udir = $_POST['usr_dir'];
 
-	if ($_POST['usr_pass1'] == $_POST['usr_pass2'])
+	if (upass1 == upass2)
 	{
 		$func = "sudo samba-tool user add ";
-		$func .= $_POST['usr_nick'];
+		$func .= unick;
 		$func .= " ";
-		$func .= $_POST['usr_pass1'];
+		$func .= upass1;
 		$func .= " --home-directory ";
-		$func .= $_POST['usr_dir'];
+		$func .= udir;
 		$func .= " --given-name ";
-		$func .= $_POST['usr_nome'];
+		$func .= unome;
 		$func .= " --surname ";
-		$func .= $_POST['usr_snome'];
+		$func .= usnome;
 		$func .= " --home-directory	";
-		$func .= $_POST['usr_dir'];
+		$func .= udir;
 		$func .= " --mail-address ";
-		$func .= $_POST['usr_email'];
+		$func .= uemail;
 		$func .= " --telephone-number ";
-		$func .= $_POST['usr_tel'];
+		$func .= utel;
 		$func .= " --force-badname ";
 		echo "<pre>$func</pre>";
 	}

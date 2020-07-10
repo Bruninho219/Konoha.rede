@@ -5,11 +5,30 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 
+	<?php
+		if (isset($_POST['usr_nick']))
+		{
+			var_dump($_POST['usr_nick']);
+			$func = "sudo samba-tool user add ";
+			$func = $func . $_POST['usr_nick'];
+			$func = $func . " ";
+			$func = $func . $_POST['usr_pass1'];
+			$func = $func . " --home-directory ";
+			$func = $func . $_POST['usr_dir'];
+			$func = $func . " --given-name ";
+			$func = $func . $_POST['usr_nome'];
+			$func = $func . " --surname ";
+			$func = $func . $_POST['usr_snome'];
+			$func = $func . " --mail-address ";
+			$func = $func . $_POST['usr_email'];
+			$func = $func . " --telephone-number ";
+			$func = $func . $_POST['usr_tel'];
+			$func = $func . " --force-badname";
+			echo "<pre>$func</pre>";
+		}
+	?>
+
 	<body>
-		<script type="text/javascript">
-			alert("Teste alert!");
-		</script>
-			
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
@@ -18,7 +37,8 @@
 			<h1>
 				<b>Adicionar usuário:</b>
 			</h1>
-			<form action="../fnc/fncUsr_add.php" method="POST">
+			<!--<form action="../fnc/fncUsr_add.php" method="POST">-->
+			<form method="POST">
 				<p>
 					<b>Informe o nome de usuário:</b>
 					<br>
@@ -70,43 +90,9 @@
 				<p>
 					<br>
 					<br>
-					<input type="button" onclick="AddUserFunction();" value="Criar">
+					<input type="submit" value="Criar">
 				</p>
 			</form>
-
-			<script type="text/javascript">
-				function AddUserFunction()
-				{
-					alert("entrou na funcao");
-					
-					if(document.getElementById('usr_pass1').value == document.getElementById('usr_pass2').value)
-					{
-						<?php
-							var $func = "sudo samba-tool user add ";
-							$func = $func . $_POST['usr_nick'];
-							$func = $func . " ";
-							$func = $func . $_POST['usr_pass1'];
-							$func = $func . " --home-directory ";
-							$func = $func . $_POST['usr_dir'];
-							$func = $func . " --given-name ";
-							$func = $func . $_POST['usr_nome'];
-							$func = $func . " --surname ";
-							$func = $func . $_POST['usr_snome'];
-							$func = $func . " --mail-address ";
-							$func = $func . $_POST['usr_email'];
-							$func = $func . " --telephone-number ";
-							$func = $func . $_POST['usr_tel'];
-							$func = $func . " --force-badname";
-							echo "<pre>$func</pre>";
-						?>
-						alert("Vê se deu certo aaiii, tomara que tenha dado certo!");
-					}
-					else
-					{
-						alert("Verifique se as senhas correspondem!");
-					}
-				}
-			</script>
 		</section>
 		<br>
 		<br>

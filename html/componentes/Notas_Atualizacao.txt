@@ -50,3 +50,5 @@ v 0.1.4...........................Adicionado arquivo Comandos_samba-tool.txt
 v 0.2.0...........................Melhorias em usr_add.php
                                   Adicionado arquivo ./teste/teste_js.html
 v 0.2.1...........................Melhorias em usr_add.php
+v 0.2.2...........................Melhorias em usr_add.php
+                                  Melhorias em funUsr_add.php
