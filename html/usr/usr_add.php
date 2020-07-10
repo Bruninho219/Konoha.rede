@@ -5,6 +5,7 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 
+	<!--
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
@@ -27,6 +28,7 @@
 			echo "<pre>$func</pre>";
 		}
 	?>
+	-->
 
 	<body>
 		<header>
@@ -37,8 +39,8 @@
 			<h1>
 				<b>Adicionar usuário:</b>
 			</h1>
-			<!--<form action="../fnc/fncUsr_add.php" method="POST">-->
-			<form method="POST">
+			<!--<form method="POST">-->
+			<form action="../fnc/fncUsr_add.php" method="POST">
 				<p>
 					<b>Informe o nome de usuário:</b>
 					<br>
