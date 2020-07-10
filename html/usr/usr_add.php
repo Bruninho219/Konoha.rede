@@ -5,7 +5,6 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 
-	<!--
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
@@ -28,7 +27,6 @@
 			echo "<pre>$func</pre>";
 		}
 	?>
-	-->
 
 	<body>
 		<header>
@@ -39,8 +37,8 @@
 			<h1>
 				<b>Adicionar usuário:</b>
 			</h1>
-			<!--<form method="POST">-->
-			<form action="../fnc/fncUsr_add.php" method="POST">
+			<!--<form action="../fnc/fncUsr_add.php" method="POST">-->
+			<form name="formUser" method="POST">
 				<p>
 					<b>Informe o nome de usuário:</b>
 					<br>
@@ -92,7 +90,7 @@
 				<p>
 					<br>
 					<br>
-					<input type="submit" value="Criar">
+					<input type="button" onclick="AddUserFunction();" value="Criar">
 				</p>
 			</form>
 		</section>
@@ -103,4 +101,24 @@
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>
 	</body>
+	<script type="text/javascript">
+	function AddUserFunction()
+	{
+		if (document.getElementById('usr_pass1').value == '' || document.getElementById('usr_pass2').value == '')
+		{
+			console.log("Campos em branco");
+		}
+		else
+		{ 
+			if (document.getElementById('usr_pass1').value == document.getElementById('usr_pass2').value)
+			{
+				document.formUser.submit();
+			}
+			else
+			{
+				alert("Verifique se as senhas correspondem!");
+			}
+		}
+	}
+	</script>
 </html>
