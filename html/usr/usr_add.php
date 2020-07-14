@@ -8,7 +8,7 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
-			var_dump($_POST['usr_nick']);
+			print_r($_POST['usr_nick']);
 			$func = `sudo samba-tool user add `;
 			$func = $func . $_POST[`usr_nick`];
 			$func = $func . ` `;
