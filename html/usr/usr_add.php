@@ -34,9 +34,10 @@
 		</header>
 		<nav id="nav1">
 			<?php
-				var usrlist = `sudo samba-tool user list`;
+				$usrlist = `sudo samba-tool user list`;
 				echo "<pre>$usrlist</pre>";
 			?>
+			<br><br><br>
 			<?php
 				$output = `cal`;
 				echo "<pre>$output</pre>";
