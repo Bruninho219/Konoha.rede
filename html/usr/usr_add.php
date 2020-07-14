@@ -10,19 +10,19 @@
 		{
 			var_dump($_POST['usr_nick']);
 			$func = `sudo samba-tool user add `;
-			$func = $func . $_POST['usr_nick'];
+			$func = $func . $_POST[`usr_nick`];
 			$func = $func . ` `;
-			$func = $func . $_POST['usr_pass1'];
+			$func = $func . $_POST[`usr_pass1`];
 			$func = $func . ` --home-directory `;
-			$func = $func . $_POST['usr_dir'];
+			$func = $func . $_POST[`usr_dir`];
 			$func = $func . ` --given-name `;
-			$func = $func . $_POST['usr_nome'];
+			$func = $func . $_POST[`usr_nome`];
 			$func = $func . ` --surname `;
-			$func = $func . $_POST['usr_snome'];
+			$func = $func . $_POST[`usr_snome`];
 			$func = $func . ` --mail-address `;
-			$func = $func . $_POST['usr_email'];
+			$func = $func . $_POST[`usr_email`];
 			$func = $func . ` --telephone-number `;
-			$func = $func . $_POST['usr_tel'];
+			$func = $func . $_POST[`usr_tel`];
 			//$func = $func . " --force-badname";
 			echo "<pre>$func</pre>";
 		}
