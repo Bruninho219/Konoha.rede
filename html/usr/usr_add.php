@@ -8,23 +8,8 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
-			//print_r($_POST['usr_nick']);
-			$func = `sudo samba-tool user add `;
-			$func = $func . $_POST[`usr_nick`];
-			$func = $func . ` `;
-			$func = $func . $_POST[`usr_pass1`];
-			$func = $func . ` --home-directory `;
-			$func = $func . $_POST[`usr_dir`];
-			$func = $func . ` --given-name `;
-			$func = $func . $_POST[`usr_nome`];
-			$func = $func . ` --surname `;
-			$func = $func . $_POST[`usr_snome`];
-			$func = $func . ` --mail-address `;
-			$func = $func . $_POST[`usr_email`];
-			$func = $func . ` --telephone-number `;
-			$func = $func . $_POST[`usr_tel`];
-			//$func = $func . " --force-badname";
-			echo "<pre>$func</pre>";
+			$f = "`sudo samba-tool user add {$_POST['usr_nick']} {$_POST['usr_pass1']} --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}`";
+			echo "<pre>$f</pre>";
 		}
 	?>
 
