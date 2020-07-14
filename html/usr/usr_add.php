@@ -37,6 +37,10 @@
 				var usrlist = `sudo samba-tool user list`;
 				echo "<pre>$usrlist</pre>";
 			?>
+			<?php
+				$output = `cal`;
+				echo "<pre>$output</pre>";
+			?>
 		</nav>
 		<section>
 			<h1>
