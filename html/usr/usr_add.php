@@ -9,7 +9,7 @@
 		if (isset($_POST['usr_nick']))
 		{
 			var_dump($_POST['usr_nick']);
-			$func = "sudo samba-tool user add ";
+			$func = `sudo samba-tool user add `;
 			$func = $func . $_POST['usr_nick'];
 			$func = $func . " ";
 			$func = $func . $_POST['usr_pass1'];
@@ -34,7 +34,8 @@
 		</header>
 		<nav id="nav1">
 			<?php
-				echo "<pre>sudo samba-tool user list</pre>";
+				var usrlist = `sudo samba-tool user list`;
+				echo "<pre>$usrlist</pre>";
 			?>
 		</nav>
 		<section>
