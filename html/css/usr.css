@@ -42,6 +42,7 @@ usr/usr_src
 	width: 200px;
 	float: left;
 	padding: 5px;
+	overflow: hidden;
 }
 
 section

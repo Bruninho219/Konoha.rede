@@ -33,14 +33,10 @@
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
 		<nav id="nav1">
+			Usuários:
 			<?php
 				$usrlist = `sudo samba-tool user list`;
 				echo "<pre>$usrlist</pre>";
-			?>
-			<br><br><br>
-			<?php
-				$output = `cal`;
-				echo "<pre>$output</pre>";
 			?>
 		</nav>
 		<section>
