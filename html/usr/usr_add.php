@@ -39,7 +39,7 @@
 				echo "<pre>$usrlist</pre>";
 			?>
 			<?php
-				$usrlist = "sudo samba-tool user list";
+				$usrlist = 'sudo samba-tool user list';
 				echo "<pre>$usrlist</pre>";
 			?>
 		</nav>
