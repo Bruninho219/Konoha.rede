@@ -67,7 +67,7 @@
 						<li><a href="../componentes/Notas_Atualizacao.txt">Notas de atualizações</a></li>
 						<li><a href="#">.</a></li>
 						<li><a href="#">.</a></li>
-						<li><a href="#">.</a></li>
+						<li><a href="./php.php">PHP info</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
