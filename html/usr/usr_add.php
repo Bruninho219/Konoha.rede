@@ -38,10 +38,6 @@
 				$usrlist = `sudo samba-tool user list`;
 				echo "<pre>$usrlist</pre>";
 			?>
-			<?php
-				$usrlist = 'sudo samba-tool user list';
-				echo "<pre>$usrlist</pre>";
-			?>
 		</nav>
 		<section>
 			<h1>
