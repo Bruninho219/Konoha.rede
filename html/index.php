@@ -48,6 +48,10 @@
 				$output = `git --version`;
 				echo "<pre>$output</pre>";
 			?>
+
+			<br><br><br>
+			Versão PHP:
+			<?php phpinfo(); ?>
 			
 			<!--- 50 -->
 			<br><br><br><br><br><br><br><br><br><br>
