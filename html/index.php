@@ -42,7 +42,7 @@
 			?>
 
 			<br>
-			<p><b>Github:</b></p>
+			<p><b>GitHub:</b></p>
 			
 			<?php
 				$output = `git --version`;
