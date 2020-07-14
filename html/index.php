@@ -40,6 +40,14 @@
 				$output = `w -s`;
 				echo "<pre>$output</pre>";
 			?>
+
+			<br>
+			<p><b>Github:</b></p>
+			
+			<?php
+				$output = `git --version`;
+				echo "<pre>$output</pre>";
+			?>
 			
 			<!--- 50 -->
 			<br><br><br><br><br><br><br><br><br><br>

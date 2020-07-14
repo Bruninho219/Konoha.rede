@@ -53,3 +53,5 @@ v 0.2.1...........................Melhorias em usr_add.php
 v 0.2.2...........................Melhorias em usr_add.php
                                   Melhorias em funUsr_add.php
 v 0.2.3...........................Melhorias em usr_add.php
+                                  Melhorias Index.php
+                                  Melhorias nos usr.css
