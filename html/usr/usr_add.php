@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/usr.css">
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
-
+	
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
@@ -23,7 +23,7 @@
 			$func = $func . $_POST['usr_email'];
 			$func = $func . " --telephone-number ";
 			$func = $func . $_POST['usr_tel'];
-			$func = $func . " --force-badname";
+			//$func = $func . " --force-badname";
 			echo "<pre>$func</pre>";
 		}
 	?>
@@ -32,7 +32,11 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1"></nav>
+		<nav id="nav1">
+			<?php
+				echo "<pre>sudo samba-tool user list</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Adicionar usuário:</b>
