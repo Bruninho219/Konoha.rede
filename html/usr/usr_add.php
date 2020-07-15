@@ -8,9 +8,9 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
-			//$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']} --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
+			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']} --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
 
-			
+			/*
 			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
 
 			if (document.getElementById('usr_dir').value <> '')
@@ -22,7 +22,7 @@
 			{
 				$f=$f." --given-name {$_POST['usr_nome']}";
 			}
-			if (document.getElementById('usr_snome').value != '')
+			if (document.getElementById('usr_snome').value <> '')
 			{
 				$f=$f. " --surname {$_POST['usr_snome']}";
 			}
@@ -51,6 +51,7 @@
 			{
 				$f=$f. " --description {$_POST['usr_desc']}";
 			}
+			*/
 			
 			$comando = shell_exec($f);
 			echo "<pre>$comando</pre>";
