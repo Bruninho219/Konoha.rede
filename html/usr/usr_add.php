@@ -9,11 +9,11 @@
 		if (isset($_POST['usr_nick']))
 		{
 			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
-			
-			if (document.getElementById('usr_dir').value != '')
+
+			/*if (document.getElementById('usr_dir').value != '')
 			{
 				$f=$f." --home-directory {$_POST['usr_dir']};"
-			}
+			}*/
 			if (document.getElementById('usr_nome').value != '')
 			{
 				$f=$f." --given-name {$_POST['usr_nome']}";
