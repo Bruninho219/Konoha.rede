@@ -9,12 +9,12 @@
 		if (isset($_POST['usr_nick']))
 		{
 			//$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']} --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
-			
+
 			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
 
 			if (document.getElementById('usr_dir').value != '')
 			{
-				$f=$f." --home-directory {$_POST['usr_dir']}";
+				$f=$f." --home-directory /var/{$_POST['usr_dir']}";
 			}
 			if (document.getElementById('usr_nome').value != '')
 			{
@@ -28,7 +28,6 @@
 			{
 				$f=$f. " --mail-address {$_POST['usr_email']}";
 			}
-
 			if (document.getElementById('usr_tel').value != '')
 			{
 				$f=$f. " --telephone-number {$_POST['usr_tel']}";
