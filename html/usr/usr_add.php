@@ -12,6 +12,7 @@
 
 			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
 
+			/*
 			if (document.getElementById('usr_dir').value != '')
 			{
 				$f=$f." --home-directory /var/{$_POST['usr_dir']}";
@@ -48,6 +49,7 @@
 			{
 				$f=$f. " --description {$_POST['usr_desc']}";
 			}
+			*/
 			
 			$comando = shell_exec($f);
 			echo "<pre>$comando</pre>";
