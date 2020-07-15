@@ -11,7 +11,6 @@
 		</header>
 		<nav id="nav1">
 			<br>
-
 			<?php
 				$output = `cal`;
 				echo "<pre>$output</pre>";

@@ -10,8 +10,7 @@
 			<?php include("./navbar.php"); ?>
 		</header>
 		<nav id="nav1" style= "background-color: #C0C0C0;">
-			Versão atual:
-			<br>
+			<b>Versão atual:</b>
 			v. 0.3.0
 		</nav>
 		<section>

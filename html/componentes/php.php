@@ -7,7 +7,7 @@
 	
 	<body style= "margin: 0 auto;">
 		<header>
-			<?php include("./navbar.php"); ?>
+			<?php include("../componentes/navbar.php"); ?>
 		</header>
 		<nav id="nav1" ></nav>
 		<section>
@@ -16,7 +16,7 @@
 			</p>
 		</section>
 		<footer>
-			<?php include("./footerbar.php"); ?>
+			<?php include("../componentes/footerbar.php"); ?>
 		</footer>
 	</body>
 </html>
