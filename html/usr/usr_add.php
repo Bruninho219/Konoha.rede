@@ -15,6 +15,7 @@
 			{
 				$f=$f." --home-directory {$_POST['usr_dir']};"
 			}
+			*/
 			if (document.getElementById('usr_nome').value != '')
 			{
 				$f=$f." --given-name {$_POST['usr_nome']}";
@@ -27,7 +28,7 @@
 			{
 				$f=$f. " --mail-address {$_POST['usr_email']}";
 			}
-			*/
+
 			if (document.getElementById('usr_tel').value != '')
 			{
 				$f=$f. " --telephone-number {$_POST['usr_tel']}";
@@ -36,7 +37,6 @@
 			{
 				$f=$f. " --job-title {$_POST['usr_cargo']}";
 			}
-			
 			if (document.getElementById('usr_depart').value != '')
 			{
 				$f=$f. " --departament {$_POST['usr_depart']}";
