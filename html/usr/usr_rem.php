@@ -33,17 +33,17 @@
 				<p>
 					<b>Informe o nome de usuário:</b>
 					<br>
-					<input type="text" name="usr_nick" placeholder="Ex.: bruno_brs">
+					<input type="text" name="usr_nick" id="usr_nick" placeholder="Ex.: bruno_brs">
 				</p>
 				<p>
 					<b>Remover todos os arquivos:</b>
 					<br>
 					Sim
-					<input type="radio" name="alt_pass" value="remArq_sim"
+					<input type="radio" name="alt_pass" id="alt_pass" value="remArq_sim"
 						checked>
 					&nbsp;&nbsp;&nbsp;
 					Não:
-					<input type="radio" name="alt_pass" value="remArq_nao">
+					<input type="radio" name="alt_pass" id="alt_pass" value="remArq_nao">
 				</p>
 				<br>
 				<br>
