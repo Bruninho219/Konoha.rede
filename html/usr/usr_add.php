@@ -29,13 +29,27 @@
 			<h1>
 				<b>Adicionar usuário:</b>
 			</h1>
-			<!--<form action="../fnc/fncUsr_add.php" method="POST">-->
 			<form name="formUser" method="POST">
+				<br>
+				<b>Campos obrigatórios:</b>
+				<br>
 				<p>
 					<b>Informe o nome de usuário:</b>
 					<br>
 					<input type="text" name="usr_nick" id="usr_nick" placeholder="Ex.: bruno_brs">
 				</p>
+				<p>
+					<b>Informe senha:</b>
+					<br>
+					<input type="password" name="usr_pass1" id="usr_pass1">
+					<br>
+					<b>Reinforme a senha:</br>
+					<input type="password" name="usr_pass2" id="usr_pass2">
+				</p>
+				<br>
+				<br>
+				<b>Campos opcionais:</b>
+				<br>
 				<p>
 					<b>Informe o nome do usuário:</b>
 					<br>
@@ -56,14 +70,7 @@
 					<br>
 					<input type="email" name="usr_email" id="usr_email" placeholder="Ex.: bruno@konoha.rede">
 				</p>
-				<p>
-					<b>Informe senha:</b>
-					<br>
-					<input type="password" name="usr_pass1" id="usr_pass1">
-					<br>
-					<b>Reinforme a senha:</br>
-					<input type="password" name="usr_pass2" id="usr_pass2">
-				</p>
+				
 				<p>
 					<b>Solicitar alteração de senha:</b>
 					<br>
@@ -93,7 +100,7 @@
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>
 	</body>
-	
+
 	<script type="text/javascript">
 		function AddUserFunction()
 		{

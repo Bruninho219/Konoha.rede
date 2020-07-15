@@ -8,7 +8,7 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
-			$f = "sudo samba-tool user delete {$_POST['usr_nick']} ";
+			$f = "sudo samba-tool user delete {$_POST['usr_nick']}";
 			$comando = shell_exec($f);
 			echo "<pre>$comando</pre>";
 		}
