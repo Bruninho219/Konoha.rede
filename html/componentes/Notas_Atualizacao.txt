@@ -1,63 +1,63 @@
-Base...............................Adicionado arquivos basicos e de testes
-.                                  Adicionado paginas ./usr/usr_add.html
-.                                  Adicionado paginas ./usr/usr_sec.html
-.                                  Adicionado paginas ./usr/usr_src.html
-v 0.0.1............................Resolvido bug chamar pagina
-.                                  Correcoes na navbar e outros bugs
-.                                  Adicionado informacoes nas paginas ./usr/*
-.                                  Conversao arquivos .html para .php
-v 0.0.2............................Resolvido bugs no CSS
-.                                  Correcoes nas paginas ./usr/*
-.                                  Melhorias navbar
-.                                  Adicionado opcao de logout
-.                                  Adicionado imagem ./img/logout.png
-.                                  Melhorias Index.php
-.                                  Adicionado favicon
-.                                  Correcoes de erros e pequenas melhorias
-v 0.0.3............................Remocoes de arquivos .html desnecessarios
-.                                  Melhorias interface ./usr/usr_src.php
-.                                  Adicionado paginas ./usr/usr_rem.php
-.                                  Adicionado campo telefone em ./usr/usr_add.php
-.                                  Adicionado pagina ./grp/grp_add.php
-.                                  Adicionado pagina ./grp/grp_rem.php
-.                                  Adicionado pagina ./grp/grp_sec.php
-.                                  Adicionado pagina ./grp/grp_src.php
-.                                  Correções de erros e pequenas melhorias
-v 0.1.0............................Remocao de arquivo .html desnecessario
-.                                  Resolvido bug chamar pagina ./grp/grp_rem.php
-.                                  Resolvido bug chamar pagina ./usr/usr_rem.php
-.                                  Resolvido bug ./componentes/navbar.php
-.                                  Adicionado aquivo ./testes/sh.sh
-.                                  Adicionado aquivo ./testes/teste.php
-.                                  Remocao do arquivo ./testes/menu.html
-.                                  Remocao do arquivo ./testes/menu.php
-.                                  Adicionado funcao teste na navbar
-.                                  Correcoes na pagina ./usr/usr/usr_rem.php
-.                                  Correcoes na pagina ./usr/grp/grp_rem.php
-v 0.1.1............................Adicionado informacoes na pagina ./index.php
-.                                  Correcao em localizacao de arquivos
-.                                  Ajustes no arquivo ./css/index.css
-v 0.1.2............................Adicionado funcao de atualizacao automatico do repositorio git no servidor
-.                                  Melhorias em ./testes/teste.php
-.                                  Adicionado pagina ./testes/atualizacao.php
-v 0.1.3............................Melhorias Index.php
-.                                  Melhorias na navbar
-.                                  Adicionado notas de atualizacoes
-.                                  Correcoes na navbar e outros bugs
-.                                  Melhorias nos arquivos .css
-v 0.1.4............................Adicionado arquivo Comandos_samba-tool.txt
-.                                  Implementecoes de testes
-v 0.2.0............................Melhorias em usr_add.php
-.                                  Adicionado arquivo ./teste/teste_js.html
-v 0.2.1............................Melhorias em usr_add.php
-v 0.2.2............................Melhorias em usr_add.php
-.                                  Melhorias em funUsr_add.php
-v 0.2.3............................Melhorias em usr_add.php
-.                                  Melhorias Index.php
-.                                  Melhorias nos usr.css
-.                                  Adicionado pagina ./componentes/php.php
-.                                  Correcoes de erros e pequenas melhorias
-v 0.3.0............................Adicionado arquivo ./css/css.php
-.                                  Melhorias em del_add.php
-.                                  Adicionado pagina ./componentes/Notas_Atualizacao.php
-.                                  Correcoes de erros e pequenas melhorias
+Base..............................Adicionado arquivos basicos e de testes
+                                  Adicionado paginas ./usr/usr_add.html
+                                  Adicionado paginas ./usr/usr_sec.html
+                                  Adicionado paginas ./usr/usr_src.html
+v 0.0.1...........................Resolvido bug chamar pagina
+                                  Correcoes na navbar e outros bugs
+                                  Adicionado informacoes nas paginas ./usr/*
+                                  Conversao arquivos .html para .php
+v 0.0.2...........................Resolvido bugs no CSS
+                                  Correcoes nas paginas ./usr/*
+                                  Melhorias navbar
+                                  Adicionado opcao de logout
+                                  Adicionado imagem ./img/logout.png
+                                  Melhorias Index.php
+                                  Adicionado favicon
+                                  Correcoes de erros e pequenas melhorias
+v 0.0.3...........................Remocoes de arquivos .html desnecessarios
+                                  Melhorias interface ./usr/usr_src.php
+                                  Adicionado paginas ./usr/usr_rem.php
+                                  Adicionado campo telefone em ./usr/usr_add.php
+                                  Adicionado pagina ./grp/grp_add.php
+                                  Adicionado pagina ./grp/grp_rem.php
+                                  Adicionado pagina ./grp/grp_sec.php
+                                  Adicionado pagina ./grp/grp_src.php
+                                  Correções de erros e pequenas melhorias
+v 0.1.0...........................Remocao de arquivo .html desnecessario
+                                  Resolvido bug chamar pagina ./grp/grp_rem.php
+                                  Resolvido bug chamar pagina ./usr/usr_rem.php
+                                  Resolvido bug ./componentes/navbar.php
+                                  Adicionado aquivo ./testes/sh.sh
+                                  Adicionado aquivo ./testes/teste.php
+                                  Remocao do arquivo ./testes/menu.html
+                                  Remocao do arquivo ./testes/menu.php
+                                  Adicionado funcao teste na navbar
+                                  Correcoes na pagina ./usr/usr/usr_rem.php
+                                  Correcoes na pagina ./usr/grp/grp_rem.php
+v 0.1.1...........................Adicionado informacoes na pagina ./index.php
+                                  Correcao em localizacao de arquivos
+                                  Ajustes no arquivo ./css/index.css
+v 0.1.2...........................Adicionado funcao de atualizacao automatico do repositorio git no servidor
+                                  Melhorias em ./testes/teste.php
+                                  Adicionado pagina ./testes/atualizacao.php
+v 0.1.3...........................Melhorias Index.php
+                                  Melhorias na navbar
+                                  Adicionado notas de atualizacoes
+                                  Correcoes na navbar e outros bugs
+                                  Melhorias nos arquivos .css
+v 0.1.4...........................Adicionado arquivo Comandos_samba-tool.txt
+                                  Implementecoes de testes
+v 0.2.0...........................Melhorias em usr_add.php
+                                  Adicionado arquivo ./teste/teste_js.html
+v 0.2.1...........................Melhorias em usr_add.php
+v 0.2.2...........................Melhorias em usr_add.php
+                                  Melhorias em funUsr_add.php
+v 0.2.3...........................Melhorias em usr_add.php
+                                  Melhorias Index.php
+                                  Melhorias nos usr.css
+                                  Adicionado pagina ./componentes/php.php
+                                  Correcoes de erros e pequenas melhorias
+v 0.3.0...........................Adicionado arquivo ./css/css.php
+                                  Melhorias em del_add.php
+                                  Adicionado pagina ./componentes/Notas_Atualizacao.php
+                                  Correcoes de erros e pequenas melhorias

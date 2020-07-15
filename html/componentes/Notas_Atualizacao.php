@@ -16,13 +16,8 @@
 		</nav>
 		<section>
 			<?php
-				$arquivo = fopen ('./Notas_Atualizacao.txt', 'r');
-				while(!feof($arquivo))
-				{
-					$linha = fgets($arquivo, 1024);
-					echo $linha.'<br />';
-				}
-				fclose($arquivo);
+				$f = `cat ./Notas_Atualizacao.txt`;
+				echo "<pre>$f</pre>";
 			?>
 		</section>
 		<footer>
