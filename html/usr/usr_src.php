@@ -20,7 +20,7 @@
 			<h1>
 				<b>Informações sobre conta do usuário:</b>
 			</h1>
-			<form>
+			<form name="formUser" method="POST">
 				<p>
 					<b>Informe o nome de usuário:</b>
 					<br>
