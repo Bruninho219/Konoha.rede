@@ -1,0 +1,30 @@
+#nav1
+{
+	line-height: 30px;
+	height: 100%;
+	width: 250px;
+	float: left;
+	padding: 5px;
+}
+
+section
+{
+	float: left;
+	padding: 10px;
+}
+
+footer
+{
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 10px;
+}
+
+body
+{
+	background-color: #EEEEEE;
+	margin: 0 auto;
+	width: 100%;
+}

@@ -9,11 +9,21 @@
 		<header>
 			<?php include("./navbar.php"); ?>
 		</header>
-		<nav id="nav1" ></nav>
+		<nav id="nav1" style= "background-color: #C0C0C0;">
+			Versão atual:
+			<br>
+			v. 0.3.0
+		</nav>
 		<section>
-			<p>
-				<?php phpinfo(); ?>
-			</p>
+			<?php
+				$arquivo = fopen ('./Notas_Atualizacao.txt', 'r');
+				while(!feof($arquivo))
+				{
+					$linha = fgets($arquivo, 1024);
+					echo $linha.'<br />';
+				}
+				fclose($arquivo);
+			?>
 		</section>
 		<footer>
 			<?php include("./footerbar.php"); ?>

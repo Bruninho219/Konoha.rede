@@ -57,3 +57,7 @@ v 0.2.3...........................Melhorias em usr_add.php
                                   Melhorias nos usr.css
                                   Adicionado pagina ./componentes/php.php
                                   Correcoes de erros e pequenas melhorias
+v 0.3.0...........................Adicionado arquivo ./css/css.php
+                                  Melhorias em del_add.php
+                                  Adicionado pagina ./componentes/Notas_Atualizacao.php
+                                  Correcoes de erros e pequenas melhorias

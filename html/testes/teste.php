@@ -70,7 +70,7 @@
 			<br>
 			<br>
 			<br>
-			
+			<!--
 			public function Delete($param)
 			{
 				$grupo = $param['grupo']; // get the parameter $key
@@ -100,6 +100,7 @@
 			$user = `userTeste2`;
 			$comando = "sudo " . $this->samba_tool . " user add '{$user}'";        
 			$result = shell_exec($comando);
+			
 
 
 
