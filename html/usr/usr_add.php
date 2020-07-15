@@ -43,11 +43,12 @@
 			{
 				$f=$f. " --company {$_POST['usr_company']}";
 			}
+			*/
 			if (document.getElementById('usr_desc').value != '')
 			{
 				$f=$f. " --description {$_POST['usr_desc']}";
 			}
-			*/
+			
 			$comando = shell_exec($f);
 			echo "<pre>$comando</pre>";
 		}
