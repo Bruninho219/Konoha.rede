@@ -27,6 +27,7 @@
 			{
 				$f=$f. " --mail-address {$_POST['usr_email']}";
 			}
+			*/
 			if (document.getElementById('usr_tel').value != '')
 			{
 				$f=$f. " --telephone-number {$_POST['usr_tel']}";
@@ -35,17 +36,15 @@
 			{
 				$f=$f. " --job-title {$_POST['usr_cargo']}";
 			}
-			*/
+			
 			if (document.getElementById('usr_depart').value != '')
 			{
 				$f=$f. " --departament {$_POST['usr_depart']}";
 			}
-			
 			if (document.getElementById('usr_company').value != '')
 			{
 				$f=$f. " --company {$_POST['usr_company']}";
 			}
-
 			if (document.getElementById('usr_desc').value != '')
 			{
 				$f=$f. " --description {$_POST['usr_desc']}";
