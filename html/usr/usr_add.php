@@ -8,9 +8,9 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
-			$f = "`sudo samba-tool user add {$_POST['usr_nick']} {$_POST['usr_pass1']} --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}`";
-			//echo "<pre>$f</pre>";
-			shell_exec($f);
+			$f = "sudo samba-tool user add {$_POST['usr_nick']} {$_POST['usr_pass1']} --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
+			$comando = shell_exec($f);
+			echo "<pre>$comando</pre>";
 		}
 	?>
 
