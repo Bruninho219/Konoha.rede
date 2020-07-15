@@ -5,60 +5,6 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 	
-	<?php
-		if (isset($_POST['usr_nick']))
-		{
-			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
-			//" --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
-
-			/*
-			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
-
-			if (document.getElementById('usr_dir').value <> '')
-			{
-				$f=$f." --home-directory /var/";
-				$f=$f."{$_POST['usr_dir']}";
-			}
-			if (document.getElementById('usr_nome').value <> '')
-			{
-				$f=$f." --given-name {$_POST['usr_nome']}";
-			}
-			if (document.getElementById('usr_snome').value <> '')
-			{
-				$f=$f. " --surname {$_POST['usr_snome']}";
-			}
-			if (document.getElementById('usr_email').value <> '')
-			{
-				$f=$f. " --mail-address {$_POST['usr_email']}";
-			}
-			if (document.getElementById('usr_tel').value <> '')
-			{
-				$f=$f. " --telephone-number {$_POST['usr_tel']}";
-			}
-			if (document.getElementById('usr_cargo').value <> '')
-			{
-				$f=$f. " --job-title {$_POST['usr_cargo']}";
-			}
-			if (document.getElementById('usr_depart').value <> '')
-			{
-				$f=$f. " --departament {$_POST['usr_depart']}";
-			}
-			if (document.getElementById('usr_company').value <> '')
-			{
-				$f=$f. " --company {$_POST['usr_company']}";
-			}
-			
-			if (document.getElementById('usr_desc').value <> '')
-			{
-				$f=$f. " --description {$_POST['usr_desc']}";
-			}
-			*/
-			
-			$comando = shell_exec($f);
-			echo "<pre>$comando</pre>";
-		}
-	?>
-
 	<body>
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
@@ -159,6 +105,65 @@
 		<br>
 		<br>
 		<br>
+
+		<?php
+			if (isset($_POST['usr_nick']))
+			{
+				$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
+				//" --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
+
+				/*
+				$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
+
+				if (document.getElementById('usr_dir').value <> '')
+				{
+					$f=$f." --home-directory /var/";
+					$f=$f."{$_POST['usr_dir']}";
+				}
+				if (document.getElementById('usr_nome').value <> '')
+				{
+					$f=$f." --given-name {$_POST['usr_nome']}";
+				}
+				if (document.getElementById('usr_snome').value <> '')
+				{
+					$f=$f. " --surname {$_POST['usr_snome']}";
+				}
+				if (document.getElementById('usr_email').value <> '')
+				{
+					$f=$f. " --mail-address {$_POST['usr_email']}";
+				}
+				if (document.getElementById('usr_tel').value <> '')
+				{
+					$f=$f. " --telephone-number {$_POST['usr_tel']}";
+				}
+				if (document.getElementById('usr_cargo').value <> '')
+				{
+					$f=$f. " --job-title {$_POST['usr_cargo']}";
+				}
+				if (document.getElementById('usr_depart').value <> '')
+				{
+					$f=$f. " --departament {$_POST['usr_depart']}";
+				}
+				if (document.getElementById('usr_company').value <> '')
+				{
+					$f=$f. " --company {$_POST['usr_company']}";
+				}
+				
+				if (document.getElementById('usr_desc').value <> '')
+				{
+					$f=$f. " --description {$_POST['usr_desc']}";
+				}
+				*/
+				
+				$comando = shell_exec($f);
+				echo "<pre>$comando</pre>";
+			}
+		?>
+
+		<br>
+		<br>
+		<br>
+		
 		<footer>
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>

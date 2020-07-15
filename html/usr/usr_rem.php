@@ -5,15 +5,6 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 
-	<?php
-		if (isset($_POST['usr_nick']))
-		{
-			$f = "sudo samba-tool user delete {$_POST['usr_nick']}";
-			$comando = shell_exec($f);
-			echo "<pre>$comando</pre>";
-		}
-	?>
-
 	<body>
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
@@ -52,6 +43,17 @@
 				</p>
 			</form>
 		</section>
+		<br>
+		<br>
+		<br>
+		<?php
+			if (isset($_POST['usr_nick']))
+			{
+				$f = "sudo samba-tool user delete {$_POST['usr_nick']}";
+				$comando = shell_exec($f);
+				echo "<pre>$comando</pre>";
+			}
+		?>
 		<br>
 		<br>
 		<br>
