@@ -1,0 +1,11 @@
+#!/bin/bash
+#1 user
+#2 senha
+#3 diretorio
+#4 nome
+#5 sobrenome
+#6 email
+#7 telefone
+$1; $2; $3; $4; $5; $6; $7 >> add-dgb.txt
+
+#sudo samba-tool user add $1 $2 --home-directory $3 --given-name $4 --surname $5 --mail-address $6 --telephone-number $7

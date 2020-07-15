@@ -5,16 +5,31 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 
+	<?php
+		if (isset($_POST['usr_nick']))
+		{
+			$f = "sudo samba-tool user delete {$_POST['usr_nick']} ";
+			$comando = shell_exec($f);
+			echo "<pre>$comando</pre>";
+		}
+	?>
+
 	<body>
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1"></nav>
+		<nav id="nav1">
+			Usuários:
+			<?php
+				$usrlist = `sudo samba-tool user list`;
+				echo "<pre>$usrlist</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Remover usuário:</b>
 			</h1>
-			<form>
+			<form name="formUser" method="POST">
 				<p>
 					<b>Informe o nome do usuário:</b>
 					<br>
@@ -33,7 +48,7 @@
 				<br>
 				<br>
 				<p>
-					<input type="button" onclick="" value="Confirmar">
+					<input type="button" onclick="DelUserFunction();" value="Confirmar">
 				</p>
 			</form>
 		</section>
