@@ -5,7 +5,7 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 	
-		<?php
+	<?php
 		if (isset($_POST['usr_nick']))
 		{
 			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']} --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
@@ -93,24 +93,25 @@
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>
 	</body>
+	
 	<script type="text/javascript">
-	function AddUserFunction()
-	{
-		if (document.getElementById('usr_pass1').value == '' || document.getElementById('usr_pass2').value == '')
+		function AddUserFunction()
 		{
-			console.log("Campos em branco");
-		}
-		else
-		{ 
-			if (document.getElementById('usr_pass1').value == document.getElementById('usr_pass2').value)
+			if (document.getElementById('usr_pass1').value == '' || document.getElementById('usr_pass2').value == '')
 			{
-				document.formUser.submit();
+				console.log("Campos em branco");
 			}
 			else
-			{
-				alert("Verifique se as senhas correspondem!");
+			{ 
+				if (document.getElementById('usr_pass1').value == document.getElementById('usr_pass2').value)
+				{
+					document.formUser.submit();
+				}
+				else
+				{
+					alert("Verifique se as senhas correspondem!");
+				}
 			}
 		}
-	}
 	</script>
 </html>
