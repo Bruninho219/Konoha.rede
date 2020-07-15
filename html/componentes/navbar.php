@@ -64,7 +64,7 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--CONFIGURACAO-->
-						<li><a href="../componentes/Notas_Atualizacao.txt">Notas de atualizações</a></li>
+						<li><a href="../componentes/Notas_Atualizacao.php">Notas de atualizações</a></li>
 						<li><a href="#">.</a></li>
 						<li><a href="#">.</a></li>
 						<li><a href="../componentes/php.php">PHP info</a></li>
