@@ -31,9 +31,9 @@
 			</h1>
 			<form name="formUser" method="POST">
 				<p>
-					<b>Informe o nome do usuário:</b>
+					<b>Informe o nome de usuário:</b>
 					<br>
-					<input type="text" name="usr_nome" placeholder="Ex.: bruno">
+					<input type="text" name="usr_nick" placeholder="Ex.: bruno_brs">
 				</p>
 				<p>
 					<b>Remover todos os arquivos:</b>
