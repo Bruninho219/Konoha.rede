@@ -109,19 +109,11 @@
 		<?php
 			if (isset($_POST['usr_nick']))
 			{
-				$f = "sudo samba-tool user create {$_POST['usr_nick']} ";
-				$f = $f. "{$_POST['usr_pass1']}";
+				$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
 
 				//" --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
-
 				
-				//$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
-				
-				if ($_POST['usr_dir'] != '')
-				{
-					$f=$f." --home-directory /var/";
-					$f=$f."{$_POST['usr_dir']}";
-				}
+				/*
 				if ($_POST['usr_nome'] != '')
 				{
 					$f=$f." --given-name {$_POST['usr_nome']}";
@@ -134,7 +126,12 @@
 				{
 					$f=$f. " --mail-address {$_POST['usr_email']}";
 				}
-				/*
+				
+				if ($_POST['usr_dir'] != '')
+				{
+					$f=$f." --home-directory /var/";
+					$f=$f."{$_POST['usr_dir']}";
+				}
 				if ($_POST['usr_tel'] != '')
 				{
 					$f=$f. " --telephone-number {$_POST['usr_tel']}";
@@ -144,6 +141,7 @@
 				{
 					$f=$f. " --job-title {$_POST['usr_cargo']}";
 				}
+				/*
 				if ($_POST['usr_depart'] != '')
 				{
 					$f=$f. " --departament {$_POST['usr_depart']}";
@@ -157,6 +155,7 @@
 				{
 					$f=$f. " --description {$_POST['usr_desc']}";
 				}
+				*/
 				
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
