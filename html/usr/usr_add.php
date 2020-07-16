@@ -134,10 +134,12 @@
 				{
 					$f=$f. " --mail-address {$_POST['usr_email']}";
 				}
+				/*
 				if ($_POST['usr_tel'] != '')
 				{
 					$f=$f. " --telephone-number {$_POST['usr_tel']}";
 				}
+				*/
 				if ($_POST['usr_cargo'] != '')
 				{
 					$f=$f. " --job-title {$_POST['usr_cargo']}";
