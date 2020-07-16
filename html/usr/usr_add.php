@@ -114,18 +114,20 @@
 
 				//" --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
 
+				
+				//$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
 				/*
-				$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
-
 				if (document.getElementById('usr_dir').value <> '')
 				{
 					$f=$f." --home-directory /var/";
 					$f=$f."{$_POST['usr_dir']}";
 				}
-				if (document.getElementById('usr_nome').value <> '')
+				*/
+				if ($_POST['usr_nome'] != '')
 				{
 					$f=$f." --given-name {$_POST['usr_nome']}";
 				}
+				/*
 				if (document.getElementById('usr_snome').value <> '')
 				{
 					$f=$f. " --surname {$_POST['usr_snome']}";
