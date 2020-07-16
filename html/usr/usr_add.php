@@ -109,7 +109,9 @@
 		<?php
 			if (isset($_POST['usr_nick']))
 			{
-				$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
+				$f = "sudo samba-tool user create {$_POST['usr_nick']} ";
+				$f = "{$_POST['usr_pass1']}";
+				
 				//" --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
 
 				/*
