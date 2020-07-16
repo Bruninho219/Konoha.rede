@@ -150,13 +150,13 @@
 				{
 					$f=$f. " --company {$_POST['usr_company']}";
 				}
-
+				*/
 				if ($_POST['usr_desc'] != '')
 				{
 					$f=$f. " --description {$_POST['usr_desc']}";
 				}
-				*/
 				
+
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
