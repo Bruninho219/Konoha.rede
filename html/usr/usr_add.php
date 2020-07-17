@@ -141,7 +141,7 @@
 				}
 				if ($_POST['usr_depart'] != '')
 				{
-					$f=$f. " --departament {$_POST['usr_depart']}";
+					$f=$f. " --department {$_POST['usr_depart']}";
 				}
 				if ($_POST['usr_company'] != '')
 				{
