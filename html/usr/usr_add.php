@@ -113,7 +113,6 @@
 
 				//" --home-directory {$_POST['usr_dir']} --given-name {$_POST['usr_nome']} --surname {$_POST['usr_snome']} --mail-address {$_POST['usr_email']} --telephone-number {$_POST['usr_tel']}";
 				
-				/*
 				if ($_POST['usr_nome'] != '')
 				{
 					$f=$f." --given-name {$_POST['usr_nome']}";
@@ -136,12 +135,10 @@
 				{
 					$f=$f. " --telephone-number {$_POST['usr_tel']}";
 				}
-				*/
 				if ($_POST['usr_cargo'] != '')
 				{
 					$f=$f. " --job-title {$_POST['usr_cargo']}";
 				}
-				/*
 				if ($_POST['usr_depart'] != '')
 				{
 					$f=$f. " --departament {$_POST['usr_depart']}";
@@ -150,7 +147,6 @@
 				{
 					$f=$f. " --company {$_POST['usr_company']}";
 				}
-				*/
 				if ($_POST['usr_desc'] != '')
 				{
 					$f=$f. " --description {$_POST['usr_desc']}";
