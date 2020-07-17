@@ -30,7 +30,7 @@
 					<b>Função:</b>
 					<br>
 					Remover:
-					<input type="radio" name="alt_func" id="alt_func" value="delete" checked>
+					<input type="radio" name="alt_func" id="alt_func" value="delete">
 					&nbsp;&nbsp;&nbsp;
 					Desabilitar:
 					<input type="radio" name="alt_func" id="alt_func" value="disable">
