@@ -27,15 +27,26 @@
 					<input type="text" name="usr_nick" id="usr_nick" placeholder="Ex.: bruno_brs">
 				</p>
 				<p>
+					<b>Função:</b>
+					<br>
+					Remover:
+					<input type="radio" name="alt_func" id="alt_func" value="delete" checked>
+					&nbsp;&nbsp;&nbsp;
+					Desabilitar:
+					<input type="radio" name="alt_func" id="alt_func" value="disable">
+				</p>
+				<!--
+				<p>
 					<b>Remover todos os arquivos:</b>
 					<br>
-					Sim
-					<input type="radio" name="alt_pass" id="alt_pass" value="remArq_sim"
+					Sim:
+					<input type="radio" name="alt_pass" id="alt_pass" value=""
 						checked>
 					&nbsp;&nbsp;&nbsp;
 					Não:
-					<input type="radio" name="alt_pass" id="alt_pass" value="remArq_nao">
+					<input type="radio" name="alt_pass" id="alt_pass" value="">
 				</p>
+				-->
 				<br>
 				<br>
 				<p>
@@ -49,7 +60,7 @@
 		<?php
 			if (isset($_POST['usr_nick']))
 			{
-				$f = "sudo samba-tool user delete {$_POST['usr_nick']}";
+				$f = "sudo samba-tool user {$_POST['alt_func']} {$_POST['usr_nick']}";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}

@@ -53,8 +53,15 @@
 				<p>
 					<b>Telefone:</b>
 					<br>
+					<input type="text" name="usr_grupo" id="usr_gru" placeholder="Escritório">
+				</p>
+				<!--
+				<p>
+					<b>Grupo:</b>
+					<br>
 					<input type="tel" name="usr_tel" id="usr_tel" pattern="[0-9]{11}" placeholder="Ex.: 12345678901">
 				</p>
+				-->
 				<p>
 					<b>Email:</b>
 					<br>
@@ -102,7 +109,7 @@
 				</p>
 			</form>
 		</section>
-		
+
 		<br>
 		<br>
 		<br>
@@ -122,6 +129,12 @@
 				{
 					$f=$f. " --surname {$_POST['usr_snome']}";
 				}
+				/*
+				if ($_POST['usr_gru'] != '')
+				{
+					$f=$f. " -- {$_POST['usr_gru']}";
+				}
+				*/
 				if ($_POST['usr_email'] != '')
 				{
 					$f=$f. " --mail-address {$_POST['usr_email']}";
