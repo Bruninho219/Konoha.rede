@@ -24,9 +24,9 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--USUARIO-->
-						<li><a href="../usr/usr_src.php">Pesquisar</a></li>
 						<li><a href="../usr/usr_add.php">Adicionar</a></li>
 						<li><a href="../usr/usr_edt.php">Editar</a></li>
+						<li><a href="../usr/usr_src.php">Pesquisar</a></li>
 						<li><a href="../usr/usr_rem.php">Remover</a></li>
 						<li><a href="../usr/usr_sec.php">Segurança</a></li>
 					</ul>
@@ -38,9 +38,9 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--GRUPO-->
-						<li><a href="../grp/grp_src.php">Pesquisar</a></li>
 						<li><a href="../grp/grp_add.php">Criar</a></li>
 						<li><a href="../grp/grp_edt.php">Editar</a></li>
+						<li><a href="../grp/grp_src.php">Pesquisar</a></li>
 						<li><a href="../grp/grp_rem.php">Remover</a></li>
 					</ul>
 				</li>
@@ -65,6 +65,7 @@
 					<ul class="dropdown-menu">
 						<!--CONFIGURACAO-->
 						<li><a href="../componentes/Notas_Atualizacao.php">Notas de atualizações</a></li>
+						<li><a href="#">.</a></li>
 						<li><a href="#">.</a></li>
 						<li><a href="#">.</a></li>
 						<li><a href="../componentes/php.php">PHP info</a></li>
