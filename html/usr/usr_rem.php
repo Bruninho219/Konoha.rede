@@ -76,6 +76,7 @@
 	<script type="text/javascript">
 		function DelUserFunction()
 		{
+			alert(document.getElementById('alt_func').value);
 			if (document.getElementById('usr_nick').value == '')
 			{
 				alert("Informe o nome de usuário!");
