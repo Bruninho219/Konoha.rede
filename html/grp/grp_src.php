@@ -9,7 +9,13 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1"></nav>
+		<nav id="nav1">
+			Usuários:
+			<?php
+				$usrlist = `sudo samba-tool group list`;
+				echo "<pre>$usrlist</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Informações sobre grupos:</b>
