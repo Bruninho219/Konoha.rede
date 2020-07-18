@@ -15,18 +15,9 @@
 				$output = `cal`;
 				echo "<pre>$output</pre>";
 			?>
-
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			
 		</nav>
 		<section>
 			<p><b>Sistema:</b></p>
-
 			<?php
 				$output = `uname -s -r`;
 				echo "<pre>$output</pre>";
@@ -34,15 +25,20 @@
 			
 			<br>
 			<p><b>Usuário logado:</b></p>
-			
 			<?php
 				$output = `w -s`;
 				echo "<pre>$output</pre>";
 			?>
 
 			<br>
+			<p><b>Apache:</b></p>
+			<?php
+				$output = `apache2 -v`;
+				echo "<pre>$output</pre>";
+			?>
+
+			<br>
 			<p><b>GitHub:</b></p>
-			
 			<?php
 				$output = `git --version`;
 				echo "<pre>$output</pre>";
