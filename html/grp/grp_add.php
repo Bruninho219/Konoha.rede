@@ -12,8 +12,8 @@
 		<nav id="nav1">
 			Grupos:
 			<?php
-				$usrlist = `sudo samba-tool group list`;
-				echo "<pre>$usrlist</pre>";
+				$grplist = `sudo samba-tool group list`;
+				echo "<pre>$grplist</pre>";
 			?>
 		</nav>
 		<section>
@@ -24,7 +24,7 @@
 				<p>
 					<b>Informe o nome de grupo:</b>
 					<br>
-					<input type="text" name="grp_nick" id="grp_nick" placeholder="Ex.: escritorio_1">
+					<input type="text" name="grp_nick" id="grp_nick" placeholder="Ex.: escritorio">
 				</p>
 				<!--
 				<p>
@@ -43,6 +43,7 @@
 		<br>
 		<br>
 		<br>
+		
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
@@ -59,6 +60,7 @@
 				echo "<pre>$comando</pre>";
 			}
 		?>
+
 		<br>
 		<br>
 		<br>
