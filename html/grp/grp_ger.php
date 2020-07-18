@@ -24,14 +24,14 @@
 				<p>
 					<b>Informe o nome do grupo:</b>
 					<br>
-					<div id="divBusca">
-						<input type="text" name="grp_nick" id="grp_nick" placeholder="Ex: escritorio"/>
-						<img src="../img/search.png" height="31px" width="31px" id="btnsrc" alt="Buscar"/>
-					</div>
+					<input type="text" name="grp_nick" id="grp_nick" placeholder="Ex: escritorio"/>
+				</p>
+				<p>
+					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a pessoa_b pessoa_c"/>
 				</p>
 				<p>
 					<br>
-					<input type="button" onclick="SrcGrpFunction();" value="Pesquisar">
+					<input type="button" onclick="GerGrpFunction();" value="Adicionar">
 				</p>
 			</form>
 		</section>
@@ -41,7 +41,7 @@
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
-				$f = "sudo samba-tool group show {$_POST['grp_nick']} ";
+				$f = "sudo samba-tool group addmembers {$_POST['grp_nick']} {$_POST['grp_usr']}";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
@@ -55,7 +55,7 @@
 	</body>
 
 	<script type="text/javascript">
-		function SrcGrpFunction()
+		function GerGrpFunction()
 		{
 			if (document.getElementById('grp_nick').value == '')
 			{
