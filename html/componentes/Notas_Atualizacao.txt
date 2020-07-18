@@ -62,4 +62,6 @@ v 0.3.0...........................Adicionado arquivo ./css/css.php
                                   Adicionado pagina ./componentes/Notas_Atualizacao.php
                                   Correcoes de erros e pequenas melhorias
                                   Melhorias em usr_src.php
-v 0.3.0...........................Correcoes de erros e pequenas melhorias
+v 0.3.1...........................Correcoes de erros e pequenas melhorias
+v 0.3.2...........................Correcoes de erros e pequenas melhorias
+v 0.3.3...........................Correcoes de erros e pequenas melhorias
