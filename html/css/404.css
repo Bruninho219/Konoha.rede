@@ -1,16 +1,8 @@
-#nav1
-{
-	line-height: 30px;
-	height: 100%;
-	width: 250px;
-	float: left;
-	padding: 5px;
-}
-
 section
 {
+	background-color: #43CD80;
 	float: left;
-	padding: 10px;
+	padding: 15px;
 	text-align: center;
 }
 
@@ -25,8 +17,8 @@ footer
 
 body
 {
+	background-color: #43CD80;
 	color: white;
-	background-color: black;
 	margin: 0 auto;
 	width: 100%;
 }

@@ -10,10 +10,10 @@
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
 		<section>
-			<p>
+			<p style="text-align: center;">
 				<h1><b>Error 404!</b></h1>
 			</p>
-			<p>
+			<p style="text-align: center;">
 				<h2>Alguém deveria corrigir isso né!?</h2>
 			</p>
 			<p>
