@@ -162,7 +162,7 @@
 				}
 				if ($_POST['usr_desc'] != '')
 				{
-					$f=$f. " --description {$_POST['usr_desc']}";
+					$f=$f. " --description \"{$_POST['usr_desc']}\"";
 				}
 				
 				$comando = shell_exec($f);
