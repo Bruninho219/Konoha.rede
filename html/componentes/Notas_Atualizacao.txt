@@ -68,5 +68,6 @@ v 0.3.3...........................Correcoes de erros e pequenas melhorias
                                   Adicionado pagina ./componentes/404.php
                                   Adicionado pagina ./componentes/404.png
                                   Configuracao do Error 404
+                                  Melhorias em grp_add.php
                                   
                                   
