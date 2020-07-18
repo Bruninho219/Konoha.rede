@@ -29,7 +29,7 @@
 				<p>
 					<b>Informe o nome do membro:</b>
 					<br>
-					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a pessoa_b pessoa_c"/>
+					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a pessoa_b"/>
 				</p>
 				<p>
 					<br>

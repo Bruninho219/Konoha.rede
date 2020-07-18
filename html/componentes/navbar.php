@@ -38,11 +38,12 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--GRUPO-->
+						<li><a href="../grp/grp_addm.php">Adicionar membro</a></li>
 						<li><a href="../grp/grp_add.php">Criar</a></li>
 						<li><a href="../grp/grp_edt.php">Editar</a></li>
-						<li><a href="../grp/grp_ger.php">Gerência</a></li>
 						<li><a href="../grp/grp_src.php">Pesquisar</a></li>
 						<li><a href="../grp/grp_rem.php">Remover</a></li>
+						<li><a href="../grp/grp_addm.php">Adicionar membro</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
