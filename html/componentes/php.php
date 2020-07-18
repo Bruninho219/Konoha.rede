@@ -5,7 +5,7 @@
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 	
-	<body style= "margin: 0 auto;">
+	<body>
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
