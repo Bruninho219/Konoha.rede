@@ -70,4 +70,5 @@ v 0.3.3...........................Correcoes de erros e pequenas melhorias
                                   Configuracao do Error 404
                                   Melhorias em grp_add.php
                                   Melhorias em grp_rem.php
+                                  Melhorias em grp_src.php
                                   

@@ -18,7 +18,7 @@
 		</nav>
 		<section>
 			<h1>
-				<b>Informações sobre grupos:</b>
+				<b>Adicionar membros ao grupo:</b>
 			</h1>
 			<form name="formGrp" method="POST">
 				<p>
@@ -42,12 +42,6 @@
 			if (isset($_POST['grp_nick']))
 			{
 				$f = "sudo samba-tool group show {$_POST['grp_nick']} ";
-				$comando = shell_exec($f);
-				echo "<pre>$comando</pre>";
-
-				echo "Membros:";
-				echo "";
-				$f = "sudo samba-tool group listmembers {$_POST['grp_nick']} ";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
