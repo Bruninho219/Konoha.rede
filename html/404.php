@@ -12,7 +12,7 @@
 		<nav id="nav1" ></nav>
 		<section>
 			<p>
-				Chama o Hokage!
+				Chama o Hokage!!!
 			</p>
 		</section>
 		<footer>
