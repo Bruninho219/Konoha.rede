@@ -38,6 +38,13 @@
 			?>
 
 			<br>
+			<p><b>SAMBA:</b></p>
+			<?php
+				$output = `samba-tool -V`;
+				echo "<pre>$output</pre>";
+			?>
+
+			<br>
 			<p><b>GitHub:</b></p>
 			<?php
 				$output = `git --version`;
