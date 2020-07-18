@@ -24,13 +24,15 @@
 				<p>
 					<b>Informe o nome de grupo:</b>
 					<br>
-					<input type="text" name="grp_nome" id="grp_nick" placeholder="Ex.: escritorio_1">
+					<input type="text" name="grp_nick" id="grp_nick" placeholder="Ex.: escritorio_1">
 				</p>
+				<!--
 				<p>
 					<b>Email:</b>
 					<br>
 					<input type="email" name="grp_email" id="grp_email" placeholder="Ex.: escritorio1@x.com">
 				</p>
+				-->
 				<p>
 					<br>
 					<br>
@@ -46,10 +48,12 @@
 			{
 				$f = "sudo samba-tool group add {$_POST['grp_nick']}";
 				
+				/*
 				if ($_POST['grp_email'] != '')
 				{
 					$f=$f." --mail-address {$_POST['grp_email']}";
 				}
+				*/
 
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
