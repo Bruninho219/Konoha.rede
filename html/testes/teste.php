@@ -10,8 +10,8 @@
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
 		<nav id="nav1">
-			<form action=./atualizacao.php method=get >
-    			<input type=submit value='Atualizar'/>
+			<form name="formUp" method="POST">
+    			<input type="button" onclick="Update();" value="Atualizar">
 			</form>
 		</form>
 		</nav>
@@ -124,4 +124,14 @@
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>
 	</body>
+	<script type="text/javascript">
+		function Update()
+		{
+			<?php
+				$f = "sudo tcc";
+				$comando = shell_exec($f);
+				echo "<pre>$comando</pre>";
+			?>
+		}
+	</script>
 </html>

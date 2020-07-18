@@ -66,5 +66,7 @@ v 0.3.1...........................Correcoes de erros e pequenas melhorias
 v 0.3.2...........................Correcoes de erros e pequenas melhorias
 v 0.3.3...........................Correcoes de erros e pequenas melhorias
                                   Adicionado pagina ./componentes/404.php
+                                  Adicionado pagina ./componentes/404.png
                                   Configuracao do Error 404
+                                  
                                   
