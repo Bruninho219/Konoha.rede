@@ -9,7 +9,6 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1" ></nav>
 		<section>
 			<p>
 				<?php phpinfo(); ?>
