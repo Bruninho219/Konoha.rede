@@ -65,7 +65,7 @@
 				<p>
 					<b>Email:</b>
 					<br>
-					<input type="email" name="usr_email" id="usr_email" placeholder="Ex.: bruno@konoha.rede">
+					<input type="email" name="usr_email" id="usr_email" placeholder="Ex.: nomeUsuario@x.com">
 				</p>
 				<p>
 					<b>Cargo:</b>

@@ -18,7 +18,12 @@
 				<p>
 					<b>Informe o nome de grupo:</b>
 					<br>
-					<input type="text" name="grp_nome" placeholder="Ex.: escritorio1">
+					<input type="text" name="grp_nome" id="grp_nick" placeholder="Ex.: escritorio1">
+				</p>
+				<p>
+					<b>Email:</b>
+					<br>
+					<input type="email" name="grp_email" id="grp_email" placeholder="Ex.: escritorio1@x.com">
 				</p>
 				<p>
 					<b>Informe o nome do grupo :</b>
