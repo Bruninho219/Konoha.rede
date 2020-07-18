@@ -50,14 +50,6 @@
 				$output = `git --version`;
 				echo "<pre>$output</pre>";
 			?>
-
-			<!--- 50 -->
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<!--- 50 -->
 		</section>
 		<footer>
 			<?php include("./componentes/footerbar.php"); ?>
