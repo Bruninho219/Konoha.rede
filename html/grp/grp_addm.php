@@ -29,7 +29,7 @@
 				<p>
 					<b>Informe o nome do membro:</b>
 					<br>
-					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a pessoa_b"/>
+					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a, pessoa_b"/>
 				</p>
 				<p>
 					<br>
@@ -43,7 +43,7 @@
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
-				$f = "sudo samba-tool group addmembers {$_POST['grp_nick']} {$_POST['grp_usr']}";
+				$f = "sudo samba-tool group addmembers {$_POST['grp_nick']} \"{$_POST['grp_usr']}\"";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
