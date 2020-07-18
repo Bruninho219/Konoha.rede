@@ -71,4 +71,6 @@ v 0.3.3...........................Correcoes de erros e pequenas melhorias
                                   Melhorias em grp_add.php
                                   Melhorias em grp_rem.php
                                   Melhorias em grp_src.php
+                                  Adicionado pagina ./grp/grp_addm.php
+                                  Adicionado pagina ./grp/grp_remm.php
                                   
