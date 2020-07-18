@@ -1,6 +1,5 @@
 section
 {
-	background-color: #43CD80;
 	float: left;
 	padding: 15px;
 	text-align: center;
@@ -17,7 +16,6 @@ footer
 
 body
 {
-	background-color: #43CD80;
 	color: white;
 	margin: 0 auto;
 	width: 100%;
