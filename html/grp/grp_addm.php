@@ -18,7 +18,7 @@
 		</nav>
 		<section>
 			<h1>
-				<b>Adicionar membros ao grupo:</b>
+				<b>Adicionar membro ao grupo:</b>
 			</h1>
 			<form name="formGrp" method="POST">
 				<p>
@@ -27,6 +27,8 @@
 					<input type="text" name="grp_nick" id="grp_nick" placeholder="Ex: escritorio"/>
 				</p>
 				<p>
+					<b>Informe o nome do membro:</b>
+					<br>
 					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a pessoa_b pessoa_c"/>
 				</p>
 				<p>
