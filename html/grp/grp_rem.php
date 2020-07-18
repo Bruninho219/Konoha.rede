@@ -40,7 +40,7 @@
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
-				$f = "sudo samba-tool group remove {$_POST['grp_nick']}";
+				$f = "sudo samba-tool group delete {$_POST['grp_nick']}";
 				
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
