@@ -31,11 +31,13 @@
 					<br>
 					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a, pessoa_b"/>
 				</p>
+				<!--
 				<p>
 					<b>Administrador:</b>
 					<br>
 					<input type="checkbox" name="usr_adm" id="usr_adm" value="Administrador" />
 				</p>
+				-->
 				<p>
 					<br>
 					<input type="button" onclick="GerGrpFunction();" value="Adicionar">
