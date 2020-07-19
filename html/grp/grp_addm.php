@@ -34,8 +34,8 @@
 				<p>
 					<b>Administrador:</b>
 					<br>
-					<input type="checkbox" name="usr_adm" id="usr_adm"/>
-				</p>>
+					<input type="checkbox" name="usr_adm" id="usr_adm" value="Administrador" />
+				</p>
 				<p>
 					<br>
 					<input type="button" onclick="GerGrpFunction();" value="Adicionar">
