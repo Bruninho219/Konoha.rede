@@ -32,6 +32,11 @@
 					<input type="text" name="grp_usr" id="grp_usr" placeholder="Ex: pessoa_a, pessoa_b"/>
 				</p>
 				<p>
+					<b>Administrador:</b>
+					<br>
+					<input type="checkbox" name="usr_adm" id="usr_adm"/>
+				</p>>
+				<p>
 					<br>
 					<input type="button" onclick="GerGrpFunction();" value="Adicionar">
 				</p>
@@ -59,6 +64,7 @@
 	<script type="text/javascript">
 		function GerGrpFunction()
 		{
+			alert(document.getElementById('usr_adm').value);
 			if (document.getElementById('grp_nick').value == '')
 			{
 				alert("Informe o nome do grupo!");
