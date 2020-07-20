@@ -26,25 +26,28 @@
 					<br>
 					<input type="text" name="usr_nick" id="usr_nick" placeholder="Ex.: bruno_brs">
 				</p>
-				<div>
-					<p>
-						<b>Função:</b>
-						<br>
+				<p>
+					<b>Função:</b>
+					<br>
+					<label>
 						Desabilitar:
 						<input type="radio" name="alt_func" id="alt_func" value="disable"/>
-						&nbsp;&nbsp;&nbsp;
+					</label>
+					&nbsp;&nbsp;&nbsp;
+					<label>
 						Remover:
 						<input type="radio" name="alt_func" id="alt_func" value="delete" checked/>
-					</p>				<p>
-						<b>Remover todos os arquivos:</b>
-						<br>
-						Sim:
-						<input type="radio" name="alt_pass" id="alt_pass" value="" checked>
-						&nbsp;&nbsp;&nbsp;
-						Não:
-						<input type="radio" name="alt_pass" id="alt_pass" value="">
-					</p>
-				</div>
+					</label>
+				</p>	
+				<p>
+					<b>Remover todos os arquivos:</b>
+					<br>
+					Sim:
+					<input type="radio" name="alt_pass" id="alt_pass" value="" checked>
+					&nbsp;&nbsp;&nbsp;
+					Não:
+					<input type="radio" name="alt_pass" id="alt_pass" value="">
+				</p>
 				<br>
 				<br>
 				<p>
