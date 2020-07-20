@@ -34,9 +34,7 @@
 					&nbsp;&nbsp;&nbsp;
 					Remover:
 					<input type="radio" name="alt_func" id="alt_func" value="delete" checked/>
-				</p>
-				<!--
-				<p>
+				</p>				<p>
 					<b>Remover todos os arquivos:</b>
 					<br>
 					Sim:
@@ -46,7 +44,6 @@
 					Não:
 					<input type="radio" name="alt_pass" id="alt_pass" value="">
 				</p>
-				-->
 				<br>
 				<br>
 				<p>
