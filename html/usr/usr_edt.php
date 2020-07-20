@@ -45,3 +45,17 @@
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>
 	</body>
+	<script type="text/javascript">
+		function EdtUserFunction()
+		{
+			if (document.getElementById('usr_nick').value == '')
+			{
+				alert("Informe o nome de usuário!");
+			}
+			else
+			{ 
+				document.formUser.submit();
+			}
+		}
+	</script>
+</html>
