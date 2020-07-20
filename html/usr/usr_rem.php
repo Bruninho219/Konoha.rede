@@ -34,7 +34,7 @@
 					&nbsp;&nbsp;&nbsp;
 					Remover:
 					<input type="radio" name="alt_func" id="alt_func" value="delete" checked/>
-				</p>	
+				</p>
 				<p>
 					<b>Remover todos os arquivos:</b>
 					<br>
@@ -57,6 +57,9 @@
 		<?php
 			if (isset($_POST['usr_nick']))
 			{
+				$a = $_POST['alt_func']; 
+				echo $a;
+
 				$f = "sudo samba-tool user {$_POST['alt_func']} {$_POST['usr_nick']}";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
