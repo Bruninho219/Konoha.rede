@@ -29,15 +29,11 @@
 				<p>
 					<b>Função:</b>
 					<br>
-					<label>
-						Desabilitar:
-						<input type="radio" name="alt_func" id="alt_func" value="disable"/>
-					</label>
+					Desabilitar:
+					<input type="radio" name="alt_func" id="alt_func" value="disable"/>
 					&nbsp;&nbsp;&nbsp;
-					<label>
-						Remover:
-						<input type="radio" name="alt_func" id="alt_func" value="delete" checked/>
-					</label>
+					Remover:
+					<input type="radio" name="alt_func" id="alt_func" value="delete" checked/>
 				</p>	
 				<p>
 					<b>Remover todos os arquivos:</b>
