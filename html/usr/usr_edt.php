@@ -9,7 +9,13 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav></nav>
+		<nav id="nav1">
+			Usuários:
+			<?php
+				$usrlist = `sudo samba-tool user list`;
+				echo "<pre>$usrlist</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Editar usuário:</b>
@@ -35,6 +41,8 @@
 			{
 				$f = "sudo samba-tool user edit {$_POST['usr_nick']}";
 				$comando = shell_exec($f);
+				echo $f;
+				echo "Verificar um método secundário de editar usuário!";
 				echo "<pre>$comando</pre>";
 			}
 		?>
