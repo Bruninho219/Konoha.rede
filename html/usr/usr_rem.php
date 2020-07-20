@@ -61,6 +61,7 @@
 				echo $a;
 
 				$f = "sudo samba-tool user {$_POST['alt_func']} {$_POST['usr_nick']}";
+				echo $f;
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
@@ -76,7 +77,6 @@
 	<script type="text/javascript">
 		function DelUserFunction()
 		{
-			alert(document.getElementById('alt_func').value);
 			if (document.getElementById('usr_nick').value == '')
 			{
 				alert("Informe o nome de usuário!");
