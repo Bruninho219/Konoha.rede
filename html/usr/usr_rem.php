@@ -55,9 +55,9 @@
 		<br>
 		<br>
 		<?php
-			$fn = filter_input(INPUT_POST, 'alt_func');
 			if (isset($_POST['usr_nick']))
 			{
+				$fn = filter_input(INPUT_POST, 'alt_func');
 				$f = "sudo samba-tool user "
 				$f = $f. $fn;
 				$f = $f. "{$_POST['usr_nick']}";
