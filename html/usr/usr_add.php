@@ -123,11 +123,11 @@
 
 				if ($_POST['usr_nome'] != '')
 				{
-					$f=$f." --given-name {$_POST['usr_nome']}";
+					$f=$f." --given-name \"{$_POST['usr_nome']}\"";
 				}
 				if ($_POST['usr_snome'] != '')
 				{
-					$f=$f. " --surname {$_POST['usr_snome']}";
+					$f=$f. " --surname \"{$_POST['usr_snome']}\"";
 				}
 				/*
 				if ($_POST['usr_gru'] != '')
@@ -142,23 +142,23 @@
 				if ($_POST['usr_dir'] != '')
 				{
 					$f=$f." --home-directory /var/";
-					$f=$f."{$_POST['usr_dir']}";
+					$f=$f."\"{$_POST['usr_dir']}\"";
 				}
 				if ($_POST['usr_tel'] != '')
 				{
-					$f=$f. " --telephone-number {$_POST['usr_tel']}";
+					$f=$f. " --telephone-number \"{$_POST['usr_tel']}\"";
 				}
 				if ($_POST['usr_cargo'] != '')
 				{
-					$f=$f. " --job-title {$_POST['usr_cargo']}";
+					$f=$f. " --job-title \"{$_POST['usr_cargo']}\"";
 				}
 				if ($_POST['usr_depart'] != '')
 				{
-					$f=$f. " --department {$_POST['usr_depart']}";
+					$f=$f. " --department \"{$_POST['usr_depart']}\"";
 				}
 				if ($_POST['usr_company'] != '')
 				{
-					$f=$f. " --company {$_POST['usr_company']}";
+					$f=$f. " --company \"{$_POST['usr_company']}\"";
 				}
 				if ($_POST['usr_desc'] != '')
 				{
