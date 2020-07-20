@@ -57,9 +57,6 @@
 		<?php
 			if (isset($_POST['usr_nick']))
 			{
-				$a = $_POST['alt_func']; 
-				echo $a;
-
 				$f = "sudo samba-tool user {$_POST['alt_func']} {$_POST['usr_nick']}";
 				echo $f;
 				$comando = shell_exec($f);
