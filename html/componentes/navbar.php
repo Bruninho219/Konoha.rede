@@ -48,6 +48,19 @@
 				</li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown">
+						Grupo
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<!--COMPARTILHAMENTO-->
+						<li><a href="../compartilhamento/comp_addImp.php">Adicionar Impressora</a></li>
+						<li><a href="../compartilhamento/comp_addPasta.php">Adicionar Pasta</a></li>
+						<li><a href="../compartilhamento/comp_delImp.php">Remover Impressora</a></li>
+						<li><a href="../compartilhamento/comp_delPasta.php">Remover Pasta</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
 						Segurança
 						<span class="caret"></span>
 					</a>

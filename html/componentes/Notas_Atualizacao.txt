@@ -76,3 +76,8 @@ v 0.3.3...........................Correcoes de erros e pequenas melhorias
 v 0.3.4...........................Correcoes de erros e pequenas melhorias
                                   Adicionado pagina ./usr/usr_edt.php
                                   Adicionado pagina ./usr/usr_rec.php
+v 0.3.5...........................Correcoes de erros e pequenas melhorias
+                                  Adicionado pagina ./compartilhamento/comp_addPasta.php
+                                  Adicionado pagina ./compartilhamento/comp_delPasta.php
+                                  Adicionado pagina ./compartilhamento/comp_addImp.php
+                                  Adicionado pagina ./compartilhamento/comp_delImp.php
