@@ -21,6 +21,26 @@
 					<input type="text" name="comp_nick" id="comp_nick" placeholder="Ex.: MUSICAS">
 				</p>
 				<p>
+					<b>Descrição:</b>
+					<br>
+					<input type="text" name="comp_desc" id="comp_desc" placeholder="Ex.: Pasta de músicas">
+				</p>
+				<p>
+					<b>Diretório:</b>
+					<br>
+					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: /var/musicas">
+				</p>
+				<p>
+					<b>Permissão de acesso (grupo):</b>
+					<br>
+					<input type="text" name="comp_perm" id="comp_dir" placeholder="Ex.: grupo_vendas">
+				</p>
+				<p>
+					<b>Permissão de acesso (grupo):</b>
+					<br>
+					<input type="text" name="comp_perm" id="comp_dir" placeholder="Ex.: grupo_vendas">
+				</p>
+				<p>
 					<br>
 					<br>
 					<input type="button" onclick="AddPastaFunction();" value="Criar">
