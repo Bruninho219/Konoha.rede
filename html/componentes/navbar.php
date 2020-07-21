@@ -55,6 +55,8 @@
 						<!--COMPARTILHAMENTO-->
 						<li><a href="../compartilhamento/comp_addImp.php">Adicionar Impressora</a></li>
 						<li><a href="../compartilhamento/comp_addPasta.php">Adicionar Pasta</a></li>
+						<li><a href="../compartilhamento/comp_edtImp.php">Editar Impressora</a></li>
+						<li><a href="../compartilhamento/comp_edtPasta.php">Editar Pasta</a></li>
 						<li><a href="../compartilhamento/comp_delImp.php">Remover Impressora</a></li>
 						<li><a href="../compartilhamento/comp_delPasta.php">Remover Pasta</a></li>
 					</ul>
