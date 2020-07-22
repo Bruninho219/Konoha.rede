@@ -23,8 +23,7 @@
 				<p>
 					<br>
 					<br>
-					<input type="button" onclick="AddImpFunction();" value="Adicionar
-					">
+					<input type="button" onclick="AddImpFunction();" value="Adicionar">
 				</p>
 			</form>
 		</section>
