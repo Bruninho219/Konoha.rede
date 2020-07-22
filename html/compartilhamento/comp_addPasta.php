@@ -62,22 +62,27 @@
 				if(!is_dir("/Konoha/"))
 				{
 					$c=`sudo mkdir /Konoha`;
+					echo $c;
 					echo "<pre>$c</pre>";
 				}
 				if(!is_dir("/Konoha/samba"))
 				{
 					$c=`sudo mkdir /Konoha/samba`;
+					echo $c;
 					echo "<pre>$c</pre>";
 				}
 				if(!is_dir("/Konoha/samba/smb.d"))
 				{
 					$c=`sudo mkdir /Konoha/samba/smb.d`;
+					echo $c;
 					echo "<pre>$c</pre>";
 				}
 
 				$c=`sudo chmod 751 /Konoha/samba/`;
+				echo $c;
 				echo "<pre>$c</pre>";
 				$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
+				echo $c;
 				echo "<pre>$c</pre>";
 				
 
@@ -89,8 +94,10 @@
 					$c = "sudo mkdir mkdir /Konoha/samba/{$_POST['comp_nick']}";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					echo $c;
 
 					$c = "sudo chmod 0770 -R /Konoha/samba/{$_POST['comp_nick']}";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
@@ -102,27 +109,33 @@
 				{
 					$c = "sudo touch /Konoha/samba/smb.d/{$_POST['comp_nick']}";
 					$c = $c. ".conf";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "sudo echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "sudo echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "sudo echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "sudo echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					//Edição no include
 					$c = "sudo echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
