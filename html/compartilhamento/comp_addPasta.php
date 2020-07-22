@@ -61,21 +61,21 @@
 			{
 				if(!is_dir("/Konoha/"))
 				{
-					$c=`mkdir /Konoha`;
+					$c=`sudo mkdir /Konoha`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
 
 				if(!is_dir("/Konoha/samba"))
 				{
-					$c=`mkdir /Konoha/samba`;
+					$c=`sudo mkdir /Konoha/samba`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
 
 				if(!is_dir("/Konoha/samba/smb.d"))
 				{
-					$c=`mkdir /Konoha/samba/smb.d`;
+					$c=`sudo mkdir /Konoha/samba/smb.d`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
@@ -88,13 +88,14 @@
 				echo "<pre>$c</pre>";
 				
 
+
 				/*
 				* Aqui é sobre a pasta a ser criada
 				*/
 
 				if(!is_dir("/Konoha/samba/{$_POST['comp_nick']}"))
 				{
-					$c = "mkdir /Konoha/samba/{$_POST['comp_nick']}";
+					$c = "sudo mkdir mkdir /Konoha/samba/{$_POST['comp_nick']}";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					echo $c;
@@ -111,34 +112,33 @@
 
 				if(!file_exists("/Konoha/samba/{$_POST['comp_nick']}.conf"))
 				{
-					$c = "touch /Konoha/samba/smb.d/{$_POST['comp_nick']}";
-					$c = $c. ".conf";
+					$c = "sudo touch /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "sudo echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "sudo echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "sudo echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "sudo echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					//Edição no include
-					$c = "echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "sudo echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
@@ -171,8 +171,15 @@
 				alert("Informe o nome da pasta!");
 			}
 			else
-			{ 
-				document.formCamp.submit();
+			{
+				if (document.getElementById('comp_dir').value == '')
+				{
+					alert("Informe o diretório da pasta!");
+				}
+				else
+				{
+					document.formCamp.submit();
+				}
 			}
 		}
 	</script>
