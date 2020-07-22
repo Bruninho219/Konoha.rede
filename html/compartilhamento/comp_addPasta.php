@@ -138,14 +138,15 @@
 					echo "<pre>$c</pre>";
 
 					//Edição no include
+					/*
 					$c = "sudo echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
-
-					//$c = "sudo ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
-					//$c = shell_exec($c);
-					//echo "<pre>$c</pre>";
+					*/
+					$c = "sudo ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
 				}
 				else
 				{
