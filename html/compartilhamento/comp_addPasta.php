@@ -59,7 +59,6 @@
 		<?php
 			if (isset($_POST['comp_nick']))
 			{
-				/*
 				if(!is_dir("/Teste123/"))
 				{
 					$c=`sudo mkdir /Teste123`;
@@ -70,7 +69,6 @@
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
-				*/
 				if(!is_dir("/Konoha/"))
 				{
 					$c=`sudo mkdir /Konoha`;
@@ -119,7 +117,7 @@
 				else
 				{
 					echo "Essa pastá já está sendo compartilhada! #1";
-				}cd 
+				}
 
 				if(!file_exists("/Konoha/samba/{$_POST['comp_nick']}.conf"))
 				{
