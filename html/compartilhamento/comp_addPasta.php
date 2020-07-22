@@ -59,18 +59,21 @@
 		<?php
 			if (isset($_POST['comp_nick']))
 			{
+				echo "1";
 				if(!is_dir("/Konoha/"))
 				{
 					$c=`sudo mkdir /Konoha`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
+				echo "2";
 				if(!is_dir("/Konoha/samba"))
 				{
 					$c=`sudo mkdir /Konoha/samba`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
+				echo "3";
 				if(!is_dir("/Konoha/samba/smb.d"))
 				{
 					$c=`sudo mkdir /Konoha/samba/smb.d`;
@@ -89,6 +92,7 @@
 				/*
 				* Aqui é sobre a pasta a ser criada
 				*/
+				echo "4";
 				if(!is_dir("/Konoha/samba/{$_POST['comp_nick']}"))
 				{
 					$c = "sudo mkdir mkdir /Konoha/samba/{$_POST['comp_nick']}";
@@ -105,6 +109,7 @@
 				{
 					echo "Essa pastá já está sendo compartilhada! #1";
 				}
+				echo "6";
 				if(!file_exists("/Konoha/samba/{$_POST['comp_nick']}.conf"))
 				{
 					$c = "sudo touch /Konoha/samba/smb.d/{$_POST['comp_nick']}";
@@ -147,6 +152,7 @@
 				{
 					echo "compartilhamento já realizado! #2";
 				}
+				echo "7";
 			}
 		?>
 
