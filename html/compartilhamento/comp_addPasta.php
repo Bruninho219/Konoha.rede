@@ -59,33 +59,23 @@
 		<?php
 			if (isset($_POST['comp_nick']))
 			{
-				if(!is_dir("/Teste123/"))
-				{
-					$c=`sudo mkdir /Teste123`;
-					echo $c;
-					echo "<pre>$c</pre>";
-
-					$c=`pwd`;
-					echo $c;
-					echo "<pre>$c</pre>";
-				}
 				if(!is_dir("/Konoha/"))
 				{
-					$c=`sudo mkdir /Konoha`;
+					$c=`mkdir /Konoha`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
 
 				if(!is_dir("/Konoha/samba"))
 				{
-					$c=`sudo mkdir /Konoha/samba`;
+					$c=`mkdir /Konoha/samba`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
 
 				if(!is_dir("/Konoha/samba/smb.d"))
 				{
-					$c=`sudo mkdir /Konoha/samba/smb.d`;
+					$c=`mkdir /Konoha/samba/smb.d`;
 					echo $c;
 					echo "<pre>$c</pre>";
 				}
@@ -104,7 +94,7 @@
 
 				if(!is_dir("/Konoha/samba/{$_POST['comp_nick']}"))
 				{
-					$c = "sudo mkdir mkdir /Konoha/samba/{$_POST['comp_nick']}";
+					$c = "mkdir /Konoha/samba/{$_POST['comp_nick']}";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					echo $c;
@@ -121,34 +111,34 @@
 
 				if(!file_exists("/Konoha/samba/{$_POST['comp_nick']}.conf"))
 				{
-					$c = "sudo touch /Konoha/samba/smb.d/{$_POST['comp_nick']}";
+					$c = "touch /Konoha/samba/smb.d/{$_POST['comp_nick']}";
 					$c = $c. ".conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					//Edição no include
-					$c = "sudo echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
