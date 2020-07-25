@@ -20,6 +20,17 @@
 					<br>
 					<input type="text" name="comp_nick" id="comp_nick" placeholder="Ex.: MUSICAS">
 				</p>
+				<!--
+				<p>
+					<b>Remover todos os arquivos:</b>
+					<br>
+					Sim:
+					<input type="radio" name="comp_del" id="comp_del" value="yes" checked>
+					&nbsp;&nbsp;&nbsp;
+					Não:
+					<input type="radio" name="comp_del" id="comp_del" value="no">
+				</p>
+				-->
 				<p>
 					<br>
 					<br>
@@ -35,11 +46,29 @@
 		<?php
 			if (isset($_POST['comp_nick']))
 			{
-				$x = "{$_POST['comp_nick']}";
+				/*
+				if ($_POST['comp_del'] != 'yes')
+				{
+					$c = "sudo rm -R /Konoha/samba/{$_POST['comp_nick']}";
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
+					echo $c;
+
+					$c = "sudo chmod 0770 -R /Konoha/samba/{$_POST['comp_nick']}";
+					echo $c;
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
+				}
+				*/
+
+				$c = "sudo rm -R /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+				echo $c;
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
 				
-				
-				$comando = shell_exec($x);
-				echo "<pre>$comando</pre>";
+				$c = "sed -i '/{$_POST['comp_nick']}/d' /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
 			}
 		?>
 

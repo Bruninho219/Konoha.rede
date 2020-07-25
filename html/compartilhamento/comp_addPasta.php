@@ -95,7 +95,7 @@
 
 				if(!is_dir("/Konoha/samba/{$_POST['comp_nick']}"))
 				{
-					$c = "sudo mkdir mkdir /Konoha/samba/{$_POST['comp_nick']}";
+					$c = "sudo mkdir /Konoha/samba/{$_POST['comp_nick']}";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					echo $c;
