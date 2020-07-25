@@ -22,6 +22,7 @@
 				</p>
 				<!--
 				<p>
+					//Seria arriscado der essa permissão sem uma validação antes
 					<b>Remover todos os arquivos:</b>
 					<br>
 					Sim:
