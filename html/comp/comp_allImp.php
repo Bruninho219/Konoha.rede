@@ -45,90 +45,91 @@
 		<br>
 
 		<?php
-
-			$f = "echo {$_POST['imp_comp']} > ../componentes/imp_all";
-			$comando = shell_exec($f);
-			echo "<pre>$comando</pre>";
-			
-			if(!is_dir("/Konoha/"))
-				{
-					$c=`sudo mkdir /Konoha`;
-					echo $c;
-					echo "<pre>$c</pre>";
-				}
-
-				if(!is_dir("/Konoha/samba"))
-				{
-					$c=`sudo mkdir /Konoha/samba`;
-					echo $c;
-					echo "<pre>$c</pre>";
-				}
-
-				if(!is_dir("/Konoha/samba/smb.d"))
-				{
-					$c=`sudo mkdir /Konoha/samba/smb.d`;
-					echo $c;
-					echo "<pre>$c</pre>";
-				}
-
-				$c=`sudo chmod 751 /Konoha/samba/`;
-				echo $c;
-				echo "<pre>$c</pre>";
-				$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
-				echo $c;
-				echo "<pre>$c</pre>";
-
-			if ($_POST['imp_comp'] == "yes")
+			if (isset($_POST['imp_comp']))
 			{
-				if(!is_dir("/Konoha/samba/smb.d/IMP_ALL.conf"))
-				{
-					$c = "touch /Konoha/samba/smb.d/IMP_ALL.conf";
-					echo $c;
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-
-					$c = "echo \"[printers]\" > /Konoha/samba/smb.d/IMP_ALL.conf";
-					echo $c;
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-
-					$c = "echo \"comment = Todas as impressoras\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-					echo $c;
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-
-					$c = "echo \"print ok = yes\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-					echo $c;
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-
-					$c = "echo \"guest ok = yes\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-					echo $c;
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-
-					$c = "echo \"path = /var/spool/samba\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-					echo $c;
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-				}
-
-				$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
-				$c = shell_exec($c);
-				echo "<pre>$c</pre>";
-			}
-			else
-			{
-				//comp_all=no
-				$c = "sudo rm -R /Konoha/samba/smb.d/IMP_ALL.conf";
-				echo $c;
-				$c = shell_exec($c);
-				echo "<pre>$c</pre>";
+				$f = "echo {$_POST['imp_comp']} > ../componentes/imp_all";
+				$comando = shell_exec($f);
+				echo "<pre>$comando</pre>";
 				
-				$c = "sed '/{$_POST['comp_nick']}/d' /Konoha/samba/includes.conf";
-				$c = shell_exec($c);
-				echo "<pre>$c</pre>";
-			}
+				if(!is_dir("/Konoha/"))
+					{
+						$c=`sudo mkdir /Konoha`;
+						echo $c;
+						echo "<pre>$c</pre>";
+					}
+
+					if(!is_dir("/Konoha/samba"))
+					{
+						$c=`sudo mkdir /Konoha/samba`;
+						echo $c;
+						echo "<pre>$c</pre>";
+					}
+
+					if(!is_dir("/Konoha/samba/smb.d"))
+					{
+						$c=`sudo mkdir /Konoha/samba/smb.d`;
+						echo $c;
+						echo "<pre>$c</pre>";
+					}
+
+					$c=`sudo chmod 751 /Konoha/samba/`;
+					echo $c;
+					echo "<pre>$c</pre>";
+					$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
+					echo $c;
+					echo "<pre>$c</pre>";
+
+				if ($_POST['imp_comp'] == "yes")
+				{
+					if(!is_dir("/Konoha/samba/smb.d/IMP_ALL.conf"))
+					{
+						$c = "touch /Konoha/samba/smb.d/IMP_ALL.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+
+						$c = "echo \"[printers]\" > /Konoha/samba/smb.d/IMP_ALL.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+
+						$c = "echo \"comment = Todas as impressoras\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+
+						$c = "echo \"print ok = yes\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+
+						$c = "echo \"guest ok = yes\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+
+						$c = "echo \"path = /var/spool/samba\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+					}
+
+					$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
+				}
+				else
+				{
+					//comp_all=no
+					$c = "sudo rm -R /Konoha/samba/smb.d/IMP_ALL.conf";
+					echo $c;
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
+					
+					$c = "sed '/{$_POST['comp_nick']}/d' /Konoha/samba/includes.conf";
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
+				}
 		?>
 
 		<br>
