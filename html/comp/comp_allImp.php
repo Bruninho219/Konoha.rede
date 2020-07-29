@@ -20,7 +20,7 @@
 					<?php
 						if (isset($_POST['imp_comp']))
 						{
-							$f = "cat ../componentes/imp_all";
+							$f = "cat /Konoha/samba/imp_all";
 							$comando = shell_exec($f);
 							echo "<pre>$comando</pre>";
 						}
@@ -47,7 +47,8 @@
 		<?php
 			if (isset($_POST['imp_comp']))
 			{
-				$f = "echo {$_POST['imp_comp']} > ../componentes/imp_all";
+
+				$f = "echo {$_POST['imp_comp']} > /Konoha/samba/imp_all";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 				
@@ -73,10 +74,8 @@
 					}
 
 					$c=`sudo chmod 751 /Konoha/samba/`;
-					echo $c;
 					echo "<pre>$c</pre>";
 					$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
-					echo $c;
 					echo "<pre>$c</pre>";
 
 				if ($_POST['imp_comp'] == "yes")
@@ -84,32 +83,26 @@
 					if(!is_dir("/Konoha/samba/smb.d/IMP_ALL.conf"))
 					{
 						$c = "touch /Konoha/samba/smb.d/IMP_ALL.conf";
-						echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 
 						$c = "echo \"[printers]\" > /Konoha/samba/smb.d/IMP_ALL.conf";
-						echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 
-						$c = "echo \"comment = Todas as impressoras\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-						echo $c;
+						$c = "echo \"comment = Todas as impressoras\" >> /Konoha/samba/smb.d/IMP_ALL.conf"
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 
 						$c = "echo \"print ok = yes\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-						echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 
 						$c = "echo \"guest ok = yes\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-						echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 
 						$c = "echo \"path = /var/spool/samba\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
-						echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 					}
@@ -122,7 +115,6 @@
 				{
 					//comp_all=no
 					$c = "sudo rm -R /Konoha/samba/smb.d/IMP_ALL.conf";
-					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					
