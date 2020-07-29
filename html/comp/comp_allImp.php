@@ -18,12 +18,8 @@
 				<p>
 					<b>Compartilhamento geral:</b>
 					<?php
-						if (isset($_POST['imp_comp']))
-						{
-							$f = "cat /Konoha/samba/imp_all";
-							$comando = shell_exec($f);
-							echo "<pre>$comando</pre>";
-						}
+						$c=`cat /Konoha/samba/imp_all`;
+						echo "<pre>$c</pre>";
 					?>
 					<br>
 					Ativar:
@@ -47,7 +43,6 @@
 		<?php
 			if (isset($_POST['imp_comp']))
 			{
-
 				$f = "echo {$_POST['imp_comp']} > /Konoha/samba/imp_all";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
@@ -71,6 +66,7 @@
 					}
 
 					$c=`sudo chmod 751 /Konoha/samba/`;
+					echo "<pre>$c</pre>";
 					$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
 					echo "<pre>$c</pre>";
 
