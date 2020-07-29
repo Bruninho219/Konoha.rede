@@ -122,7 +122,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"patch = {$_POST['comp_dir']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
