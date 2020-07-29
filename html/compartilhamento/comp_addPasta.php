@@ -110,7 +110,7 @@
 					echo "Essa pastá já está sendo compartilhada! #1";
 				}
 
-				if(!file_exists("/Konoha/samba/{$_POST['comp_nick']}.conf"))
+				if(!file_exists("/Konoha/samba/smb.d/{$_POST['comp_nick']}.conf"))
 				{
 					$c = "touch /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;

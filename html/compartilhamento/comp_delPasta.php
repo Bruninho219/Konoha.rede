@@ -67,7 +67,7 @@
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
 				
-				$c = "sed -i '/{$_POST['comp_nick']}/d' /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
+				$c = "sed '/{$_POST['comp_nick']}/d' /Konoha/samba/includes.conf";
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
 			}
