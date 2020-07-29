@@ -1,0 +1,3 @@
+[Error 404]
+/etc/apache2/conf-avaliable/localized-error-pages.conf
+Alterar diretório ErrorDocument 404 para /componentes/404.php

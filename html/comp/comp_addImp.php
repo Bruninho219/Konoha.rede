@@ -16,6 +16,15 @@
 			</h1>
 			<form name="formCamp" method="POST">
 				<p>
+					<b>Compartilhamento geral de impressoras:</b>
+					<br>
+					Sim
+					<input type="radio" name="imp_comp" id="imp_comp" value="yes" checked>
+					&nbsp;&nbsp;&nbsp;
+					Não:
+					<input type="radio" name="imp_comp" id="imp_comp" value="no">
+				</p>
+				<p>
 					<b>Informe o nome da impressora:</b>
 					<br>
 					<input type="text" name="comp_nick" id="comp_nick" placeholder="Ex.: IMP_DIRECAO">

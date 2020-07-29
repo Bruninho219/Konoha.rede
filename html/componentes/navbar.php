@@ -40,10 +40,10 @@
 					<ul class="dropdown-menu">
 						<!--GRUPO-->
 						<li><a href="../grp/grp_addm.php">Adicionar membro</a></li>
-					<li><a href="../grp/grp_add.php">Criar</a></li>
+						<li><a href="../grp/grp_remm.php">Remover membro</a></li>
+						<li><a href="../grp/grp_add.php">Criar</a></li>
 						<li><a href="../grp/grp_src.php">Pesquisar</a></li>
 						<li><a href="../grp/grp_rem.php">Remover</a></li>
-						<li><a href="../grp/grp_remm.php">Remover membro</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
@@ -53,12 +53,13 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--COMPARTILHAMENTO-->
-						<li><a href="../compartilhamento/comp_addImp.php">Adicionar Impressora</a></li>
-						<li><a href="../compartilhamento/comp_addPasta.php">Adicionar Pasta</a></li>
-						<li><a href="../compartilhamento/comp_edtImp.php">Editar Impressora</a></li>
-						<li><a href="../compartilhamento/comp_edtPasta.php">Editar Pasta</a></li>
-						<li><a href="../compartilhamento/comp_delImp.php">Remover Impressora</a></li>
-						<li><a href="../compartilhamento/comp_delPasta.php">Remover Pasta</a></li>
+						<li><a href="../comp/comp_addImp.php">Adicionar impressora</a></li>
+						<li><a href="../comp/comp_allImp.php">Comp.geral de impressora</a></li>
+						<li><a href="../comp/comp_edtImp.php">Editar impressora</a></li>
+						<li><a href="../comp/comp_delImp.php">Remover impressora</a></li>
+						<li><a href="../comp/comp_addPasta.php">Adicionar pasta</a></li>
+						<li><a href="../comp/comp_edtPasta.php">Editar pasta</a></li>
+						<li><a href="../comp/comp_delPasta.php">Remover pasta</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

@@ -86,3 +86,6 @@ v 0.3.6...........................Correcoes de erros e pequenas melhorias
                                   Melhorias em comp_delPasta.php
                                   Melhorias em usr_add.php
 v 0.3.7...........................Correcoes de erros e pequenas melhorias
+                                  Adicionado pagina ./comp/comp_allImp.php
+                                  Pasta compartilhamento renomeado para comp
+                                  Adicionado arquivo ./componentes/conf.txt
