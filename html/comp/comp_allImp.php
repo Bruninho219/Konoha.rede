@@ -55,26 +55,22 @@
 				if(!is_dir("/Konoha/"))
 					{
 						$c=`sudo mkdir /Konoha`;
-						echo $c;
 						echo "<pre>$c</pre>";
 					}
 
 					if(!is_dir("/Konoha/samba"))
 					{
 						$c=`sudo mkdir /Konoha/samba`;
-						echo $c;
 						echo "<pre>$c</pre>";
 					}
 
 					if(!is_dir("/Konoha/samba/smb.d"))
 					{
 						$c=`sudo mkdir /Konoha/samba/smb.d`;
-						echo $c;
 						echo "<pre>$c</pre>";
 					}
 
 					$c=`sudo chmod 751 /Konoha/samba/`;
-					echo "<pre>$c</pre>";
 					$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
 					echo "<pre>$c</pre>";
 
