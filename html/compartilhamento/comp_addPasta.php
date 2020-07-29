@@ -95,12 +95,12 @@
 
 				if(!is_dir("/Konoha/samba/{$_POST['comp_nick']}"))
 				{
-					$c = "sudo mkdir /Konoha/samba/{$_POST['comp_nick']}";
+					$c = "mkdir /Konoha/samba/{$_POST['comp_nick']}";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					echo $c;
 
-					$c = "sudo chmod 0770 -R /Konoha/samba/{$_POST['comp_nick']}";
+					$c = "chmod 0770 -R /Konoha/samba/{$_POST['comp_nick']}";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
@@ -112,27 +112,27 @@
 
 				if(!file_exists("/Konoha/samba/{$_POST['comp_nick']}.conf"))
 				{
-					$c = "sudo touch /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "touch /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"patch = {$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "sudo echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
@@ -144,7 +144,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					*/
-					$c = "sudo ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
+					$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
