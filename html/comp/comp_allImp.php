@@ -130,6 +130,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
+			}
 		?>
 
 		<br>

@@ -17,12 +17,11 @@
 			<form name="formCamp" method="POST">
 				<p>
 					<b>Compartilhamento geral de impressoras:</b>
-					<br>
-					Sim
-					<input type="radio" name="imp_comp" id="imp_comp" value="yes" checked>
-					&nbsp;&nbsp;&nbsp;
-					Não:
-					<input type="radio" name="imp_comp" id="imp_comp" value="no">
+					<?php
+						$x = "cat ../componentes/imp_all";
+						$comando = shell_exec($x);
+						echo "<pre>$comando</pre>";
+					?>
 				</p>
 				<p>
 					<b>Informe o nome da impressora:</b>
