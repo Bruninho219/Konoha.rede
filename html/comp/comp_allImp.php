@@ -23,10 +23,10 @@
 					?>
 					<br>
 					Ativar:
-					<input type="radio" name="imp_comp" id="imp_comp" value="yes" checked>
+					<input type="radio" name="imp_comp" id="imp_comp" value="yes">
 					&nbsp;&nbsp;&nbsp;
 					Desativar:
-					<input type="radio" name="imp_comp" id="imp_comp" value="no">
+					<input type="radio" name="imp_comp" id="imp_comp" value="no" checked>
 				</p>
 				<p>
 					<br>
@@ -41,8 +41,8 @@
 		<br>
 
 		<?php
-			if (isset($_POST['imp_comp']))
-			{
+			//if (isset($_POST['imp_comp']))
+			//{
 				$f = "echo {$_POST['imp_comp']} > /Konoha/samba/imp_all";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
@@ -114,7 +114,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
-			}
+			//}
 		?>
 
 		<br>
