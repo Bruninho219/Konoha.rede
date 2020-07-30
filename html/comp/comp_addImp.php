@@ -18,9 +18,8 @@
 				<p>
 					<b>Compartilhamento geral de impressoras:</b>
 					<?php
-						$x = "cat ../componentes/imp_all";
-						$comando = shell_exec($x);
-						echo "<pre>$comando</pre>";
+						$c=`cat /Konoha/samba/imp_all`;
+						echo "<pre>$c</pre>";
 					?>
 				</p>
 				<p>
