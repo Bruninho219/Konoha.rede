@@ -41,8 +41,8 @@
 		<br>
 
 		<?php
-			if (isset($_POST['imp_comp']))
-			{
+			//if (isset($_POST['imp_comp']))
+			//{
 				if(!is_dir("/Konoha/"))
 				{
 					$c=`sudo mkdir /Konoha`;
@@ -120,7 +120,7 @@
 				$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
-			}
+			//}
 		?>
 
 		<br>
