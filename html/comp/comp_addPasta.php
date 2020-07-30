@@ -122,7 +122,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"pach = {$_POST['comp_dir']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"path = {$_POST['comp_dir']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
@@ -132,7 +132,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"ready only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"read only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";

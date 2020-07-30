@@ -108,7 +108,7 @@
 					$c=`echo no > /Konoha/samba/imp_all`;
 					echo "<pre>$c</pre>";
 
-					$c = "sudo rm -R /Konoha/samba/smb.d/IMP_ALL.conf";
+					$c = "rm -R /Konoha/samba/smb.d/IMP_ALL.conf";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
