@@ -31,7 +31,9 @@
 					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: /var/musicas">
 				</p>
 				<p>
-					<b>Permissão de acesso (grupo):</b>
+					<b>Permissão de acesso (grupo)</b>
+					<br>
+					Deixar em branco para público:
 					<br>
 					<input type="text" name="comp_perm" id="comp_perm" placeholder="Ex.: grupo_vendas">
 				</p>
@@ -137,9 +139,11 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
+					//falta as permissões
+
 					//Edição no include
 					/*
-					$c = "sudo echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
