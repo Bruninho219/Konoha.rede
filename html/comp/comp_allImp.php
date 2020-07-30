@@ -86,9 +86,9 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"comment = Todas as impressoras\" >> /Konoha/samba/smb.d/IMP_ALL.conf"
+					$c = "echo \"comment = Todas as impressoras\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
 					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
+					echo "<pre>$d</pre>";
 
 					$c = "echo \"print ok = yes\" >> /Konoha/samba/smb.d/IMP_ALL.conf";
 					$c = shell_exec($c);
