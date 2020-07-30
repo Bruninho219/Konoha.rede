@@ -47,27 +47,19 @@
 		<?php
 			if (isset($_POST['comp_nick']))
 			{
-				/*
-				if ($_POST['comp_del'] != 'yes')
-				{
-					$c = "sudo rm -R /Konoha/samba/{$_POST['comp_nick']}";
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-					echo $c;
+				$c = "rn -R /Konoha/samba/{$_POST['comp_nick']}";
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
 
-					$c = "sudo chmod 0770 -R /Konoha/samba/{$_POST['comp_nick']}";
-					echo $c;
-					$c = shell_exec($c);
-					echo "<pre>$c</pre>";
-				}
-				*/
-
-				$c = "sudo rm -R /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-				echo $c;
+				$c = "rm -R /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
 				
-				$c = "sed '/{$_POST['comp_nick']}/d' /Konoha/samba/includes.conf";
+				$c = "rm -R /Konoha/samba/includes.conf";
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
+				
+				$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
 			}
