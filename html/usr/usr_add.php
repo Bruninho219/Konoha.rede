@@ -127,7 +127,7 @@
 				}
 				if ($_POST['usr_email'] != '')
 				{
-					$f=$f. " --mail-address \"{$_POST['usr_email']}\"";
+					$f=$f. " --mail-address {$_POST['usr_email']}";
 				}
 				if ($_POST['usr_dir'] != '')
 				{

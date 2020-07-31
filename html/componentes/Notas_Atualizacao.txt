@@ -89,3 +89,4 @@ v 0.3.7...........................Correcoes de erros e pequenas melhorias
                                   Adicionado pagina ./comp/comp_allImp.php
                                   Pasta compartilhamento renomeado para comp
                                   Adicionado arquivo ./componentes/conf.txt
+v 0.3.8...........................Correcoes de erros e pequenas melhorias
