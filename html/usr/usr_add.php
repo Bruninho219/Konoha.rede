@@ -157,8 +157,8 @@
 				
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
-
-
+				
+				/*
 				//add no grupo
 				if ($_POST['usr_gru'] != '')
 				{
@@ -166,6 +166,7 @@
 					$comando = shell_exec($f);
 					echo "<pre>$comando</pre>";
 				}
+				*/
 			}
 		?>
 
