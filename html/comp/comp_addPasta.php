@@ -149,6 +149,7 @@
 					echo "<pre>$c</pre>";
 					*/
 					$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
+					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
