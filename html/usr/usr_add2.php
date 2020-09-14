@@ -40,8 +40,8 @@
 				<br>
 				<b>Campos opcionais:</b>
 				<br>
-				<div>
-					<table>
+				<div class="container">
+					<table class="table table-bordered">
 						<tbody>
 							<tr>
 								<td>
