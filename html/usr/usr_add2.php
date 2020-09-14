@@ -37,7 +37,6 @@
 					<input type="password" name="usr_pass2" id="usr_pass2">
 				</p>
 				<br>
-				<br>
 				<b>Campos opcionais:</b>
 				<br>
 				<div class="container">
@@ -137,7 +136,6 @@
 					</table>
 				</div>
 				<p>
-					<br>
 					<br>
 					<input type="button" onclick="AddUserFunction();" value="Criar">
 				</p>
