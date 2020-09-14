@@ -1,10 +1,4 @@
 <html>
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<head>
 		<title>Konoha</title>
 		<link rel="stylesheet" type="text/css" href="../css/usr.css">
@@ -52,6 +46,13 @@
 							<tr>
 								<td>
 									<p>
+										<b>Nome do usuário:</b>
+										<br>
+										<input type="text" name="usr_nome" id="usr_nome" placeholder="Ex.: Bruno">
+									</p>
+								</td>
+								<td>
+									<p>
 										<b>Sobrenome do usuário:</b>
 										<br>
 										<input type="text" name="usr_snome" id="usr_snome" placeholder="Ex.: Silva">
@@ -62,13 +63,6 @@
 										<b>Telefone:</b>
 										<br>
 										<input type="tel" name="usr_tel" id="usr_tel" pattern="[0-9]{11}" placeholder="Ex.: 12345678901">
-									</p>
-								</td>
-								<td>
-									<p>
-										<b>Grupo:</b>
-										<br>
-										<input type="text" name="usr_grupo" id="usr_gru" placeholder="Escritório">
 									</p>
 								</td>
 							</tr>
@@ -82,9 +76,9 @@
 								</td>
 								<td>
 									<p>
-										<b>Cargo:</b>
+										<b>Grupo:</b>
 										<br>
-										<input type="text" name="usr_cargo" id="usr_cargo" placeholder="Diretor">
+										<input type="text" name="usr_grupo" id="usr_gru" placeholder="Escritório">
 									</p>
 								</td>
 							</tr>
@@ -105,22 +99,18 @@
 								</td>
 								<td>
 									<p>
-										<b>Descrição:</b>
+										<b>Cargo:</b>
 										<br>
-										<input type="text" name="usr_desc" id="usr_desc" placeholder="Descrição do usuário">
+										<input type="text" name="usr_cargo" id="usr_cargo" placeholder="Diretor">
 									</p>
-								</td>
+								</td>>
 							</tr>
 							<tr>
 								<td>
 									<p>
-										<b>Solicitar alteração de senha:</b>
+										<b>Descrição:</b>
 										<br>
-										Sim
-										<input type="radio" name="alt_pass" id="alt_pass" value="senha_sim" checked>
-										&nbsp;&nbsp;&nbsp;
-										Não:
-										<input type="radio" name="alt_pass" id="alt_pass" value="senha_nao">
+										<input type="text" name="usr_desc" id="usr_desc" placeholder="Descrição do usuário">
 									</p>
 								</td>
 								<td>
@@ -132,6 +122,15 @@
 									</p>
 								</td>
 								<td>
+									<p>
+										<b>Solicitar alteração de senha:</b>
+										<br>
+										Sim
+										<input type="radio" name="alt_pass" id="alt_pass" value="senha_sim" checked>
+										&nbsp;&nbsp;&nbsp;
+										Não:
+										<input type="radio" name="alt_pass" id="alt_pass" value="senha_nao">
+									</p>
 								</td>
 							</tr>
 						</tbody>
