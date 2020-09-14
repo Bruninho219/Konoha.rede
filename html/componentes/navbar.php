@@ -24,7 +24,7 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--USUARIO-->
-						<li><a href="../usr/usr_add.php">Adicionar</a></li>
+						<li><a href="../usr/usr_add2.php">Adicionar</a></li>
 						<li><a href="../usr/usr_edt.php">Editar</a></li>
 						<li><a href="../usr/usr_src.php">Pesquisar</a></li>
 						<li><a href="../usr/usr_rec.php">Recuperar senha</a></li>
@@ -89,13 +89,13 @@
 						<li><a href="../componentes/php.php">PHP info</a></li>
 					</ul>
 				</li>
+				<!--
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown">
 						TESTE
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-						<!--TESTE-->
 						<li><a href="../testes/teste.php">Teste SH</a></li>
 					</ul>
 				</li>
@@ -105,6 +105,7 @@
 						<img src="../img/logout.png" width="25" height="25" href="#"/>
 					</a>
 				</li>
+				-->
 			</ul>
 		</div>
 	</nav>
