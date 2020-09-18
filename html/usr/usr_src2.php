@@ -58,12 +58,32 @@
 					//Nome completo
 					$var1 = explode('cn: ', $comando);
 					$var2 = explode('sn:',$var1[1]);
-					print "Nome completo: ".$var2[0]."<br>";
+					print "<b>Nome completo: </b>".$var2[0]."<br>";
 
-					//Grupo
+					//Telefone
+					$var1 = explode('telephoneNumber: ', $comando);
+					$var2 = explode('givenName:',$var1[1]);
+					print "<b>Telefone: </b>".$var2[0]."<br>";
+
+					//Departamento
+					$var1 = explode('department:', $comando);
+					$var2 = explode('company:',$var1[1]);
+					print "<b>Cargo: </b>".$var2[0]."<br>";
+
+					//Cargo
 					$var1 = explode('title: ', $comando);
 					$var2 = explode('description:',$var1[1]);
-					print "Cargo: ".$var2[0]."<br>";
+					print "<b>Cargo: </b>".$var2[0]."<br>";
+
+					//Companhia
+					$var1 = explode('company: ', $comando);
+					$var2 = explode('name:',$var1[1]);
+					print "<b>Companhia: </b>".$var2[0]."<br>";
+
+					//Descrição
+					$var1 = explode('description: ', $comando);
+					$var2 = explode('telephoneNumber:',$var1[1]);
+					print "<b>Descrição: </b>".$var2[0]."<br>";
 				}
 				else
 				{
