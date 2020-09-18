@@ -19,9 +19,9 @@
 			<br>
 
 			<?php
-				$url = 'https://github.com/Bruninho219/Konoha.rede/blob/master/html/componentes/versao';
+				$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/componentes/versao";
 				$dado = file_get_contents($url);
-				$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $dados);
+				$var1 = explode('<td id=\"LC1" class="blob-code blob-code-inner js-file-line">', $dado);
 				$var2 = explode("</td>",$var1[1]);
 				print "<p>Versão mais recente:<br>";
 				print $var2[0];
