@@ -65,6 +65,11 @@
 					$var2 = explode('givenName:',$var1[1]);
 					print "<b>Telefone: </b>".$var2[0]."<br>";
 
+					//EMail
+					$var1 = explode('mail: ', $comando);
+					$var2 = explode('pwdLastSet:',$var1[1]);
+					print "<b>E-mail: </b>".$var2[0]."<br>";
+
 					//Departamento
 					$var1 = explode('department:', $comando);
 					$var2 = explode('company:',$var1[1]);
