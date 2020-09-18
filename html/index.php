@@ -23,13 +23,18 @@
 				$dado = file_get_contents($url);
 				$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $dados);
 				$var2 = explode("</td>",$var1[1]);
-				print "Versão mais recente: ".$var2[0];
+				print "<p>Versão mais recente:<br>";
+				print $var2[0];
+				print "</p>"
 			?>
-			Versão atual:
-			<?php
-				$c=`cat ./componentes/versao`;
-				echo "<pre>$c</pre>";
-			?>
+			<br>
+				<p>
+					Versão atual:
+					<?php
+						$c=`cat ./componentes/versao`;
+						echo "<pre>$c</pre>";
+					?>
+				</p>
 		</nav>
 		<section>
 			<p><b>Sistema:</b></p>
