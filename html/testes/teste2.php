@@ -19,7 +19,6 @@
 				}
 				else
 				{
-					print "cURL está instalado!";
 					$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/componentes/versao";
 					$ch = curl_init();
 					curl_setopt($ch, CURLOPT_URL, $url);
@@ -31,7 +30,7 @@
 					$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
 					$var2 = explode('</td>',$var1[1]);
 					
-					print $var2[0];
+					print "<p>".$var2[0]."</p>";
 				}
 			?>
 			
