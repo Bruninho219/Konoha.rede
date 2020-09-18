@@ -68,7 +68,6 @@
 	<script type="text/javascript">
 		function GerGrpFunction()
 		{
-			alert(document.getElementById('usr_adm').value);
 			if (document.getElementById('grp_nick').value == '')
 			{
 				alert("Informe o nome do grupo!");

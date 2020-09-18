@@ -52,12 +52,24 @@
 			{
 				$f = "sudo samba-tool user show {$_POST['usr_nick']} ";
 				$comando = shell_exec($f);
-				echo "<pre>$comando</pre>";
+
+				if ($_POST['usr_pesq'] != '0')
+				{
+					//Nome completo
+					$var1 = explode('cn: ', $comando);
+					$var2 = explode('sn:',$var1[1]);
+					print "Nome completo: ".$var2[0]."<br>";
+
+					//Grupo
+					$var1 = explode('title: ', $comando);
+					$var2 = explode('description:',$var1[1]);
+					print "Cargo: ".$var2[0]."<br>";
+				}
+				else
+				{
+					echo "<pre>$comando</pre>";
+				}
 			}
-			
-			$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
-			$var2 = explode('</td>',$var1[1]);
-			print "<p><b>Versão mais atual: ".$var2[0]."<br>";
 		?>
 
 		<br>
