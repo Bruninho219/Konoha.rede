@@ -82,7 +82,7 @@
 				
 
 				/*
-				* Aqui é sobre a pasta a ser criada
+				* Aqui é sobre a impressora a ser criada
 				*/
 
 				if(!file_exists("/Konoha/samba/smb.d/{$_POST['comp_nick']}.conf"))
