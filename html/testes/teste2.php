@@ -19,7 +19,7 @@
 				}
 				else
 				{
-					$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/componentes/versao";
+					/*$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/componentes/versao";
 					$ch = curl_init();
 					curl_setopt($ch, CURLOPT_URL, $url);
 					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -30,7 +30,7 @@
 					$end = strpos($output, '</td>', $start);
 					$length = $end-$start;
 					$output = substr($output, $start, $length)
-					echo $output;
+					echo $output;*/
 				}
 			?>
 			
