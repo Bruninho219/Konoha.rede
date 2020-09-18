@@ -35,16 +35,6 @@
 					echo "<pre>$c</pre>";
 				?>
 			</p>
-			<?php
-				$url = 'http://www.horariodebrasilia.org/index.php';
-				$dadosSite = file_get_contents($url);
-
-				$var1 = explode('<p id="relogio">',$dadosSite);
-				$var2 = explode("</p>",$var1[1]);
-
-				print "<h1><center>Horário de Brasília<br>
-				".$var2[0]."</center></h1>";
-			?>
 		</nav>
 		<section>
 			<p><b>Sistema:</b></p>
