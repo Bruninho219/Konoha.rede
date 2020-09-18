@@ -22,7 +22,7 @@
 			?>
 		</nav>
 		<section>
-			<!--***************-->
+			<!--***************
 			<?php
 				if (!function_exists('curl_init'))
 				{
@@ -44,7 +44,7 @@
 					print $output;
 				}
 			?>
-			<!--***************-->
+			***************-->
 		</section>
 		<footer>
 			<?php include("../componentes/footerbar.php"); ?>
