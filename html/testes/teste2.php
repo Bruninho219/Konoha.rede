@@ -19,6 +19,7 @@
 				}
 				else
 				{
+					print "cURL está instalado!";
 					/*$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/componentes/versao";
 					$ch = curl_init();
 					curl_setopt($ch, CURLOPT_URL, $url);
