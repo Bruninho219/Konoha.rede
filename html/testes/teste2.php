@@ -28,22 +28,10 @@
 					curl_close($ch);
 					//print $output;
 
-					$var1 = explode('<td id=\"LC1" class="blob-code blob-code-inner js-file-line">', $output);
-					$var2 = explode("</td>",$var1);
+					$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
+					$var2 = explode('</td>',$var1[1]);
 					
-					print $var2;
-					
-					/*
-					$xpath = new DOMXPath($dom);
-					$tables = $xpath->query("//table[@class=\"table-general\"]");
-					$values = $xpath->query(".//tbody/tr", $tables->item(0));
-					*/
-					/*
-					$start = strpos($output, "<td id=\"LC1\" class=\"blob-code blob-code-inner js-file-line\">");
-					$end = strpos($output, "</td>", $start);
-					$length = $end-$start;
-					$output = substr($output, $start, $length)
-					echo $output;*/
+					print $var2[0];
 				}
 			?>
 			
