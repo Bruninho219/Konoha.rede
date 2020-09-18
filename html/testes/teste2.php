@@ -30,7 +30,7 @@
 					$end = strpos($output, '</td>', $start);
 					$length = $end-$start;
 					$output = substr($output, $start, $length)
-					print $output;
+					echo $output;
 				}
 			?>
 			
