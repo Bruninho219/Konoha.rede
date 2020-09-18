@@ -27,11 +27,11 @@
 					$output = curl_exec($ch);
 					curl_close($ch);
 
-					/*$start = strpos($output, '<td id="LC1" class="blob-code blob-code-inner js-file-line">');
-					$end = strpos($output, '</td>', $start);
+					$start = strpos($output, "<td id=\"LC1\" class=\"blob-code blob-code-inner js-file-line\">");
+					$end = strpos($output, "</td>", $start);
 					$length = $end-$start;
 					$output = substr($output, $start, $length)
-					echo $output;*/
+					echo $output;
 				}
 			?>
 			
