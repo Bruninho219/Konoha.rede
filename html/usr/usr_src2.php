@@ -68,7 +68,7 @@
 					//Departamento
 					$var1 = explode('department:', $comando);
 					$var2 = explode('company:',$var1[1]);
-					print "<b>Cargo: </b>".$var2[0]."<br>";
+					print "<b>Departamento: </b>".$var2[0]."<br>";
 
 					//Cargo
 					$var1 = explode('title: ', $comando);
