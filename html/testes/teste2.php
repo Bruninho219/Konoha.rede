@@ -9,24 +9,13 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1">
+		<nav id="nav1"></nav>
+		<section>
+			
 			<?php
 				if (!function_exists('curl_init'))
 				{
 					print "cURL não está instalado!";
-				}
-				else
-				{
-					print "OK!";
-				}
-			?>
-		</nav>
-		<section>
-			<!--***************
-			<?php
-				if (!function_exists('curl_init'))
-				{
-					die('cURL não está instalado!');
 				}
 				else
 				{
@@ -44,7 +33,7 @@
 					print $output;
 				}
 			?>
-			***************-->
+			
 		</section>
 		<footer>
 			<?php include("../componentes/footerbar.php"); ?>
