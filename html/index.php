@@ -19,14 +19,24 @@
 			<br>
 
 			<?php
-				$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/componentes/versao";
-				$dado = file_get_contents($url);
+				$ch = curl_init();
+				$timeout = 5;
+				curl_setopt ($ch, CURLOPT_URL, 'http://example.com');
+				curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+				curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+				$file_contents = curl_exec($ch);
+				curl_close($ch);
+
+				$dado = file_get_contents($file_contents);
+				
 				$var1 = explode('<td id=\"LC1" class="blob-code blob-code-inner js-file-line">', $dado);
 				$var2 = explode("</td>",$var1[1]);
 				print "<p>Versão mais recente:<br>";
 				print $var2[0];
 				print "</p>"
 			?>
+
+
 			<br>
 			<p>
 				Versão atual:
