@@ -26,7 +26,7 @@
 					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 					$output = curl_exec($ch);
 					curl_close($ch);
-					echo $output;
+					print $output;
 					/*
 					$start = strpos($output, "<td id=\"LC1\" class=\"blob-code blob-code-inner js-file-line\">");
 					$end = strpos($output, "</td>", $start);
