@@ -38,8 +38,6 @@
 					print "<p><b>Versão mais atual:</b><br>".$var2[0]."</p>";
 				}
 			?>
-
-			<br>
 			<p>
 				<b>Versão local:</b>
 				<?php
