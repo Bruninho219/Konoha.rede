@@ -29,10 +29,10 @@
 					//print $output;
 
 					$var1 = explode('<td id=\"LC1" class="blob-code blob-code-inner js-file-line">', $output);
-					$var2 = explode("</td>",$var1[1]);
-					print "<p>Versão mais recente:<br>";
-					print $var2[0];
-					print "</p>"
+					$var2 = explode("</td>",$var1);
+					
+					print $var2;
+					
 					/*
 					$xpath = new DOMXPath($dom);
 					$tables = $xpath->query("//table[@class=\"table-general\"]");
