@@ -90,10 +90,13 @@
 					$var2 = explode('name:',$var1[1]);
 					print "<b>Companhia: </b>".$var2[0]."<br>";
 
+					/*
 					//Descrição
 					$var1 = explode('description: ', $comando);
-					$var2 = explode('telephoneNumber:',$var1[1]);
+					//Tem que achar um modo para achar o fim da descrição.
+					$var2 = explode('/0:',$var1[1]);
 					print "<b>Descrição: </b>".$var2[0]."<br>";
+					*/
 				}
 				else
 				{
