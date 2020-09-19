@@ -103,4 +103,4 @@ v 0.4.1...........................Melhorias em comp_addImp.php
 v 0.4.2...........................Adicionado pagina ./grp/grp_src2.php
                                   Melhorias em ./grp/grp_add.php
                                   Melhorias em navbar.php
-                                  
+                                  Melhorias em ./componentes/Notas_Atualizacao.php

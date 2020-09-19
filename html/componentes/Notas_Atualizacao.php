@@ -11,7 +11,10 @@
 		</header>
 		<nav id="nav1" style= "background-color: #C0C0C0;">
 			<b>Versão atual:</b>
-			v. 0.3.0
+			<?php
+				$f = `cat ./versao`;
+				echo "<pre>$f</pre>";
+			?>
 		</nav>
 		<section>
 			<?php
