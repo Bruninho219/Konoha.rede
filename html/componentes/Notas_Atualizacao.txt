@@ -5,24 +5,24 @@ Base..............................Adicionado arquivos basicos e de testes
 v 0.0.1...........................Resolvido bug chamar pagina
                                   Correcoes na navbar e outros bugs
                                   Adicionado informacoes nas paginas ./usr/*
-                                  Conversao arquivos .html para .php
+                                  Conversao de arquivos .html para .php
 v 0.0.2...........................Resolvido bugs no CSS
                                   Correcoes nas paginas ./usr/*
-                                  Melhorias navbar
+                                  Melhorias em navbar.php
                                   Adicionado opcao de logout
                                   Adicionado imagem ./img/logout.png
-                                  Melhorias Index.php
+                                  Melhorias em Index.php
                                   Adicionado favicon
                                   Correcoes de erros e pequenas melhorias
 v 0.0.3...........................Remocoes de arquivos .html desnecessarios
-                                  Melhorias interface ./usr/usr_src.php
+                                  Melhorias em ./usr/usr_src.php
                                   Adicionado paginas ./usr/usr_rem.php
                                   Adicionado campo telefone em ./usr/usr_add.php
                                   Adicionado pagina ./grp/grp_add.php
                                   Adicionado pagina ./grp/grp_rem.php
                                   Adicionado pagina ./grp/grp_sec.php
                                   Adicionado pagina ./grp/grp_src.php
-                                  Correções de erros e pequenas melhorias
+                                  Correcoes de erros e pequenas melhorias
 v 0.1.0...........................Remocao de arquivo .html desnecessario
                                   Resolvido bug chamar pagina ./grp/grp_rem.php
                                   Resolvido bug chamar pagina ./usr/usr_rem.php
