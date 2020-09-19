@@ -66,7 +66,7 @@
 					print "<b>E-mail: </b>".$var2[0]."<br>";
 
 					//Membros
-					print "";
+					print "<br><b>Membros:</b>";
 					$f = "sudo samba-tool group listmembers {$_POST['grp_nick']}";
 					$comando = shell_exec($f);
 					echo "<pre>$comando</pre>";
