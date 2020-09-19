@@ -109,3 +109,4 @@ v 0.4.2...........................Adicionado pagina ./grp/grp_src2.php
                                   Movido ./componentes/imp_all para ./conf/
                                   Melhorias em Index.php
                                   Melhorias em ./comp/comp_addPasta.php
+                                  Melhorias em ./grp/grp_addm.php

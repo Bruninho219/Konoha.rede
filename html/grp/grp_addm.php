@@ -50,8 +50,6 @@
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
-				echo "aaa";
-
 				$f = "sudo samba-tool group addmembers {$_POST['grp_nick']} \"{$_POST['grp_usr']}\"";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";

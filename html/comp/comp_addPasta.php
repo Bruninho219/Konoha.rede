@@ -89,8 +89,7 @@
 				echo $c;
 				echo "<pre>$c</pre>";
 				
-
-
+				
 				/*
 				* Aqui é sobre a pasta a ser criada
 				*/
@@ -144,7 +143,6 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					
 
 					if ($_POST['comp_perm'] != '')
 					{
