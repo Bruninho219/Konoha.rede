@@ -89,10 +89,6 @@
 		<br>
 		<br>
 	</body>
-	<footer>
-		<?php include("../componentes/footerbar.php"); ?>
-	</footer>
-
 	<script type="text/javascript">
 		function SrcGrpFunction()
 		{
@@ -106,4 +102,7 @@
 			}
 		}
 	</script>
+	<footer>
+		<?php include("../componentes/footerbar.php"); ?>
+	</footer>
 </html>
