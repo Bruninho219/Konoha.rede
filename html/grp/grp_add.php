@@ -29,7 +29,12 @@
 				<p>
 					<b>Email:</b>
 					<br>
-					<input type="email" name="grp_email" id="grp_email" placeholder="Ex.: escritorio1@x.com">
+					<input type="email" name="grp_email" id="grp_email" placeholder="Ex.: escritorio@x.com">
+				</p>
+				<p>
+					<b>Descrição:</b> (não use "/0" na descrição)
+					<br>
+					<input type="text" name="grp_desc" id="grp_desc" placeholder="Ex.: Grupo do escritorio">
 				</p>
 				<p>
 					<br>
@@ -51,7 +56,10 @@
 				{
 					$f=$f." --mail-address {$_POST['grp_email']}";
 				}
-				
+				if ($_POST['grp_desc'] != '')
+				{
+					$f=$f." --description {$_POST['grp_desc']}"."/0";
+				}
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}

@@ -71,6 +71,11 @@
 					$f = "sudo samba-tool group listmembers {$_POST['grp_nick']}";
 					$comando = shell_exec($f);
 					echo "<pre>$comando</pre>";
+
+					//Descrição
+					$var1 = explode('description: ', $comando);
+					$var2 = explode('/0',$var1[1]);
+					print "<b>Descrição: </b>".$var2[0]."<br>";
 				}
 				else
 				{
@@ -96,7 +101,7 @@
 				alert("Informe o nome do grupo!");
 			}
 			else
-			{ 
+			{
 				document.formGrp.submit();
 			}
 		}
