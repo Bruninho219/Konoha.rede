@@ -87,11 +87,11 @@
 		?>
 		<br>
 		<br>
-		<br>		
-		<footer>
-			<?php include("../componentes/footerbar.php"); ?>
-		</footer>
+		<br>
 	</body>
+	<footer>
+		<?php include("../componentes/footerbar.php"); ?>
+	</footer>
 
 	<script type="text/javascript">
 		function SrcGrpFunction()

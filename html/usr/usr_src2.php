@@ -107,11 +107,11 @@
 
 		<br>
 		<br>
-		<br>		
-		<footer>
+		<br>
+	</body>
+	<footer>
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>
-	</body>
 
 	<script type="text/javascript">
 		function SrcUserFunction()
