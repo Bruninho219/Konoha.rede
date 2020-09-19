@@ -63,7 +63,8 @@
 					//EMail
 					$var1 = explode('mail: ', $comando);
 					$var2 = explode('distinguishedName:',$var1[1]);
-					print "<b>E-mail: </b>".$var2[0]."<br>";
+					$var3 = explode('member:',$var2[0]);
+					print "<b>E-mail: </b>".$var3[0]."<br>";
 
 					//Membros
 					print "<br><b>Membros:</b>";
