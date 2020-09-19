@@ -26,7 +26,7 @@
 						<!--USUARIO-->
 						<li><a href="../usr/usr_add2.php">Adicionar</a></li>
 						<li><a href="../usr/usr_edt.php">Editar</a></li>
-						<li><a href="../usr/usr_src.php">Pesquisar</a></li>
+						<li><a href="../usr/usr_src2.php">Pesquisar</a></li>
 						<li><a href="../usr/usr_rec.php">Recuperar senha</a></li>
 						<li><a href="../usr/usr_rem.php">Remover</a></li>
 						<li><a href="../usr/usr_sec.php">Segurança</a></li>
@@ -42,7 +42,7 @@
 						<li><a href="../grp/grp_addm.php">Adicionar membro</a></li>
 						<li><a href="../grp/grp_remm.php">Remover membro</a></li>
 						<li><a href="../grp/grp_add.php">Criar</a></li>
-						<li><a href="../grp/grp_src.php">Pesquisar</a></li>
+						<li><a href="../grp/grp_src2.php">Pesquisar</a></li>
 						<li><a href="../grp/grp_rem.php">Remover</a></li>
 					</ul>
 				</li>
