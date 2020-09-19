@@ -139,7 +139,34 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					//falta as permissões
+					$c = "echo \"browseable = yes\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					echo $c;
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
+
+					
+
+					if ($_POST['comp_perm'] != '')
+					{
+						$c = "echo \"guest ok=no\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+
+						$c = "echo \"valid users = {$_POST['comp_perm']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+					}
+					else
+					{
+						$c = "echo \"guest ok=yes\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+						echo $c;
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+					}
+
+					//faltam as permissões
 
 					//Edição no include
 					/*
