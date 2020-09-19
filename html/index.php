@@ -43,7 +43,7 @@
 				<b>-->
 				Versão local:</b>
 				<?php
-					$c=`cat ./componentes/versao`;
+					$c=`cat ./conf/versao`;
 					echo "<pre>$c</pre>";
 				?>
 			</p>

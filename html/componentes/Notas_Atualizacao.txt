@@ -104,3 +104,8 @@ v 0.4.2...........................Adicionado pagina ./grp/grp_src2.php
                                   Melhorias em ./grp/grp_add.php
                                   Melhorias em navbar.php
                                   Melhorias em ./componentes/Notas_Atualizacao.php
+                                  Adicionado diretorio ./conf/
+                                  Movido ./componentes/versao para ./conf/
+                                  Movido ./componentes/imp_all para ./conf/
+                                  Melhorias em Index.php
+                                  
