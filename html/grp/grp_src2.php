@@ -69,7 +69,7 @@
 					print "";
 					$f = "sudo samba-tool group listmembers {$_POST['grp_nick']}";
 					$comando = shell_exec($f);
-					print $comando;
+					echo "<pre>$comando</pre>";
 				}
 				else
 				{
