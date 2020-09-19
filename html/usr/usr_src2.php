@@ -65,6 +65,11 @@
 					$var2 = explode('givenName:',$var1[1]);
 					print "<b>Telefone: </b>".$var2[0]."<br>";
 
+					//Diretório
+					$var1 = explode('homeDirectory: ', $comando);
+					$var2 = explode('badPasswordTime:',$var1[1]);
+					print "<b>Diretório: </b>".$var2[0]."<br>";
+					
 					//EMail
 					$var1 = explode('mail: ', $comando);
 					$var2 = explode('pwdLastSet:',$var1[1]);
