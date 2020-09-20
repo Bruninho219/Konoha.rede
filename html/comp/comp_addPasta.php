@@ -28,7 +28,8 @@
 				<p>
 					<b>Diretório:</b>
 					<br>
-					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: /var/musicas">
+					/Konoha/samba/
+					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: /">
 				</p>
 				<p>
 					<b>Permissão de acesso (grupo)</b>
@@ -123,7 +124,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"path = {$_POST['comp_dir']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"path = /Konoha/samba/{$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
@@ -167,6 +168,8 @@
 					//faltam as permissões
 
 					//Edição no include
+					//Metodo antigo, sem importancia
+					//Tá aqui para eu lembrar do código
 					/*
 					$c = "echo \"include = /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					echo $c;
