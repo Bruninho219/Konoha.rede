@@ -29,7 +29,7 @@
 					<b>Diretório:</b>
 					<br>
 					/Konoha/samba/
-					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: /">
+					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: MUSICAS">
 				</p>
 				<p>
 					<b>Permissão de acesso (grupo)</b>
