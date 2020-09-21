@@ -9,7 +9,12 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1"></nav>
+		<nav id="nav1">
+			<?php
+				$c=`cat /Konoha/samba/imp_list`;
+				echo "<pre>$c</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Compartilhamento geral de impressoras:</b>

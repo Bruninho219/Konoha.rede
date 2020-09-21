@@ -113,4 +113,8 @@ v 0.4.2...........................Adicionado pagina ./grp/grp_src2.php
 v 0.4.3...........................Melhorias em ./comp/comp_addPasta.php
                                   Melhorias em ./componentes/conf.txt
 v 0.4.4...........................Melhorias em ./comp/comp_addPasta.php
+                                  Melhorias em ./comp/comp_delPasta.php
+                                  Melhorias em ./comp/comp_addImp.php
+                                  Melhorias em ./comp/comp_delImp.php
+
                                   

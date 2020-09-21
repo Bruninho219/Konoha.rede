@@ -9,7 +9,13 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1"></nav>
+		<nav id="nav1">
+			Compartilhamento:
+			<?php
+				$usrlist = `ls /Konoha/samba --ignore imp_all --ignore includes.conf --ignore smb.d`;
+				echo "<pre>$usrlist</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Adicionar pasta compartilhada:</b>
@@ -133,7 +139,8 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"path = /Konoha/samba/{$_POST['comp_dir']}/{$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+					$c = "echo \"path = /Konoha/samba/{$_POST['comp_dir']}/{$_POST['comp_nick']}\"";
+					$c = $c." >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";

@@ -9,7 +9,12 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1"></nav>
+		<nav id="nav1">
+			<?php
+				$c=`cat /Konoha/samba/imp_list`;
+				echo "<pre>$c</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Remover impressora compartilhada:</b>
@@ -18,7 +23,7 @@
 				<p>
 					<b>Informe o nome da impressora:</b>
 					<br>
-					<input type="text" name="comp_nick" id="comp_nick" placeholder="Ex.: IMP_DIRECAO">
+					<input type="text" name="comp_nick" id="comp_nick" placeholder="Ex.: Direcao">
 				</p>
 				<p>
 					<br>
@@ -31,15 +36,25 @@
 		<br>
 		<br>
 		<br>
-
+		
 		<?php
 			if (isset($_POST['comp_nick']))
 			{
-				$x = "{$_POST['comp_nick']}";
+				$c = "rm -R /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
 				
+				$c = "rm -R /Konoha/samba/includes.conf";
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
 				
-				$comando = shell_exec($x);
-				echo "<pre>$comando</pre>";
+				$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
+
+				$c = "sed -i '/{$_POST['comp_nick']}/d' /Konoha/samba/imp_list";
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
 			}
 		?>
 

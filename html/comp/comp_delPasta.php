@@ -9,7 +9,13 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1"></nav>
+		<nav id="nav1">
+			Compartilhamento:
+			<?php
+				$usrlist = `ls /Konoha/samba --ignore imp_all --ignore includes.conf --ignore smb.d`;
+				echo "<pre>$usrlist</pre>";
+			?>
+		</nav>
 		<section>
 			<h1>
 				<b>Remover pasta compartilhada:</b>
@@ -47,7 +53,7 @@
 		<?php
 			if (isset($_POST['comp_nick']))
 			{
-				$c = "rn -R /Konoha/samba/{$_POST['comp_nick']}";
+				$c = "rm -R /Konoha/samba/{$_POST['comp_nick']}";
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
 
