@@ -40,7 +40,7 @@
 				<p>
 					<b>Path:</b>
 					<br>
-					<input type="text" name="comp_path" id="comp_path" placeholder="Padrão: /tmp">
+					<input type="text" name="comp_path" id="comp_path" placeholder="Padrão: /var/spool/samba/">
 				</p>
 				<p>
 					<br>
@@ -123,7 +123,7 @@
 					}
 					else
 					{
-						$c = "echo \"path = /tmp\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
+						$c = "echo \"path = /var/spool/samba/\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
 						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
@@ -139,7 +139,12 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					if ($_POST['comp_path'] != '')
+					$c = "echo \"browseable = yes\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
+					//echo $c;
+					$c = shell_exec($c);
+					echo "<pre>$c</pre>";
+
+					if ($_POST['comp_perm'] != '')
 					{
 						$c = "echo \"valid users = {$_POST['comp_perm']}]\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
 						//echo $c;
