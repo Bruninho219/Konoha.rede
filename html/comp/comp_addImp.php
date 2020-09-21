@@ -129,7 +129,7 @@
 						echo "<pre>$c</pre>";
 					}
 
-					$c = "echo \"printer name = {$_POST['comp_nick']}]\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
+					$c = "echo \"printer name = {$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
 					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
