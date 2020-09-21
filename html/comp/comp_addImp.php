@@ -99,7 +99,7 @@
 
 				if(!file_exists("/Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf"))
 				{
-					$c = "echo {$_POST['comp_nick']} > /Konoha/samba/imp_list";
+					$c = "echo {$_POST['comp_nick']} >> /Konoha/samba/imp_list";
 					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";

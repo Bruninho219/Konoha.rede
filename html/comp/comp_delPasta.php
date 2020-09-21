@@ -12,7 +12,7 @@
 		<nav id="nav1">
 			Compartilhamento:
 			<?php
-				$usrlist = `ls /Konoha/samba --ignore imp_all --ignore includes.conf --ignore smb.d`;
+				$usrlist = `ls /Konoha/samba --ignore imp_all --ignore imp_list --ignore includes.conf --ignore smb.d`;
 				echo "<pre>$usrlist</pre>";
 			?>
 		</nav>
