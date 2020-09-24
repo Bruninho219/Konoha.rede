@@ -51,13 +51,6 @@
 	            </ul>
 	        </div>
 	    </nav>
-		<nav id="nav1">
-			<b>Usuários:</b>
-			<?php
-				$usrlist = `sudo samba-tool user list`;
-				echo "<pre>$usrlist</pre>";
-			?>
-		</nav>
 		<div class="container">
 	        <h2>Criação de Usuário</h2>
 	        <form class="form" role="form" autocomplete="off">
