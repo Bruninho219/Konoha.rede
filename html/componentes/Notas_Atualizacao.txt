@@ -118,4 +118,4 @@ v 0.4.4...........................Melhorias em ./comp/comp_addPasta.php
                                   Melhorias em ./comp/comp_delImp.php
                                   Melhorias em ./comp/comp_delImp.php
 v 0.5.0...........................Adicionado pagina ./usr/usr_add3.php
-                                  Adicionado pagina ./componentes/navbar.php
+                                  Adicionado pagina ./componentes/navbar2.php
