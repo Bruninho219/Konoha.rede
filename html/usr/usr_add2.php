@@ -9,13 +9,6 @@
 		<header>
 			<?php include("../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1">
-			Usuários:
-			<?php
-				$usrlist = `sudo samba-tool user list`;
-				echo "<pre>$usrlist</pre>";
-			?>
-		</nav>
 		<section>
 			<h1>
 				<b>Adicionar usuário:</b>
