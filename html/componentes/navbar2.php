@@ -26,7 +26,7 @@
 					<a class="dropdown-item" href="./../usr/usr_sec.php">Segurança</a>
 				</div>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Grupo
 				</a>
@@ -38,7 +38,7 @@
 					<a class="dropdown-item" href="./../grp/grp_rem.php">Remover</a>
 					</div>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Compartilhamento
 				</a>
@@ -52,7 +52,7 @@
 					<a class="dropdown-item" href="./../comp/comp_delPasta.php">Remover pasta</a>
 					</div>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Segurança
 				</a>
@@ -63,7 +63,7 @@
 					<a class="dropdown-item" href="#">.</a>
 					</div>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Configuração
 				</a>
