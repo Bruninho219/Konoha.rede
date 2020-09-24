@@ -70,7 +70,7 @@
 					<ul class="dropdown-menu">
 						<!--SEGURANCA-->
 						<li><a href="../sec/sec_pass.php">Senha</a></li>
-						<li><a href="../sec/sec_validacao.php">Validacao de arquivos</a></li>
+						<li><a href="../sec/sec_validacao.php">Validação de arquivos</a></li>
 						<li><a href="#">.</a></li>
 						<li><a href="#">.</a></li>
 					</ul>

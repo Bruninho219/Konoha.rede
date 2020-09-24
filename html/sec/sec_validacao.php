@@ -34,13 +34,6 @@
 					echo "<pre>$f</pre>";
 				?>
 			</p>
-			<p>
-				<b>dbcheck:</b>
-				<?php
-					$f = ``;
-					echo "<pre>$f</pre>";
-				?>
-			</p>
 		</section>
 		<footer>
 			<?php include("./footerbar.php"); ?>
