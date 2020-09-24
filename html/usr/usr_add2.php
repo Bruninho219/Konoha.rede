@@ -1,55 +1,14 @@
 <html>
 	<head>
-    <title>Konoha</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <style>
-        *
-        {
-            font-size: 13px;
-        }
-    </style>
-    	<link rel="stylesheet" type="text/css" href="../css/usr.css">
+		<title>Konoha</title>
+		<link rel="stylesheet" type="text/css" href="../css/usr.css">
 		<link rel="shortcut icon" href="../img/icon.png">
 	</head>
 	
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:16px;">
-	        <a class="navbar-brand" href="#"><img src="img/icon.png" height="30" width="30" />
-	        	<sub style="font-size: 10px;">Konoha</sup>
-	        </a>
-	        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="false">
-	            <span class="navbar-toggler-icon"></span>
-	        </button>
-
-	        <div class="navbar-collapse collapse" id="navb">
-	            <ul class="navbar-nav mr-auto">
-	                <li class="nav-item">
-	                    <a class="nav-link">Home</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link">Usuário</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link">Grupo</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link">Segurança</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link">Configuração</a>
-	                </li>
-	            </ul>
-	            <ul class="navbar-nav">
-	                <a class="nav-link"><i class='fas fas fa-cog'></i>Admin</a>
-	                <a class="nav-link" href="logout.php"><i class='fas fa-sign-out-alt'></i> Sair</a>
-	            </ul>
-	        </div>
-	    </nav>
+		<header>
+			<?php include("../componentes/navbar.php"); ?>
+		</header>
 		<nav id="nav1">
 			Usuários:
 			<?php
@@ -57,123 +16,131 @@
 				echo "<pre>$usrlist</pre>";
 			?>
 		</nav>
-		<div class="container">
-	        <h2>Criação de Usuário</h2>
-	        <form class="form" role="form" autocomplete="off">
-
-	            <div class="container py-3">
-	                <div class="row">
-	                    <div class="mx-auto col-sm-12">
-	                        <!-- form user info -->
-	                        <div class="card">
-	                            <div class="card-header">
-	                                <h6 class="mb-0">Informações obrigatórias</h4>
-	                            </div>
-	                            <div class="card-body">
-	                                <div class="form-group row">
-	                                    <label class="col-lg-3 col-form-label form-control-label">Usuário*</label>
-	                                    <div class="col-lg-9">
-	                                        <input class="form-control" type="text" name="user" value="">
-	                                    </div>
-	                                </div>
-
-	                                <div class="form-group row">
-	                                    <label class="col-lg-3 col-form-label form-control-label">Informe a senha*:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="password" name="password" value="">
-	                                    </div>
-	                                    <div class="col-lg-1"></div>
-	                                    <label class="col-lg-2 col-form-label form-control-label">Confirme a senha*:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="password" name="password" value="">
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div class="card">
-	                            <div class="card-header">
-	                                <h6 class="mb-0">Informações opcionais</h4>
-	                            </div>
-	                            <div class="card-body">
-	                                <div class="form-group row">
-	                                    <label class="col-lg-3 col-form-label form-control-label">Nome do usuário:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="npme" value="">
-	                                    </div>
-	                                    <div class="col-lg-1"></div>
-	                                    <label class="col-lg-2 col-form-label form-control-label">Sobrenome:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="sobrenome" value="">
-	                                    </div>
-	                                </div>
-	                                <div class="form-group row">
-	                                    <label class="col-lg-3 col-form-label form-control-label">E-mail:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="email" name="email" value="">
-	                                    </div>
-	                                    <div class="col-lg-1"></div>
-	                                    <label class="col-lg-2 col-form-label form-control-label">Telefone:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="fone" value="">
-	                                    </div>
-	                                </div>
-
-
-	                                <div class="form-group row">
-	                                    <label class="col-lg-3 col-form-label form-control-label">Departamento:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="dept" value="">
-	                                    </div>
-	                                    <div class="col-lg-1"></div>
-	                                    <label class="col-lg-2 col-form-label form-control-label">Grupo:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="grupo" value="">
-	                                    </div>
-	                                </div>
-
-
-	                                <div class="form-group row">
-	                                    <label class="col-lg-3 col-form-label form-control-label">Companhia:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="companhia" value="">
-	                                    </div>
-	                                    <div class="col-lg-1"></div>
-	                                    <label class="col-lg-2 col-form-label form-control-label">Cargo:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="cargo" value="">
-	                                    </div>
-	                                </div>
-
-	                                <div class="form-group row">
-	                                    <label class="col-lg-3 col-form-label form-control-label">Diretório:</label>
-	                                    <div class="col-lg-3">
-	                                        <input class="form-control" type="text" name="dept" placeholder="/home/bruno">
-	                                    </div>
-	                                    <div class="col-lg-1"></div>
-
-	                                    <label class="col-lg-3 col-form-label form-control-label">Solicitar troca de senha:</label>
-	                                    <div class="col-lg-1 text-center">
-	                                        Sim <input type="radio" class="">
-	                                        Não <input type="radio" class="">
-	                                    </div>
-	                                </div>
-
-
-	                                <hr />
-	                                <div class="form-group row">
-	                                    <div class="col-lg-12 text-right">
-	                                        <input type="reset" class="btn btn-secondary" value="Cancelar">
-	                                        <input type="submit" name="submit" class="btn btn-primary" value="Salvar">
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <!-- /form user info -->
-	                    </div>
-	                </div>
-	            </div>
-	        </form>
-	    </div>
+		<section>
+			<h1>
+				<b>Adicionar usuário:</b>
+			</h1>
+			<form name="formUser" method="POST">
+				<b>Campos obrigatórios:</b>
+				<br>
+				<p>
+					<b>Informe o nome de usuário:</b>
+					<br>
+					<input type="text" name="usr_nick" id="usr_nick" placeholder="Ex.: bruno_brs">
+				</p>
+				<p>
+					<b>Informe senha:</b>
+					<br>
+					<input type="password" name="usr_pass1" id="usr_pass1">
+					<br>
+					<b>Reinforme a senha:</br>
+					<input type="password" name="usr_pass2" id="usr_pass2">
+				</p>
+				<br>
+				<b>Campos opcionais:</b>
+				<br>
+				<div class="container">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td>
+									<p>
+										<b>Nome do usuário:</b>
+										<br>
+										<input type="text" name="usr_nome" id="usr_nome" placeholder="Ex.: Bruno">
+									</p>
+								</td>
+								<td>
+									<p>
+										<b>Sobrenome do usuário:</b>
+										<br>
+										<input type="text" name="usr_snome" id="usr_snome" placeholder="Ex.: Silva">
+									</p>
+								</td>
+								<td>
+									<p>
+										<b>Telefone:</b>
+										<br>
+										<input type="tel" name="usr_tel" id="usr_tel" pattern="[0-9]{11}" placeholder="Ex.: 12345678901">
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Email:</b>
+										<br>
+										<input type="email" name="usr_email" id="usr_email" placeholder="Ex.: nomeUsuario@x.com">
+									</p>
+								</td>
+								<td>
+									<p>
+										<b>Grupo:</b>
+										<br>
+										<input type="text" name="usr_grupo" id="usr_gru" placeholder="Escritório">
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Departamento:</b>
+										<br>
+										<input type="text" name="usr_depart" id="usr_depart" placeholder="RH">
+									</p>
+								</td>
+								<td>
+									<p>
+										<b>Compania:</b>
+										<br>
+										<input type="text" name="usr_company" id="usr_company" placeholder="Empresa A1">
+									</p>
+								</td>
+								<td>
+									<p>
+										<b>Cargo:</b>
+										<br>
+										<input type="text" name="usr_cargo" id="usr_cargo" placeholder="Diretor">
+									</p>
+								</td>>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Descrição:</b>
+										<br>
+										<input type="text" name="usr_desc" id="usr_desc" placeholder="Descrição do usuário">
+									</p>
+								</td>
+								<td>
+									<p>
+										<b>Diretório:</b>
+										<br>
+										&nbsp;/var/
+										<input type="text" name="usr_dir" id="usr_dir" placeholder="home/bruno/">
+									</p>
+								</td>
+								<td>
+									<p>
+										<b>Solicitar alteração de senha:</b>
+										<br>
+										Sim
+										<input type="radio" name="alt_pass" id="alt_pass" value="senha_sim" checked>
+										&nbsp;&nbsp;&nbsp;
+										Não:
+										<input type="radio" name="alt_pass" id="alt_pass" value="senha_nao">
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>
+					<br>
+					<input type="button" onclick="AddUserFunction();" value="Criar">
+				</p>
+			</form>
+		</section>
 
 		<br>
 		<br>

@@ -24,7 +24,7 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--USUARIO-->
-						<li><a href="../usr/usr_add2.php">Adicionar</a></li>
+						<li><a href="../usr/usr_add3.php">Adicionar</a></li>
 						<li><a href="../usr/usr_edt.php">Editar</a></li>
 						<li><a href="../usr/usr_src2.php">Pesquisar</a></li>
 						<li><a href="../usr/usr_rec.php">Recuperar senha</a></li>
