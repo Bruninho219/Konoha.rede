@@ -1,21 +1,15 @@
 <html>
 	<head>
 		<title>Konoha</title>
-		<link rel="stylesheet" type="text/css" href="../css/php.css">
-		<link rel="shortcut icon" href="../img/icon.png">
+		<link rel="stylesheet" type="text/css" href="./../css/usr.css">
+		<link rel="shortcut icon" href="./../img/icon.png">
 	</head>
 	
-	<body style= "margin: 0 auto;">
+	<body>
 		<header>
-			<?php include("./navbar.php"); ?>
+			<?php include("./../componentes/navbar.php"); ?>
 		</header>
-		<nav id="nav1" style= "background-color: #C0C0C0;">
-			<b>Versão atual:</b>
-			<?php
-				$f = `cat ./../conf/versao`;
-				echo "<pre>$f</pre>";
-			?>
-		</nav>
+		<nav id="nav1"></nav>
 		<section>
 			<h1>
 				<b>Validações de arquivos:</b>
@@ -36,7 +30,7 @@
 			</p>
 		</section>
 		<footer>
-			<?php include("./footerbar.php"); ?>
+			<?php include("./../componentes/footerbar.php"); ?>
 		</footer>
 	</body>
 </html>
