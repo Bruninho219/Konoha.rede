@@ -116,5 +116,4 @@ v 0.4.4...........................Melhorias em ./comp/comp_addPasta.php
                                   Melhorias em ./comp/comp_delPasta.php
                                   Melhorias em ./comp/comp_addImp.php
                                   Melhorias em ./comp/comp_delImp.php
-
-                                  
+                                  Melhorias em ./comp/comp_delImp.php
