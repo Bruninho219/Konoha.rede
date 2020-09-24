@@ -24,7 +24,7 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--USUARIO-->
-						<li><a href="../usr/usr_add3.php">Adicionar</a></li>
+						<li><a href="../usr/usr_add2.php">Adicionar</a></li>
 						<li><a href="../usr/usr_edt.php">Editar</a></li>
 						<li><a href="../usr/usr_src2.php">Pesquisar</a></li>
 						<li><a href="../usr/usr_rec.php">Recuperar senha</a></li>
@@ -70,7 +70,7 @@
 					<ul class="dropdown-menu">
 						<!--SEGURANCA-->
 						<li><a href="../sec/sec_pass.php">Senha</a></li>
-						<li><a href="#">.</a></li>
+						<li><a href="../sec/sec_validacao.php">Validacao de arquivos</a></li>
 						<li><a href="#">.</a></li>
 						<li><a href="#">.</a></li>
 					</ul>
