@@ -27,42 +27,64 @@
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link">Grupo</a>
-				<a class="dropdown-item" href="./../grp/grp_addm.php">Adicionar membro</a>
-				<a class="dropdown-item" href="./../grp/grp_remm.php">Remover membro</a>
-				<a class="dropdown-item" href="./../grp/grp_add.php">Criar</a>
-				<a class="dropdown-item" href="./../grp/grp_src2.php">Pesquisar</a>
-				<a class="dropdown-item" href="./../grp/grp_rem.php">Remover</a>
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Grupo
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="./../grp/grp_addm.php">Adicionar membro</a>
+					<a class="dropdown-item" href="./../grp/grp_remm.php">Remover membro</a>
+					<a class="dropdown-item" href="./../grp/grp_add.php">Criar</a>
+					<a class="dropdown-item" href="./../grp/grp_src2.php">Pesquisar</a>
+					<a class="dropdown-item" href="./../grp/grp_rem.php">Remover</a>
+					</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link">Compartilhamento</a>
-				<a class="dropdown-item" href="./../comp/comp_addImp.php">Adicionar impressora</a>
-				<a class="dropdown-item" href="./../comp/comp_allImp.php">Comp.geral de impressora</a>
-				<a class="dropdown-item" href="./../comp/comp_edtImp.php">Editar impressora</a>
-				<a class="dropdown-item" href="./../comp/comp_delImp.php">Remover impressora</a>
-				<a class="dropdown-item" href="./../comp/comp_addPasta.php">Adicionar pasta</a>
-				<a class="dropdown-item" href="./../comp/comp_edtPasta.php">Editar pasta</a>
-				<a class="dropdown-item" href="./../comp/comp_delPasta.php">Remover pasta</a>
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Compartilhamento
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="./../comp/comp_addImp.php">Adicionar impressora</a>
+					<a class="dropdown-item" href="./../comp/comp_allImp.php">Comp.geral de impressora</a>
+					<a class="dropdown-item" href="./../comp/comp_edtImp.php">Editar impressora</a>
+					<a class="dropdown-item" href="./../comp/comp_delImp.php">Remover impressora</a>
+					<a class="dropdown-item" href="./../comp/comp_addPasta.php">Adicionar pasta</a>
+					<a class="dropdown-item" href="./../comp/comp_edtPasta.php">Editar pasta</a>
+					<a class="dropdown-item" href="./../comp/comp_delPasta.php">Remover pasta</a>
+					</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link">Segurança</a>
-				<a class="dropdown-item" href="./../sec/sec_pass.php">Senha</a>
-				<a class="dropdown-item" href="#">.</a>
-				<a class="dropdown-item" href="#">.</a>
-				<a class="dropdown-item" href="#">.</a>
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Segurança
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="./../sec/sec_pass.php">Senha</a>
+					<a class="dropdown-item" href="#">.</a>
+					<a class="dropdown-item" href="#">.</a>
+					<a class="dropdown-item" href="#">.</a>
+					</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link">Configuração</a>
-				<a class="dropdown-item" href="./componentes/Notas_Atualizacao.php">Notas de atualizações</a>
-				<a class="dropdown-item" href="#">.</a>
-				<a class="dropdown-item" href="#">.</a>
-				<a class="dropdown-item" href="#">.</a>
-				<a class="dropdown-item" href="./componentes/php.php">PHP info</a>
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Configuração
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="./componentes/Notas_Atualizacao.php">Notas de atualizações</a>
+					<a class="dropdown-item" href="#">.</a>
+					<a class="dropdown-item" href="#">.</a>
+					<a class="dropdown-item" href="#">.</a>
+					<a class="dropdown-item" href="./componentes/php.php">PHP info</a>
+					</div>
 			</li>
 		</ul>
 		<ul class="navbar-nav">
-			<a class="nav-link"><i class='fas fas fa-cog'></i>Admin</a>
-			<a class="nav-link" href="#"><i class='fas fa-sign-out-alt'></i> Sair</a>
+			<a class="nav-link">
+				<i class='fas fas fa-cog'></i>
+				Admin
+			</a>
+			<a class="nav-link" href="#">
+				<i class='fas fa-sign-out-alt'></i>
+				Sair
+			</a>
 		</ul>
 	</div>
 </nav>
