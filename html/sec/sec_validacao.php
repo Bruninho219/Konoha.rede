@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Konoha</title>
-		<link rel="stylesheet" type="text/css" href="./../css/index.css">
+		<link rel="stylesheet" type="text/css" href="./../css/sec.css">
 		<link rel="shortcut icon" href="./../img/icon.png">
 	</head>
 	
@@ -10,7 +10,7 @@
 			<?php include("./../componentes/navbar.php"); ?>
 		</header>
 		<nav id="nav1"></nav>
-		
+
 		<section>
 			<h1>
 				<b>Validações de arquivos:</b>
