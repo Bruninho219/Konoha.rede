@@ -10,6 +10,7 @@
 			<?php include("./../componentes/navbar.php"); ?>
 		</header>
 		<nav id="nav1"></nav>
+		
 		<section>
 			<h1>
 				<b>Validações de arquivos:</b>
@@ -29,6 +30,7 @@
 				?>
 			</p>
 		</section>
+
 		<footer>
 			<?php include("./../componentes/footerbar.php"); ?>
 		</footer>

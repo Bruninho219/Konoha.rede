@@ -121,4 +121,6 @@ v 0.5.0...........................Adicionado pagina ./usr/usr_add3.php
                                   Adicionado pagina ./componentes/navbar2.php
                                   Adicionado diretorio ./sec/
                                   Adicionado pagina ./sec/sec_validacao.php
+v 0.5.1...........................Melhorias em ./sec/sec_validacao.php
+                                  
                                   
