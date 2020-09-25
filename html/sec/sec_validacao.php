@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Konoha</title>
-		<link rel="stylesheet" type="text/css" href="./../css/usr.css">
+		<link rel="stylesheet" type="text/css" href="./../css/index.css">
 		<link rel="shortcut icon" href="./../img/icon.png">
 	</head>
 	
