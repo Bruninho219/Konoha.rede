@@ -39,10 +39,14 @@
 		<?php
 			if (isset($_POST['usr_nick']))
 			{
-				//$f = "sudo samba-tool user edit {$_POST['usr_nick']}";
-				//$comando = shell_exec($f);
-				echo "Verificar um método secundário de editar usuário!";
-				echo "<pre>$comando</pre>";
+				$f = "sudo samba-tool user edit {$_POST['usr_nick']}";
+				$comando = shell_exec($f);
+				//echo "Verificar um método secundário de editar usuário!";
+				//echo "<pre>$comando</pre>";
+				$f = "sudo samba-tool user show {$_POST['usr_nick']} ";
+				echo "<textarea id=\"usr_edt\" rows=\"4\" cols=\"50\">"
+				echo $comando;
+				echo "</textarea>"
 			}
 		?>
 		<br>

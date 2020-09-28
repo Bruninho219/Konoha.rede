@@ -13,7 +13,6 @@
 			<form name="formUp" method="POST">
     			<input type="button" onclick="Update();" value="Atualizar">
 			</form>
-		</form>
 		</nav>
 		<section>
 			[ntdsconn]
@@ -23,7 +22,6 @@
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			?>
-			[/ls -al]
 
 			<br>
 			<br>
@@ -56,11 +54,7 @@
 	<script type="text/javascript">
 		function Update()
 		{
-			<?php
-				$f = "sudo tcc";
-				$comando = shell_exec($f);
-				echo "<pre>$comando</pre>";
-			?>
+			document.formUp.submit();
 		}
 	</script>
 </html>
