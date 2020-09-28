@@ -43,10 +43,9 @@
 				$comando = shell_exec($f);
 				//echo "Verificar um método secundário de editar usuário!";
 				//echo "<pre>$comando</pre>";
-				$f = "sudo samba-tool user show {$_POST['usr_nick']} ";
-				echo "<textarea id=\"usr_edt\" rows=\"4\" cols=\"50\">"
+				echo "<textarea id=\"usr_edt\" rows=\"4\" cols=\"50\">";
 				echo $comando;
-				echo "</textarea>"
+				echo "</textarea>";
 			}
 		?>
 		<br>
