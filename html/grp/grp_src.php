@@ -35,20 +35,25 @@
 				</p>
 			</form>
 		</section>
+		
 		<br>
 		<br>
 		<br>
+
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
-				$f = "sudo samba-tool group show {$_POST['grp_nick']} ; echo ; echo Membros: ; sudo samba-tool group listmembers {$_POST['grp_nick']}";
+				$f = "sudo samba-tool group show {$_POST['grp_nick']} ; echo ; echo Membros: ;";
+				$f = $f. "sudo samba-tool group listmembers {$_POST['grp_nick']}";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
 		?>
+
 		<br>
 		<br>
 		<br>		
+		
 		<footer>
 			<?php include("../componentes/footerbar.php"); ?>
 		</footer>

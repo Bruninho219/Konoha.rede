@@ -58,10 +58,10 @@
 					<b>Tornar diretório oculto:</b>
 					<br>
 					Sim:
-					<input type="radio" name="comp_sec" id="comp_sec" value="yes"/>
+					<input type="radio" name="comp_sec" id="comp_sec" value="no"/>
 					&nbsp;&nbsp;&nbsp;
 					Não:
-					<input type="radio" name="comp_sec" id="comp_sec" value="no" checked/>
+					<input type="radio" name="comp_sec" id="comp_sec" value="yes" checked/>
 				</p>
 				<p>
 					<br>
@@ -174,7 +174,11 @@
 					}
 					else
 					{
-						$c = "echo \"guest ok=yes\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+						$c = "echo \"guest ok = yes\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
+						$c = shell_exec($c);
+						echo "<pre>$c</pre>";
+
+						$c = "echo \"public = yes\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 					}

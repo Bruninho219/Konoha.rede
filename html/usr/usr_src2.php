@@ -50,7 +50,7 @@
 		<?php
 			if (isset($_POST['usr_nick']))
 			{
-				$f = "sudo samba-tool user show {$_POST['usr_nick']} ";
+				$f = "sudo samba-tool user show {$_POST['usr_nick']}";
 				$comando = shell_exec($f);
 
 				if ($_POST['usr_pesq'] != '0')

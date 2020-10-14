@@ -51,35 +51,42 @@
 				if(!is_dir("/Konoha/"))
 				{
 					$c=`sudo mkdir /Konoha`;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
 
 				if(!is_dir("/Konoha/samba"))
 				{
 					$c=`sudo mkdir /Konoha/samba`;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c=`sudo chmod 751 /Konoha/samba/`;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
 
 				if(!is_dir("/Konoha/samba/smb.d"))
 				{
 					$c=`sudo mkdir /Konoha/samba/smb.d`;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
 
 				if ($_POST['imp_comp'] == "yes")
 				{
 					$c=`echo yes > /Konoha/samba/imp_all`;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					
 					if(file_exists("/Konoha/samba/smb.d/IMP_ALL.conf"))
 					{
 						$c=`rm -R /Konoha/samba/smb.d/IMP_ALL.conf`;
+						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 					}
 
