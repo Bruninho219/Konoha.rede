@@ -62,7 +62,6 @@
 					$c=`sudo mkdir /Konoha`;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
-					//echo $c;
 				}
 
 				if(!is_dir("/Konoha/samba"))
@@ -70,15 +69,13 @@
 					$c=`sudo mkdir /Konoha/samba`;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
-					//echo $c;
 				}
 
-				if(!is_dir("/Konoha/samba/imp_list"))
+				if(!file_exists("/Konoha/samba/imp_list"))
 				{
 					$c=`sudo touch /Konoha/samba/imp_list`;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
-					//echo $c;
 				}
 
 				if(!is_dir("/Konoha/samba/smb.d"))
@@ -86,93 +83,86 @@
 					$c=`sudo mkdir /Konoha/samba/smb.d`;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
-					//echo $c;
 				}
 
+				$c=`sudo chmod 751 /Konoha/*`;
+				$c = shell_exec($c);
+				echo "<pre>$c</pre>";
+
+				/*
 				$c=`sudo chmod 751 /Konoha/samba/`;
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
-				//echo $c;
-				
+
 				$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
 				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
-				//echo $c;
+				*/
 				
 
 				/*
 				* Aqui é sobre a impressora a ser criada
+				* [INICIO]
+				* Geração do arquivo /Konoha/samba/smb.d/IMP_***.conf
 				*/
 
 				if(!file_exists("/Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf"))
 				{
 					$c = "echo {$_POST['comp_nick']} >> /Konoha/samba/imp_list";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "touch /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					if ($_POST['comp_path'] != '')
 					{
 						$c = "echo \"path = {$_POST['comp_path']}\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 					}
 					else
 					{
 						$c = "echo \"path = /var/spool/samba/\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 					}
 
 					$c = "echo \"printer name = {$_POST['comp_nick']}\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "echo \"printable = yes\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "echo \"browseable = yes\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					if ($_POST['comp_perm'] != '')
 					{
 						$c = "echo \"valid users = {$_POST['comp_perm']}]\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 					}
 					else
 					{
 						$c = "echo \"valid users = public\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
 					}
 
 					$c = "echo \"create mode = 0700\" >> /Konoha/samba/smb.d/IMP_{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
 					$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 				}
@@ -180,6 +170,11 @@
 				{
 					echo "compartilhamento da impressora já realizado!";
 				}
+
+				/*
+				* Geração do arquivo //Konoha/samba/smb.d/IMP_***.conf
+				* [FIM]
+				*/
 			}
 		?>
 

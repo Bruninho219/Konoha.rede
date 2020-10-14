@@ -77,7 +77,7 @@
 					$c=`echo yes > /Konoha/samba/imp_all`;
 					echo "<pre>$c</pre>";
 					
-					if(is_dir("/Konoha/samba/smb.d/IMP_ALL.conf"))
+					if(file_exists("/Konoha/samba/smb.d/IMP_ALL.conf"))
 					{
 						$c=`rm -R /Konoha/samba/smb.d/IMP_ALL.conf`;
 						echo "<pre>$c</pre>";
