@@ -125,4 +125,6 @@ v 0.5.1...........................Melhorias em ./sec/sec_validacao.php
                                   Adicionado arquivo ./css/sec.php
                                   Adicionado arquivo ./sec/sec_pass.php
 v 0.5.2...........................Melhorias em ./usr/usr_edt.php
+v 0.5.3...........................Melhorias em ./comp/comp_addPasta.php
+                                  Correcoes de erros e pequenas melhorias
                                   

@@ -80,30 +80,36 @@
 				if(!is_dir("/Konoha/"))
 				{
 					$c=`sudo mkdir /Konoha`;
-					//echo $c;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 
 				if(!is_dir("/Konoha/samba"))
 				{
 					$c=`sudo mkdir /Konoha/samba`;
-					//echo $c;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 
 				if(!is_dir("/Konoha/samba/smb.d"))
 				{
 					$c=`sudo mkdir /Konoha/samba/smb.d`;
-					//echo $c;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 
 				$c=`sudo chmod 751 /Konoha/samba/`;
-				//echo $c;
+				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
+				//echo $c;
+				
 				$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
-				//echo $c;
+				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
+				//echo $c;
 				
 				
 				/*
@@ -113,14 +119,14 @@
 				if(!is_dir("/Konoha/samba/{$_POST['comp_nick']}"))
 				{
 					$c = "mkdir /Konoha/samba/{$_POST['comp_nick']}";
-					//$c = shell_exec($c);
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 					//echo $c;
 
 					$c = "chmod 0770 -R /Konoha/samba/{$_POST['comp_nick']}";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 				else
 				{
@@ -130,54 +136,54 @@
 				if(!file_exists("/Konoha/samba/smb.d/{$_POST['comp_nick']}.conf"))
 				{
 					$c = "touch /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 
 					$c = "echo \"[{$_POST['comp_nick']}]\" > /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 
 					$c = "echo \"path = /Konoha/samba/{$_POST['comp_dir']}/{$_POST['comp_nick']}\"";
 					$c = $c." >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 
 					$c = "echo \"comment = {$_POST['comp_desc']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 
 					$c = "echo \"read only = {$_POST['comp_leit']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 
 					$c = "echo \"browseable = {$_POST['comp_sec']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 
 					if ($_POST['comp_perm'] != '')
 					{
 						$c = "echo \"guest ok=no\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
+						//echo $c;
 
 						$c = "echo \"valid users = {$_POST['comp_perm']}\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
+						//echo $c;
 					}
 					else
 					{
 						$c = "echo \"guest ok=yes\" >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
-						//echo $c;
 						$c = shell_exec($c);
 						echo "<pre>$c</pre>";
+						//echo $c;
 					}
 
 					//faltam as permissões
@@ -192,9 +198,9 @@
 					echo "<pre>$c</pre>";
 					*/
 					$c = "ls /Konoha/samba/smb.d/* | sed -e 's/^/include = /' > /Konoha/samba/includes.conf";
-					//echo $c;
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 				else
 				{

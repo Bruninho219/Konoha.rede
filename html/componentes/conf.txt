@@ -3,5 +3,5 @@
 Alterar diretório ErrorDocument 404 para /componentes/404.php
 
 [smb.conf]
-#incluir a seguinte linra ao arquivo /etc/samba/smb.conf
+#incluir a seguinte linha ao arquivo /etc/samba/smb.conf
 include = /Konoha/samba/includes.conf
