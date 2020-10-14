@@ -60,37 +60,44 @@
 				if(!is_dir("/Konoha/"))
 				{
 					$c=`sudo mkdir /Konoha`;
-					//echo $c;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 
 				if(!is_dir("/Konoha/samba"))
 				{
 					$c=`sudo mkdir /Konoha/samba`;
-					//echo $c;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 
 				if(!is_dir("/Konoha/samba/imp_list"))
 				{
 					$c=`sudo touch /Konoha/samba/imp_list`;
-					//echo $c;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 
 				if(!is_dir("/Konoha/samba/smb.d"))
 				{
 					$c=`sudo mkdir /Konoha/samba/smb.d`;
-					//echo $c;
+					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
+					//echo $c;
 				}
 
 				$c=`sudo chmod 751 /Konoha/samba/`;
-				//echo $c;
+				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
+				//echo $c;
+				
 				$c=`sudo chmod 751 /Konoha/samba/smb.d/`;
-				//echo $c;
+				$c = shell_exec($c);
 				echo "<pre>$c</pre>";
+				//echo $c;
 				
 
 				/*
