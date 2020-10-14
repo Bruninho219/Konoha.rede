@@ -36,6 +36,7 @@
 					<br>
 					/Konoha/samba/
 					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: MUSICAS">
+					/NomePasta/
 				</p>
 				<p>
 					<b>Permissão de acesso (grupo)</b>
