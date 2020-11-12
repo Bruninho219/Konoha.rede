@@ -202,8 +202,10 @@
 				}
 				else
 				{
-					echo "compartilhamento já realizado! #2";
+					echo "<br>compartilhamento já realizado! #2";
 				}
+
+				echo "<meta HTTP-EQUIV='refresh' CONTENT='0'>";
 
 				/*
 				* Geração do arquivo //Konoha/samba/smb.d/***.conf
