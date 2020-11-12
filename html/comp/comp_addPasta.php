@@ -35,8 +35,8 @@
 					<b>Diretório:</b>
 					<br>
 					/Konoha/samba/
-					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: PastaLocal">
-					/NomePasta/
+					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: PastaLocal/">
+					NomePasta/
 				</p>
 				<p>
 					<b>Permissão de acesso (grupo)</b>
@@ -145,7 +145,7 @@
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
 
-					$c = "echo \"path = /Konoha/samba/{$_POST['comp_dir']}/{$_POST['comp_nick']}\"";
+					$c = "echo \"path = /Konoha/samba/{$_POST['comp_dir']}{$_POST['comp_nick']}\"";
 					$c = $c." >> /Konoha/samba/smb.d/{$_POST['comp_nick']}.conf";
 					$c = shell_exec($c);
 					echo "<pre>$c</pre>";
