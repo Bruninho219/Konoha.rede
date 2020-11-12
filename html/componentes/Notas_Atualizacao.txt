@@ -129,4 +129,5 @@ v 0.5.3...........................Melhorias em ./comp/comp_addPasta.php
                                   Melhorias em ./comp/comp_addImp.php
                                   Melhorias em ./comp/comp_allImp.php
                                   Correcoes de erros e pequenas melhorias
+v 0.5.4...........................Melhorias em ./comp/comp_addPasta.php
                                   

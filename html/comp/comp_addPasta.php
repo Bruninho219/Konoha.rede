@@ -35,7 +35,7 @@
 					<b>Diretório:</b>
 					<br>
 					/Konoha/samba/
-					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: MUSICAS">
+					<input type="text" name="comp_dir" id="comp_dir" placeholder="Ex.: PastaLocal">
 					/NomePasta/
 				</p>
 				<p>
@@ -230,14 +230,13 @@
 			}
 			else
 			{
+				/*
 				if (document.getElementById('comp_dir').value == '')
 				{
 					alert("Informe o diretório da pasta!");
 				}
-				else
-				{
-					document.formCamp.submit();
-				}
+				*/
+				document.formCamp.submit();
 			}
 		}
 	</script>
