@@ -39,9 +39,9 @@
 					NomePasta/
 				</p>
 				<p>
-					<b>Permissão de acesso (grupo)</b>
+					<b>Permissão de acesso (grupo):</b>
 					<br>
-					Deixar em branco para público:
+					Deixar em branco para público
 					<br>
 					<input type="text" name="comp_perm" id="comp_perm" placeholder="Ex.: grupo_vendas">
 				</p>
@@ -205,12 +205,13 @@
 					echo "<br>compartilhamento já realizado! #2";
 				}
 
-				echo "<meta HTTP-EQUIV='refresh' CONTENT='0'>";
-
+				
 				/*
 				* Geração do arquivo //Konoha/samba/smb.d/***.conf
 				* [FIM]
 				*/
+
+				echo "<meta HTTP-EQUIV='refresh' CONTENT='0'>";
 			}
 		?>
 
