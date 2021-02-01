@@ -37,18 +37,18 @@
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Usuário*</label>
 										<div class="col-lg-9">
-											<input class="form-control" type="text" name="usr_nick" id="usr_nick" value="">
+											<input class="form-control" type="text" name="usr_nick" value="">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Informe a senha*:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="password" name="usr_pass1" id="usr_pass1" value="">
+											<input class="form-control" type="password" name="usr_pass1" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Confirme a senha*:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="password" name="usr_pass2" id="usr_pass2" value="">
+											<input class="form-control" type="password" name="usr_pass2" value="">
 										</div>
 									</div>
 								</div>
@@ -61,55 +61,55 @@
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Nome do usuário:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_nome" id="usr_nome" value="">
+											<input class="form-control" type="text" name="usr_nome" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Sobrenome:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_snome" id="usr_snome" value="">
+											<input class="form-control" type="text" name="usr_snome" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">E-mail:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="email" name="usr_email" id="usr_email" value="">
+											<input class="form-control" type="email" name="usr_email" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Telefone:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_tel" id="usr_tel" value="">
+											<input class="form-control" type="text" name="usr_tel" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Departamento:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_depart" id="usr_depart" value="">
+											<input class="form-control" type="text" name="usr_depart" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Grupo:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_grp" id="usr_grp" value="">
+											<input class="form-control" type="text" name="usr_grp" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Companhia:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_company" id="usr_company" value="">
+											<input class="form-control" type="text" name="usr_company" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Cargo:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_cargo" id="usr_cargo" value="">
+											<input class="form-control" type="text" name="usr_cargo" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Diretório:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_dir" id="usr_dir" placeholder="/home/bruno">
+											<input class="form-control" type="text" name="usr_dir" placeholder="/home/bruno">
 										</div>
 										<div class="col-lg-1"></div>
 									
@@ -124,7 +124,7 @@
 									<div class="form-group row">
 										<div class="col-lg-12 text-right">
 											<input type="reset" class="btn btn-secondary" value="Cancelar">
-											<input type="submit" name="submit" id="submit" class="btn btn-primary" value="Criar"
+											<input type="submit" name="submit" class="btn btn-primary" value="Criar"
 												onclick="AddUserFunction();">
 										</div>
 									</div>
@@ -210,13 +210,15 @@
 	<script type="text/javascript">
 		function AddUserFunction()
 		{
-			if (document.getElementById('usr_pass1').value == '' || document.getElementById('usr_pass2').value == '')
+			if (document.getElementByName('usr_pass1').value == ''
+				|| document.getElementByName('usr_pass2').value == ''
+				|| document.getElementByName('usr_nick').value == '')
 			{
 				console.log("Campos em branco");
 			}
 			else
 			{ 
-				if (document.getElementById('usr_pass1').value == document.getElementById('usr_pass2').value)
+				if (document.getElementByName('usr_pass1').value == document.getElementByName('usr_pass2').value)
 				{
 					document.formUser.submit();
 				}
