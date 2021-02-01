@@ -197,7 +197,7 @@
 		echo "<p>Sen1: {$_POST['usr_pass1']}</p>";
 		echo "<p>Sen2: {$_POST['usr_pass2']}</p>";
 		echo "<p>Nome: {$_POST['usr_nome']}</p>";
-		echo "<p>NNom: {$_POST['usr_snome']}</p>";
+		echo "<p>SNom: {$_POST['usr_snome']}</p>";
 		echo "<p>Comp: {$_POST['usr_company']}</p>";
 		echo "<p>Emai: {$_POST['usr_email']}</p>";
 		echo "<p>Dire: {$_POST['usr_dir']}</p>";
