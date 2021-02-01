@@ -108,16 +108,18 @@
 												$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
 												$var2 = explode('</td>',$var1[1]);
 												
-												print "<nobr>Versão mais recente: ".$var2[0]."</nobr><br>";
+												print "<nobr><p>Versão mais recente: ".$var2[0]."</p></nobr><br>";
 											}
 										?>
 										<br>
 										<nobr>
-											Versão local: 
-											<?php
-												$c=`cat ./conf/versao`;
-												echo "<pre>$c</pre>";
-											?>
+											<p>
+												Versão local: 
+												<?php
+													$c=`cat ./conf/versao`;
+													echo "<pre>$c</pre>";
+												?>
+											</p>
 										</nobr>
 									</div>
 								</div>
