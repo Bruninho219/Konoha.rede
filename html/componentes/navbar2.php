@@ -22,7 +22,7 @@
 					<a class="dropdown-item" href="./../usr/usr_edt2.php">Editar</a>
 					<a class="dropdown-item" href="./../usr/usr_src3.php">Pesquisar</a>
 					<a class="dropdown-item" href="./../usr/usr_rec.php">Recuperar senha</a>
-					<a class="dropdown-item" href="./../usr/usr_rem.php">Remover</a>
+					<a class="dropdown-item" href="./../usr/usr_rem2.php">Remover</a>
 					<a class="dropdown-item" href="./../usr/usr_sec.php">Segurança</a>
 				</div>
 			</li>

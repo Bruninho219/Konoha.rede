@@ -28,7 +28,7 @@
 						<li><a href="../usr/usr_edt2.php">Editar</a></li>
 						<li><a href="../usr/usr_src3.php">Pesquisar</a></li>
 						<li><a href="../usr/usr_rec.php">Recuperar senha</a></li>
-						<li><a href="../usr/usr_rem.php">Remover</a></li>
+						<li><a href="../usr/usr_rem2.php">Remover</a></li>
 						<li><a href="../usr/usr_sec.php">Segurança</a></li>
 					</ul>
 				</li>
