@@ -111,6 +111,7 @@
 												print "<nobr>Versão mais recente: ".$var2[0]."<br></nobr>";
 											}
 										?>
+										<br>
 										<nobr>
 											Versão local: 
 											<?php
