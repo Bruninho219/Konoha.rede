@@ -115,8 +115,7 @@
 											<?php
 												$c=`cat ./conf/versao`;
 												$x.= "<pre>$c</pre>";
-												print "Versão local: ". ;
-												echo $x;
+												print "Versão local: ".$x;
 											?>
 										</div>
 									</div>
