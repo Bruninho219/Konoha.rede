@@ -58,10 +58,6 @@
 								</div>
 								<div class="card-body">
 									<div class="form-group row">
-										<label class="col-lg-3 col-form-label form-control-label">Diretório:</label>
-										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_dir" placeholder="/var/">
-										</div>
 										<div class="col-lg-1"></div>
 									
 										<label class="col-lg-3 col-form-label form-control-label">Solicitar troca de senha:</label>
