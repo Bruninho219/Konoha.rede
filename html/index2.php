@@ -99,6 +99,7 @@
 												}
 												else
 												{
+													//Versão github
 													$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/conf/versao";
 													$ch = curl_init();
 													curl_setopt($ch, CURLOPT_URL, $url);
@@ -110,15 +111,22 @@
 													$var2 = explode('</td>',$var1[1]);
 													
 													print "<p>Versão mais recente: ".$var2[0]."</p>";
+
+													//Versão local
+													$url = "./conf/versao";
+													$ch = curl_init();
+													curl_setopt($ch, CURLOPT_URL, $url);
+													curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+													$output = curl_exec($ch);
+													curl_close($ch);
+
+													$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
+													$var2 = explode('</td>',$var1[1]);
+													
+													print "<p>Versão local: ".$var2[0]."</p>";
 												}
 											?>
 										</div>
-									</div>
-								 	<div>
-										<?php
-											$c=`cat ./conf/versao`;
-											$x.= "<pre>echo \"Versão local: \"; $c</pre>";;
-										?>
 									</div>
 								</div>
 							</div>
