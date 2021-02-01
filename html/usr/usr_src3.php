@@ -29,10 +29,6 @@
 						<div class="mx-auto col-sm-12">
 							<!-- form user info -->
 							<div class="card">
-								<div class="card-header">
-									<h6 class="mb-0">Informações obrigatórias</h4>
-								</div>
-								<div class="card-body">
 									<div class="card-header">
 										<h6 class="mb-0">Informações obrigatórias</h4>
 									</div>
