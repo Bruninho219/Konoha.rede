@@ -113,7 +113,7 @@
 													print "<p>Versão mais recente: ".$var2[0]."</p>";
 
 													//Versão local
-													$url = "./conf/versao";
+													$url = "127.0.0.1/conf/versao";
 													$ch = curl_init();
 													curl_setopt($ch, CURLOPT_URL, $url);
 													curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
