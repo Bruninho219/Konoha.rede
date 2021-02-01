@@ -61,7 +61,7 @@
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Nome do usuário:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_nome" id="usr_nome" value="">
+											<input class="form-control" type="text" name="usr_nome" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Sobrenome:</label>
@@ -192,17 +192,6 @@
 				echo "<pre>$comando</pre>";
 			}
 		}
-
-		echo "<p>Nick: {$_POST['usr_nick']}</p>";
-		echo "<p>Sen1: {$_POST['usr_pass1']}</p>";
-		echo "<p>Sen2: {$_POST['usr_pass2']}</p>";
-		echo "<p>Nome: {$_POST['usr_nome']}</p>";
-		echo "<p>SNom: {$_POST['usr_snome']}</p>";
-		echo "<p>Comp: {$_POST['usr_company']}</p>";
-		echo "<p>Emai: {$_POST['usr_email']}</p>";
-		echo "<p>Dire: {$_POST['usr_dir']}</p>";
-		echo "<p>Tele: {$_POST['usr_tel']}</p>";
-		echo "<p>Desc: {$_POST['usr_desc']}</p>";
 	?>
 	<br>
 	<br>
