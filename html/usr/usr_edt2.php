@@ -68,6 +68,7 @@
 			$comando = shell_exec($f);
 			//echo "Verificar um método secundário de editar usuário!";
 			//echo "<pre>$comando</pre>";
+			
 			echo "<textarea id=\"usr_edt\" rows=\"20\" cols=\"75\">";
 			echo $comando;
 			echo "</textarea>";
