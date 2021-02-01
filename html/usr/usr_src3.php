@@ -41,13 +41,15 @@
 										</div>
 
 										<div class="form-group row">
-											<div class="col-lg-1"></div>
-											<label class="col-lg-3 col-form-label form-control-label">Tipo de pesquisa:</label>
-											<div class="col-lg-1 text-center">
+											<div class="col-lg-12 text-right">
+												<div class="col-lg-1 text-center">
 												Simples <input type="radio" name="usr_pesq" value="0" class="">
 												Detalhado <input type="radio" name="usr_pesq" value="1" class="">
 											</div>
+											</div>
 										</div>
+
+										
 									</div>
 								</div>
 				
