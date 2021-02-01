@@ -113,8 +113,9 @@
 												}
 											?>
 										</div>
-										<hr>
-										<div>
+									</div>
+									 <div>
+									 	<div>
 											<?php
 												$c=`cat ./conf/versao`;
 												$x.= "<pre>$c</pre>";
