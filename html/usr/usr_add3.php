@@ -61,7 +61,7 @@
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Nome do usuário:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_nome" value="">
+											<input class="form-control" type="text" name="usr_nome" id="usr_nome" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Sobrenome:</label>
