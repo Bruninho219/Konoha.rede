@@ -35,6 +35,18 @@
 											echo "<pre>$output</pre>";
 										?>
 									</div>
+								</div>
+								<div class="card-header">
+									<h6 class="mb-0">Sistema:</h4>
+								</div>
+								<div class="card-body">
+									<div class="form-group row">
+										<?php
+											$output = `uname -s -r`;
+											echo "<pre>$output</pre>";
+										?>
+									</div>
+
 
 									<div class="card-header">
 										<h6 class="mb-0">Usuário logado:</h4>
