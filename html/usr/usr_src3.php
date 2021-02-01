@@ -40,16 +40,18 @@
 											</div>
 										</div>
 
+										<hr>
+
 										<div class="form-group row">
 											<div class="col-lg-12 text-right">
 												<div class="col-lg-1 text-center">
-												Simples <input type="radio" name="usr_pesq" value="0" class="">
-												Detalhado <input type="radio" name="usr_pesq" value="1" class="">
-											</div>
+													<p>Simples <input type="radio" name="usr_pesq" value="0" class=""></p>
+													<p>Detalhado <input type="radio" name="usr_pesq" value="1" class=""></p>
+												</div>
 											</div>
 										</div>
 
-										
+
 									</div>
 								</div>
 				
