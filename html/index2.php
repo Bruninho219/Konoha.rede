@@ -108,7 +108,7 @@
 												$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
 												$var2 = explode('</td>',$var1[1]);
 												
-												print "<nobr>Versão mais recente: ".$var2[0]."<br></nobr>";
+												print "<nobr>Versão mais recente: ".$var2[0]."</nobr><br>";
 											}
 										?>
 										<br>
