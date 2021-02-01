@@ -47,6 +47,7 @@
 												<div class="col-lg-1 text-center">
 													<nobr><input type="radio" name="alt_func" value="delete" checked class=""> Remover</nobr>
 													<nobr><input type="radio" name="alt_func" value="disable" class=""> Desabilitar</nobr>
+													<nobr><input type="radio" name="alt_func" value="enable" class=""> Habilitar</nobr>
 												</div>
 											</div>
 										</div>
@@ -59,7 +60,7 @@
 								<div class="form-group row">
 									<div class="col-lg-12 text-right">
 										<input type="reset" class="btn btn-secondary" value="Cancelar">
-										<input type="submit" name="submit" class="btn btn-primary" value="Pesquisar"
+										<input type="submit" name="submit" class="btn btn-primary" value="Aplicar"
 											onclick="DelUserFunction();">
 									</div>
 								</div>
