@@ -137,6 +137,8 @@ v 0.5.5...........................Melhorias de teste para a v 0.6.0
                                   Melhorias em ./componentes/navbar2.php
 v 0.6.0...........................Adicionado arquivo ./usr/usr_edt2.php
                                   Adicionado arquivo ./usr/usr_edt2.php
+                                  Adicionado arquivo ./usr/usr_src3.php
                                   Melhorias em ./componentes/navbar1.php
                                   Melhorias em ./componentes/navbar2.php
+
                                   

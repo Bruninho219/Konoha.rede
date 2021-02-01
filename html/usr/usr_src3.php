@@ -33,44 +33,34 @@
 									<h6 class="mb-0">Informações obrigatórias</h4>
 								</div>
 								<div class="card-body">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label form-control-label">Usuário*</label>
-										<div class="col-lg-9">
-											<input class="form-control" type="text" name="usr_nick" value="">
-										</div>
+									<div class="card-header">
+										<h6 class="mb-0">Informações obrigatórias</h4>
 									</div>
-
-
-									<div class="card">
-										<div class="card-header">
-											<h6 class="mb-0">Informações obrigatórias</h4>
-										</div>
-										<div class="card-body">
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label form-control-label">Usuário*</label>
-												<div class="col-lg-9">
-													<input class="form-control" type="text" name="usr_nick" value="">
-												</div>
+									<div class="card-body">
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label form-control-label">Usuário*</label>
+											<div class="col-lg-9">
+												<input class="form-control" type="text" name="usr_nick" value="">
 											</div>
+										</div>
 
-											<div class="form-group row">
-												<div class="col-lg-1"></div>
-												<label class="col-lg-3 col-form-label form-control-label">Tipo de pesquisa:</label>
-												<div class="col-lg-1 text-center">
-													Simples <input type="radio" name="usr_pesq" value="0" class="">
-													Detalhado <input type="radio" name="usr_pesq" value="1" class="">
-												</div>
+										<div class="form-group row">
+											<div class="col-lg-1"></div>
+											<label class="col-lg-3 col-form-label form-control-label">Tipo de pesquisa:</label>
+											<div class="col-lg-1 text-center">
+												Simples <input type="radio" name="usr_pesq" value="0" class="">
+												Detalhado <input type="radio" name="usr_pesq" value="1" class="">
 											</div>
 										</div>
 									</div>
-					
+								</div>
+				
 
-									<div class="form-group row">
-										<div class="col-lg-12 text-right">
-											<input type="reset" class="btn btn-secondary" value="Cancelar">
-											<input type="submit" name="submit" class="btn btn-primary" value="Editar"
-												onclick="SrcUserFunction();">
-										</div>
+								<div class="form-group row">
+									<div class="col-lg-12 text-right">
+										<input type="reset" class="btn btn-secondary" value="Cancelar">
+										<input type="submit" name="submit" class="btn btn-primary" value="Editar"
+											onclick="SrcUserFunction();">
 									</div>
 								</div>
 							</div>
