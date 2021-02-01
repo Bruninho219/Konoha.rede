@@ -46,7 +46,7 @@
 											<div class="col-lg-12 text-right">
 												<div class="col-lg-1 text-center">
 													<nobr><input type="radio" name="usr_pesq" value="0" class=""> Simples</nobr>
-													<nobr><input type="radio" name="usr_pesq" value="1" class=""> Detalhado</nobr>
+													<nobr><input type="radio" name="usr_pesq" value="1" checked class=""> Detalhado</nobr>
 												</div>
 											</div>
 										</div>
@@ -59,7 +59,7 @@
 								<div class="form-group row">
 									<div class="col-lg-12 text-right">
 										<input type="reset" class="btn btn-secondary" value="Cancelar">
-										<input type="submit" name="submit" class="btn btn-primary" value="Editar"
+										<input type="submit" name="submit" class="btn btn-primary" value="Pesquisar"
 											onclick="SrcUserFunction();">
 									</div>
 								</div>
