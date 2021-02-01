@@ -43,18 +43,8 @@
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-header">
-									<h6 class="mb-0">Dados:</h4>
-								</div>
+								<div class="card-header"></div>
 								<div class="card-body">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label form-control-label">Dados do Usuário:</label>
-										<div class="col-lg-3">
-											<input class="form-control" type="text" name="usr_nome" value="">
-										</div>
-									</div>
-									
-									<hr />
 									<div class="form-group row">
 										<div class="col-lg-12 text-right">
 											<input type="reset" class="btn btn-secondary" value="Cancelar">
