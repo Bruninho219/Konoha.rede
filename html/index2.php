@@ -91,32 +91,37 @@
 								</div>
 								<div class="card-body">
 									<div class="form-group row">
-										<?php
-											if (!function_exists('curl_init'))
-											{
-												print "cURL não está instalado!";
-											}
-											else
-											{
-												$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/conf/versao";
-												$ch = curl_init();
-												curl_setopt($ch, CURLOPT_URL, $url);
-												curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-												$output = curl_exec($ch);
-												curl_close($ch);
+										<div>
+											<?php
+												if (!function_exists('curl_init'))
+												{
+													print "cURL não está instalado!";
+												}
+												else
+												{
+													$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/conf/versao";
+													$ch = curl_init();
+													curl_setopt($ch, CURLOPT_URL, $url);
+													curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+													$output = curl_exec($ch);
+													curl_close($ch);
 
-												$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
-												$var2 = explode('</td>',$var1[1]);
-												
-												print "<p>Versão mais recente: ".$var2[0]."</p>";
-											}
-										?>
+													$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
+													$var2 = explode('</td>',$var1[1]);
+													
+													print "<p>Versão mais recente: ".$var2[0]."</p>";
+												}
+											?>
+										</div>
 										<hr>
-										<?php
-											$c=`cat ./conf/versao`;
-											$x.= "<pre>$c</pre>";
-											print "Versão local: ".$x;
-										?>
+										<div>
+											<?php
+												$c=`cat ./conf/versao`;
+												$x.= "<pre>$c</pre>";
+												echo "Versão local: ".$x;
+												print "Versão local: ".$x;
+											?>
+										</div>
 									</div>
 								</div>
 							</div>
