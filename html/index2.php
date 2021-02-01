@@ -114,6 +114,7 @@
 										<br>
 										<nobr>
 											<p>
+												<br>
 												Versão local: 
 												<?php
 													$c=`cat ./conf/versao`;
