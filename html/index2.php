@@ -119,11 +119,8 @@
 													curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 													$output = curl_exec($ch);
 													curl_close($ch);
-
-													$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
-													$var2 = explode('</td>',$var1[1]);
 													
-													print "<p>Versão local: ".$var2[0]."</p>";
+													print "<p>Versão local: ".$output."</p>";
 												}
 											?>
 										</div>
