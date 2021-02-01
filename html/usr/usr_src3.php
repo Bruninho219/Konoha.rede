@@ -45,8 +45,8 @@
 										<div class="form-group row">
 											<div class="col-lg-12 text-right">
 												<div class="col-lg-1 text-center">
-													<nobr>Simples <input type="radio" name="usr_pesq" value="0" class=""></nobr>
-													<nobr>Detalhado <input type="radio" name="usr_pesq" value="1" class=""></nobr>
+													<nobr><input type="radio" name="usr_pesq" value="0" class=""> Simples</nobr>
+													<nobr><input type="radio" name="usr_pesq" value="1" class=""> Detalhado</nobr>
 												</div>
 											</div>
 										</div>
