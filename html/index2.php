@@ -36,62 +36,60 @@
 										?>
 									</div>
 								</div>
+
 								<div class="card-header">
-									<h6 class="mb-0">Sistema:</h4>
+									<h6 class="mb-0">Usuário logado:</h4>
 								</div>
 								<div class="card-body">
-									<div class="form-group row">
-										<?php
-											$output = `uname -s -r`;
-											echo "<pre>$output</pre>";
-										?>
-									</div>
-
-
-									<div class="card-header">
-										<h6 class="mb-0">Usuário logado:</h4>
-									</div>
 									<div class="form-group row">
 										<?php
 											$output = `w -s`;
 											echo "<pre>$output</pre>";
 										?>
 									</div>
+								</div>
 
-									<div class="card-header">
-										<h6 class="mb-0">Apache:</h4>
-									</div>
+
+								<div class="card-header">
+									<h6 class="mb-0">Apache:</h4>
+								</div>
+								<div class="card-body">
 									<div class="form-group row">
 										<?php
 											$output = `apache2 -v`;
 											echo "<pre>$output</pre>";
 										?>
 									</div>
+								</div>
 
-
-									<div class="card-header">
-										<h6 class="mb-0">SAMBA:</h4>
-									</div>
+								<div class="card-header">
+									<h6 class="mb-0">SAMBA:</h4>
+								</div>
+								<div class="card-body">
 									<div class="form-group row">
 										<?php
 											$output = `samba-tool -V`;
 											echo "<pre>$output</pre>";
 										?>
 									</div>
+								</div>
 
-									<div class="card-header">
-										<h6 class="mb-0">GitHub:</h4>
-									</div>
+								<div class="card-header">
+									<h6 class="mb-0">GitHub:</h4>
+								</div>
+								<div class="card-body">
 									<div class="form-group row">
 										<?php
 											$output = `git --version`;
 											echo "<pre>$output</pre>";
 										?>
 									</div>
+								</div>
 
-									<div class="card-header">
-										<h6 class="mb-0">Versão sistema::</h4>
-									</div>
+								<div class="card-header">
+									<h6 class="mb-0">Versão sistema:</h4>
+								</div>
+								<div class="card-body">
 									<div class="form-group row">
 										<?php
 											if (!function_exists('curl_init'))
