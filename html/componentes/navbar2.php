@@ -10,7 +10,7 @@
 	<div class="navbar-collapse collapse" id="navb">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link">Home</a>
+				<a class="nav-link" href="./../index.php">Home</a>
 			</li>
 			<!-- Dropdown -->
 			<li class="nav-item dropdown">
