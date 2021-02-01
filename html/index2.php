@@ -17,10 +17,10 @@
 	</head>
 	<body>
 		<?php
-			include "./../componentes/navbar2.php";
+			include "./componentes/navbar2.php";
 		?>
 		<div class="container">
-			<form class="form" role="form" autocomplete="off" method="POST">
+			<form class="form" role="form">
 				<div class="container py-3">
 					<div class="row">
 						<div class="mx-auto col-sm-12">
@@ -82,35 +82,29 @@
 									</div>
 									<div class="form-group row">
 										<?php
-											<?php
-												if (!function_exists('curl_init'))
-												{
-													print "cURL não está instalado!";
-												}
-												else
-												{
-													$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/conf/versao";
-													$ch = curl_init();
-													curl_setopt($ch, CURLOPT_URL, $url);
-													curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-													$output = curl_exec($ch);
-													curl_close($ch);
+											if (!function_exists('curl_init'))
+											{
+												print "cURL não está instalado!";
+											}
+											else
+											{
+												$url = "https://github.com/Bruninho219/Konoha.rede/blob/master/html/conf/versao";
+												$ch = curl_init();
+												curl_setopt($ch, CURLOPT_URL, $url);
+												curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+												$output = curl_exec($ch);
+												curl_close($ch);
 
-													$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
-													$var2 = explode('</td>',$var1[1]);
-													
-													print "<p><b>Versão mais recente: ".$var2[0]."<br>";
-												}
-											?>
-											<!--
-											<p>
-												<b>-->
-												Versão local:</b>
-												<?php
-													$c=`cat ./conf/versao`;
-													echo "<pre>$c</pre>";
-												?>
-											</p>
+												$var1 = explode('<td id="LC1" class="blob-code blob-code-inner js-file-line">', $output);
+												$var2 = explode('</td>',$var1[1]);
+												
+												print "<p><b>Versão mais recente: ".$var2[0]."<br>";
+											}
+										?>
+										<b>Versão local:</b>
+										<?php
+											$c=`cat ./conf/versao`;
+											echo "<pre>$c</pre>";
 										?>
 									</div>
 								</div>
