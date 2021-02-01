@@ -114,15 +114,12 @@
 											?>
 										</div>
 									</div>
-									 <div>
-									 	<div>
-											<?php
-												$c=`cat ./conf/versao`;
-												$x.= "<pre>$c</pre>";
-												echo "Versão local: ".$x;
-												print "Versão local: ".$x;
-											?>
-										</div>
+								 	<div>
+										<?php
+											$c=`cat ./conf/versao`;
+											$x.= "<pre>$c</pre>";
+											print "<nobr>Versão local: ".$x."</nobr>";
+										?>
 									</div>
 								</div>
 							</div>
