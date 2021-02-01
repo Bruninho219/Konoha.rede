@@ -39,19 +39,23 @@
 										<div class="col-lg-9">
 											<input class="form-control" type="text" name="usr_nick" value="">
 										</div>
+										
+										<div class="col-lg-1"></div>
+										<label class="col-lg-2 col-form-label form-control-label"></label>
+										<div class="form-group row">
+											<div class="col-lg-12 text-right">
+												<input type="reset" class="btn btn-secondary" value="Cancelar">
+												<input type="submit" name="submit" class="btn btn-primary" value="Editar"
+													onclick="EdtUserFunction();">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-header"></div>
 								<div class="card-body">
-									<div class="form-group row">
-										<div class="col-lg-12 text-right">
-											<input type="reset" class="btn btn-secondary" value="Cancelar">
-											<input type="submit" name="submit" class="btn btn-primary" value="Editar"
-												onclick="EdtUserFunction();">
-										</div>
-									</div>
+									
 								</div>
 							</div>
 							<!-- /form user info -->
@@ -68,7 +72,7 @@
 			$comando = shell_exec($f);
 			//echo "Verificar um método secundário de editar usuário!";
 			//echo "<pre>$comando</pre>";
-			
+
 			echo "<textarea id=\"usr_edt\" rows=\"20\" cols=\"75\">";
 			echo $comando;
 			echo "</textarea>";
