@@ -140,6 +140,18 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
+
+			echo "<p>Nick: {$_POST['usr_nick']}</p>";
+			echo "<p>Sen1: {$_POST['usr_pass1']}</p>";
+			echo "<p>Sen2: {$_POST['usr_pass2']}</p>";
+			echo "<p>Nome: {$_POST['usr_nome']}</p>";
+			echo "<p>NNom: {$_POST['usr_snome']}</p>";
+			echo "<p>Comp: {$_POST['usr_company']}</p>";
+			echo "<p>Emai: {$_POST['usr_email']}</p>";
+			echo "<p>Dire: {$_POST['usr_dir']}</p>";
+			echo "<p>Tele: {$_POST['usr_tel']}</p>";
+			echo "<p>Desc: {$_POST['usr_desc']}</p>";
+
 			$f = "sudo samba-tool user create {$_POST['usr_nick']} {$_POST['usr_pass1']}";
 
 			if ($_POST['usr_nome'] != '')
