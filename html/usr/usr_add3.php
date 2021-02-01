@@ -1,5 +1,4 @@
 <html>
-
 	<head>
 		<title>Konoha</title>
 		<meta charset="utf-8">
@@ -22,7 +21,7 @@
 		?>
 
 		<div class="container">
-			<h2>Criação de Usuário</h2>
+			<h2>Criação de usuário</h2>
 			<form class="form" role="form" autocomplete="off" method="POST">
 
 				<div class="container py-3">

@@ -21,7 +21,7 @@
 		?>
 
 		<div class="container">
-			<h2>Edição de Usuário</h2>
+			<h2>Edição de usuário</h2>
 			<form class="form" role="form" autocomplete="off" method="POST">
 
 				<div class="container py-3">

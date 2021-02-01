@@ -21,7 +21,7 @@
 		?>
 
 		<div class="container">
-			<h2>Informações sobre conta do usuário:</h2>
+			<h2>Informações sobre conta do usuário</h2>
 			<form class="form" role="form" autocomplete="off" method="POST">
 
 				<div class="container py-3">
