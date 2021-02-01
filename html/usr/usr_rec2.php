@@ -53,13 +53,8 @@
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-header">
-									<h6 class="mb-0">Informações opcionais</h4>
-								</div>
 								<div class="card-body">
-									<div class="form-group row">
-										<div class="col-lg-1"></div>
-									
+									<div class="form-group row">									
 										<label class="col-lg-3 col-form-label form-control-label">Solicitar troca de senha:</label>
 										<div class="col-lg-1 text-center">
 											<nobr><input type="radio" name="alt_pass" value="senha_sim" checked class=""> Sim</nobr>
