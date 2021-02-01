@@ -39,6 +39,7 @@
 											<input class="form-control" type="text" name="usr_nick" value="">
 										</div>
 									</div>
+									<hr>
 									<div class="form-group row">
 										<div class="col-lg-12 text-right">
 											<input type="reset" class="btn btn-secondary" value="Cancelar">
