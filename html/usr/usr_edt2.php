@@ -1,5 +1,4 @@
 <html>
-
 	<head>
 		<title>Konoha</title>
 		<meta charset="utf-8">

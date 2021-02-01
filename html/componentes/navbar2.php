@@ -19,8 +19,8 @@
 				</a>
 				<div class="dropdown-menu">
 					<a class="dropdown-item" href="./../usr/usr_add3.php">Adicionar</a>
-					<a class="dropdown-item" href="./../usr/usr_edt.php">Editar</a>
-					<a class="dropdown-item" href="./../usr/usr_src2.php">Pesquisar</a>
+					<a class="dropdown-item" href="./../usr/usr_edt2.php">Editar</a>
+					<a class="dropdown-item" href="./../usr/usr_src3.php">Pesquisar</a>
 					<a class="dropdown-item" href="./../usr/usr_rec.php">Recuperar senha</a>
 					<a class="dropdown-item" href="./../usr/usr_rem.php">Remover</a>
 					<a class="dropdown-item" href="./../usr/usr_sec.php">Segurança</a>
