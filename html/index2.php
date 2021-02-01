@@ -111,6 +111,7 @@
 												print "<p>Versão mais recente: ".$var2[0]."</p>";
 											}
 										?>
+										<br>
 										<p>
 											<?php
 												$x="Versão local: ";
