@@ -8,7 +8,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-		<link rel="shortcut icon" href="../img/icon.png">
+		<link rel="shortcut icon" href="../img/icon.png" href="./../index.php">
 		<style>
 			*
 			{
@@ -37,18 +37,18 @@
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Usuário*</label>
 										<div class="col-lg-9">
-											<input class="form-control" type="text" name="user" value="">
+											<input class="form-control" type="text" name="usr_nick" value="">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Informe a senha*:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="password" name="password" value="">
+											<input class="form-control" type="password" name="usr_pass1" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Confirme a senha*:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="password" name="password" value="">
+											<input class="form-control" type="password" name="usr_pass2" value="">
 										</div>
 									</div>
 								</div>
@@ -61,55 +61,55 @@
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Nome do usuário:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="npme" value="">
+											<input class="form-control" type="text" name="usr_nome" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Sobrenome:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="sobrenome" value="">
+											<input class="form-control" type="text" name="usr_snome" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">E-mail:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="email" name="email" value="">
+											<input class="form-control" type="email" name="usr_email" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Telefone:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="fone" value="">
+											<input class="form-control" type="text" name="usr_tel" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Departamento:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="dept" value="">
+											<input class="form-control" type="text" name="usr_depart" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Grupo:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="grupo" value="">
+											<input class="form-control" type="text" name="usr_grp" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Companhia:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="companhia" value="">
+											<input class="form-control" type="text" name="usr_company" value="">
 										</div>
 										<div class="col-lg-1"></div>
 										<label class="col-lg-2 col-form-label form-control-label">Cargo:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="cargo" value="">
+											<input class="form-control" type="text" name="usr_cargo" value="">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Diretório:</label>
 										<div class="col-lg-3">
-											<input class="form-control" type="text" name="dept" placeholder="/home/bruno">
+											<input class="form-control" type="text" name="usr_dir" placeholder="/home/bruno">
 										</div>
 										<div class="col-lg-1"></div>
 									
@@ -185,9 +185,9 @@
 
 
 			//add no grupo
-			if ($_POST['usr_gru'] != '')
+			if ($_POST['usr_grp'] != '')
 			{
-				$f = "sudo samba-tool group addmembers \"{$_POST['usr_gru']}\" \"{$_POST['usr_nick']}\"";
+				$f = "sudo samba-tool group addmembers \"{$_POST['usr_grp']}\" \"{$_POST['usr_nick']}\"";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
