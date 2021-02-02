@@ -139,7 +139,11 @@ v 0.6.0...........................Adicionado arquivo ./usr/usr_edt2.php
                                   Adicionado arquivo ./usr/usr_edt2.php
                                   Adicionado arquivo ./usr/usr_src3.php
                                   Adicionado arquivo ./usr/usr_rem2.php
+                                  Adicionado arquivo ./usr/usr_rec2.php
+                                  Adicionado arquivo ./index2.php
+                                  
                                   Melhorias em ./componentes/navbar1.php
                                   Melhorias em ./componentes/navbar2.php
-
+                                  Substituido ./index2.php pelo ./index.php
+                                  
                                   
