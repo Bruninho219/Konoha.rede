@@ -59,7 +59,7 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
-			$f = "sudo samba-tool user edit {$_POST['usr_nick']}";
+			$f = "sudo samba-tool user edit {$_POST['usr_nick']} --editor=nano";
 			$comando = shell_exec($f);
 			//echo "Verificar um método secundário de editar usuário!";
 			//echo "<pre>$comando</pre>";
