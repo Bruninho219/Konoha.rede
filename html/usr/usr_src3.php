@@ -81,37 +81,37 @@
 			{
 				//Nome completo
 				$var1 = explode('cn: ', $comando);
-				$var2 = explode('sn:',$var1[1]);
+				$var2 = explode('\n',$var1[1]);
 				print "<b>Nome completo: </b>".$var2[0]."<br>";
 
 				//Telefone
 				$var1 = explode('telephoneNumber: ', $comando);
-				$var2 = explode('givenName:',$var1[1]);
+				$var2 = explode('\n',$var1[1]);
 				print "<b>Telefone: </b>".$var2[0]."<br>";
 
 				//Diretório
 				$var1 = explode('homeDirectory: ', $comando);
-				$var2 = explode('badPasswordTime:',$var1[1]);
+				$var2 = explode('\n',$var1[1]);
 				print "<b>Diretório: </b>".$var2[0]."<br>";
 
 				//EMail
 				$var1 = explode('mail: ', $comando);
-				$var2 = explode('pwdLastSet:',$var1[1]);
+				$var2 = explode('\n',$var1[1]);
 				print "<b>E-mail: </b>".$var2[0]."<br>";
 
 				//Departamento
 				$var1 = explode('department:', $comando);
-				$var2 = explode('company:',$var1[1]);
+				$var2 = explode('\n',$var1[1]);
 				print "<b>Departamento: </b>".$var2[0]."<br>";
 
 				//Cargo
 				$var1 = explode('title: ', $comando);
-				$var2 = explode('description:',$var1[1]);
+				$var2 = explode('\n',$var1[1]);
 				print "<b>Cargo: </b>".$var2[0]."<br>";
 
 				//Companhia
 				$var1 = explode('company: ', $comando);
-				$var2 = explode('name:',$var1[1]);
+				$var2 = explode('\n',$var1[1]);
 				print "<b>Companhia: </b>".$var2[0]."<br>";
 
 				/*
