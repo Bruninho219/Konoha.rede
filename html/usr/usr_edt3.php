@@ -19,7 +19,6 @@
 		<?php
 			include "./../componentes/navbar2.php";
 		?>
-
 		<div class="container">
 			<h2>Edição de usuário</h2>
 			<form class="form" role="form" autocomplete="off" method="POST">
@@ -59,6 +58,7 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
+			/*
 			$f = "sudo samba-tool user edit {$_POST['usr_nick']} --editor=nano";
 			$comando = shell_exec($f);
 			//echo "Verificar um método secundário de editar usuário!";
@@ -67,17 +67,52 @@
 			echo "<textarea id=\"usr_edt\" rows=\"20\" cols=\"75\">";
 			echo $comando;
 			echo "</textarea>";
+			*/
+			echo "<form class=\"form\" role=\"form\" autocomplete=\"off\" method=\"POST\">";
+			echo "	<div class=\"container py-3\">";
+			echo "		<div class=\"row\">";
+			echo "			<div class=\"mx-auto col-sm-12\">";
+			echo "				<div class=\"card\">";
+			echo "					<div class=\"card-header\">";
+			echo "						<h6 class=\"mb-0\">Informações obrigatórias</h4>";
+			echo "					</div>";
+			echo "						<div class=\"form-group row\">";
+			echo "							<label class=\"col-lg-3 col-form-label form-control-label\">Informe a senha*:</label>";
+			echo "							<div class=\"col-lg-3\">";
+			echo "								<input class=\"form-control\" type=\"password\" name=\"usr_pass1\" value=\"\">";
+			echo "							</div>";
+			echo "							<div class=\"col-lg-1\"></div>";
+			echo "							<label class=\"col-lg-2 col-form-label form-control-label\">Confirme a senha*:</label>";
+			echo "							<div class=\"col-lg-3\">";
+			echo "								<input class=\"form-control\" type=\"password\" name=\"usr_pass2\" value=\"\">";
+			echo "							</div>";
+			echo "						</div>";
+			echo "						<hr />";
+			echo "						<div class=\"form-group row\">";
+			echo "							<div class=\"col-lg-12 text-right\">";
+			echo "								<input type=\"reset\" class=\"btn btn-secondary\" value=\"Cancelar\">";
+			echo "								<input type=\"submit\" name=\"submit\" class=\"btn btn-primary\" value=\"Criar\"";
+			echo "									onclick=\"UpdUserFunction();\">";
+			echo "							</div>";
+			echo "						</div>";
+			echo "					</div>";
+			echo "				</div>";
+			echo "			</div>";
+			echo "		</div>";
+			echo "	</div>";
+			echo "</form>";
 		}
 	?>
 	<br>
 	<br>
 	<br>
 	<script type="text/javascript">
-		function EdtUserFunction()
+		function UpdUserFunction()
 		{
-			if (document.getElementByName('usr_nick').value == '')
+			if (document.getElementByName('usr_pass').value != document.getElementByName('usr_pass2').value
+				|| document.getElementByName('usr_pass').value == '')
 			{
-				console.log("Campo nome em branco");
+				console.log("As senhas devem ser iguais e não podem ficar vazias");
 			}
 			else
 			{ 

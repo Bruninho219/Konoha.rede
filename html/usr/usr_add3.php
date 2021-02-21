@@ -23,7 +23,6 @@
 		<div class="container">
 			<h2>Criação de usuário</h2>
 			<form class="form" role="form" autocomplete="off" method="POST">
-
 				<div class="container py-3">
 					<div class="row">
 						<div class="mx-auto col-sm-12">
