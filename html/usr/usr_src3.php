@@ -77,6 +77,7 @@
 			$f = "sudo samba-tool user show {$_POST['usr_nick']}";
 			$comando = shell_exec($f);
 			nl2br($comando);
+			console.log($comando);
 
 			if ($_POST['usr_pesq'] != '0')
 			{
