@@ -41,8 +41,7 @@
 									<hr>
 									<div class="form-group row">
 										<div class="col-lg-12 text-right">
-											<input type="reset" class="btn btn-secondary" value="Cancelar">
-											<input type="submit" name="submit" class="btn btn-primary" value="Editar"
+											<input type="submit" name="submit" class="btn btn-primary" value="Pesquisar"
 												onclick="EdtUserFunction();">
 										</div>
 									</div>
@@ -58,6 +57,12 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
+			$f = "sudo samba-tool user show {$_POST['usr_nick']}";
+			$dadoUser = shell_exec($f);
+
+			$var1 = explode('cn: ', $dadoUser);
+			$var2 = explode('\n',$var1[1]);
+			print "<b>Nome completo: </b>".$var2[0]."<br>";
 			/*
 			$f = "sudo samba-tool user edit {$_POST['usr_nick']} --editor=nano";
 			$comando = shell_exec($f);
@@ -76,24 +81,22 @@
 			echo "					<div class=\"card-header\">";
 			echo "						<h6 class=\"mb-0\">Informações obrigatórias</h4>";
 			echo "					</div>";
-			echo "						<div class=\"form-group row\">";
-			echo "							<label class=\"col-lg-3 col-form-label form-control-label\">Informe a senha*:</label>";
-			echo "							<div class=\"col-lg-3\">";
-			echo "								<input class=\"form-control\" type=\"password\" name=\"usr_pass1\" value=\"\">";
-			echo "							</div>";
-			echo "							<div class=\"col-lg-1\"></div>";
-			echo "							<label class=\"col-lg-2 col-form-label form-control-label\">Confirme a senha*:</label>";
-			echo "							<div class=\"col-lg-3\">";
-			echo "								<input class=\"form-control\" type=\"password\" name=\"usr_pass2\" value=\"\">";
-			echo "							</div>";
+			echo "					<div class=\"form-group row\">";
+			echo "						<label class=\"col-lg-3 col-form-label form-control-label\">Informe a senha*:</label>";
+			echo "						<div class=\"col-lg-3\">";
+			echo "							<input class=\"form-control\" type=\"password\" name=\"usr_pass1\" value=\"\">";
 			echo "						</div>";
-			echo "						<hr />";
-			echo "						<div class=\"form-group row\">";
-			echo "							<div class=\"col-lg-12 text-right\">";
-			echo "								<input type=\"reset\" class=\"btn btn-secondary\" value=\"Cancelar\">";
-			echo "								<input type=\"submit\" name=\"submit\" class=\"btn btn-primary\" value=\"Criar\"";
-			echo "									onclick=\"UpdUserFunction();\">";
-			echo "							</div>";
+			echo "						<div class=\"col-lg-1\"></div>";
+			echo "						<label class=\"col-lg-2 col-form-label form-control-label\">Confirme a senha*:</label>";
+			echo "						<div class=\"col-lg-3\">";
+			echo "							<input class=\"form-control\" type=\"password\" name=\"usr_pass2\" value=\"\">";
+			echo "						</div>";
+			echo "					</div>";
+			echo "					<hr />";
+			echo "					<div class=\"form-group row\">";
+			echo "						<div class=\"col-lg-12 text-right\">";
+			echo "							<input type=\"submit\" name=\"submit\" class=\"btn btn-primary\" value=\"Atualizar\"";
+			echo "								onclick=\"UpdUserFunction();\">";
 			echo "						</div>";
 			echo "					</div>";
 			echo "				</div>";

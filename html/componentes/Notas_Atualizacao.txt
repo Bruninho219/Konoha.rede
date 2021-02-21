@@ -148,3 +148,4 @@ v 0.6.1...........................Testes de comandos ./usr/usr_edt2.php
 v 0.6.2...........................Correcoes de erros e pequenas melhorias
                                   Adicionado arquivo ./usr/usr_edt3.php
 v 0.6.2...........................Melhorias em ./usr/usr_src3.php
+                                  Melhorias em ./usr/usr_edt3.php
