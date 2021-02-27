@@ -29,7 +29,7 @@
 							<!-- form user info -->
 							<div class="card">
 								<div class="card-header">
-									<h6 class="mb-0">Informações obrigatórias</h4>
+									<h6 class="mb-0">Alteração de senha:</h4>
 								</div>
 								<div class="card-body">
 									<div class="form-group row">
@@ -46,6 +46,7 @@
 										</div>
 									</div>
 								</div>
+
 							</div>
 							<!-- /form user info -->
 						</div>
@@ -59,7 +60,51 @@
 		{
 			$f = "sudo samba-tool user show {$_POST['usr_nick']}";
 			$dadoUser = shell_exec($f);
+			function formatarStringParaArray($string)
+			{
+				$arrString = explode(': ', $string);
+				$chaves = array();
+				$valores = array();
+				$i = 0;
+				foreach ($arrString as $parteString)
+				{
+					if($i == 0)
+					{
+						$chaves[] = $parteString;
+						$i++;
+						continue;
+					}
 
+					$espacos = explode(' ', $parteString);
+					$ultimaPalavra = end($espacos);
+					array_pop($espacos);
+
+					if($i == sizeof($arrString)-1){
+						$valores[] = $parteString;
+						continue;
+					}
+
+					$valores[] = implode(' ', $espacos);
+					$chaves[] = $ultimaPalavra;
+
+					$i++;
+				}
+
+				$arrFormatado = array();
+				foreach($chaves as $i => $key)
+				{
+					$arrFormatado[$key] = $valores[$i];
+				}
+
+				return $arrFormatado;
+			}
+
+			$string = "dn: teste 1 usuario: maick teste 2 telefone: 951892 pais: brasil testenum: 0 1";
+			$retorno = formatarStringParaArray($string);
+
+			print_r($retorno);
+			print $retorno;
+			/*
 			$var1 = explode('cn: ', $dadoUser);
 			$var2 = explode('\n',$var1[1]);
 			print "<b>Nome completo: </b>".$var2[0]."<br>";
@@ -73,13 +118,20 @@
 			echo $comando;
 			echo "</textarea>";
 			*/
+			/*
 			echo "<form class=\"form\" role=\"form\" autocomplete=\"off\" method=\"POST\">";
 			echo "	<div class=\"container py-3\">";
 			echo "		<div class=\"row\">";
 			echo "			<div class=\"mx-auto col-sm-12\">";
 			echo "				<div class=\"card\">";
 			echo "					<div class=\"card-header\">";
-			echo "						<h6 class=\"mb-0\">Informações obrigatórias</h4>";
+			echo "						<h6 class=\"mb-0\">Informações~sobre {$_POST['usr_nick']}:</h4>";
+			echo "					</div>";
+			echo "					<div class=\"form-group row\">";
+			echo "						<label class=\"col-lg-3 col-form-label form-control-label\">Usuário*</label>";
+			echo "						<div class=\"col-lg-9\">";
+			echo "							<input class=\"form-control\" type=\"text\" name=\"usr_nick\" placeholder=\"{$_POST['usr_nick']}\">";
+			echo "						</div>";
 			echo "					</div>";
 			echo "					<div class=\"form-group row\">";
 			echo "						<label class=\"col-lg-3 col-form-label form-control-label\">Informe a senha*:</label>";
@@ -92,11 +144,11 @@
 			echo "							<input class=\"form-control\" type=\"password\" name=\"usr_pass2\" value=\"\">";
 			echo "						</div>";
 			echo "					</div>";
-			echo "					<hr />";
+			echo "					<hr/>";
 			echo "					<div class=\"form-group row\">";
 			echo "						<div class=\"col-lg-12 text-right\">";
 			echo "							<input type=\"submit\" name=\"submit\" class=\"btn btn-primary\" value=\"Atualizar\"";
-			echo "								onclick=\"UpdUserFunction();\">";
+			echo "								onclick=\"UserPassFunction();\">";
 			echo "						</div>";
 			echo "					</div>";
 			echo "				</div>";
@@ -104,6 +156,7 @@
 			echo "		</div>";
 			echo "	</div>";
 			echo "</form>";
+			*/
 		}
 	?>
 	<br>
@@ -121,6 +174,12 @@
 			{ 
 				document.formUser.submit();
 			}
+		}
+
+		function UserPassFunction()
+		{
+			//alterar a senha do usuario
+			//
 		}
 	</script>
 </html>
