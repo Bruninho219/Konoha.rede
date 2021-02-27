@@ -59,7 +59,8 @@
 		if (isset($_POST['usr_nick']))
 		{
 			$f = "sudo samba-tool user show {$_POST['usr_nick']}";
-			$dadoUser = shell_exec($f);
+			$string = shell_exec($f);
+			
 			function formatarStringParaArray($string)
 			{
 				$arrString = explode(': ', $string);
@@ -99,7 +100,6 @@
 				return $arrFormatado;
 			}
 
-			$string = "dn: teste 1 usuario: maick teste 2 telefone: 951892 pais: brasil testenum: 0 1";
 			$retorno = formatarStringParaArray($string);
 
 			print_r($retorno);
