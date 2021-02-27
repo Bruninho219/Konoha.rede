@@ -61,6 +61,8 @@
 			$f = "sudo samba-tool user show {$_POST['usr_nick']}";
 			$string = shell_exec($f);
 			var_dump($string);
+			echo "";
+			echo "";
 			function formatarStringParaArray($string)
 			{
 				$arrString = explode(': ', $string);
