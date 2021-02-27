@@ -120,15 +120,11 @@
 		function UserPassFunction()
 		{
 			<?php
-				if({$_POST['usr_pass']} == {$_POST['usr_pass2']})
+				if (document.getElementByName('usr_pass').value == document.getElementByName('usr_pass2').value)
 				{
-					$f = "sudo samba-tool user setpassword {$_POST['usr_nick']} --newpassword== {$_POST['usr_pass']} --must-change-at-next-login";
+					f = "sudo samba-tool user setpassword {$_POST['usr_nick']} --newpassword== {$_POST['usr_pass']} --must-change-at-next-login";
 					$comando= shell_exec($f);
 					echo "alert(\"Senha alterada!\")";
-				}
-				else
-				{
-					echo "Senhas não coincidem";
 				}
 			?>
 		}
