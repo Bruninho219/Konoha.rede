@@ -57,10 +57,6 @@
 	<?php
 		if (isset($_POST['usr_nick']))
 		{
-			$f = "sudo samba-tool user show {$_POST['usr_nick']}";
-			$string = shell_exec($f);
-			
-
 			echo "<form class=\"form\" role=\"form\" autocomplete=\"off\" method=\"POST\">";
 			echo "	<div class=\"container py-3\">";
 			echo "		<div class=\"row\">";
