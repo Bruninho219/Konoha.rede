@@ -69,6 +69,7 @@
 				
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
+				echo "<pre>$f</pre>";
 			}
 		?>
 	</body>
