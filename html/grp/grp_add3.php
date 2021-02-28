@@ -29,28 +29,26 @@
 						<div class="mx-auto col-sm-12">
 							<!-- form user info -->
 							<div class="card">
-									<div class="card-header">
-										<h6 class="mb-0">Informações obrigatórias</h4>
-									</div>
-									<div class="card-body">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label form-control-label">Grupo*</label>
-											<div class="col-lg-9">
-												<input class="form-control" type="text" name="grp_nick" value="">
-											</div>
-										</div>
-
-										<hr>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label form-control-label">E-mail:</label>
-											<div class="col-lg-9">
-												<input class="form-control" type="email" name="grp_email" value="">
-											</div>
-										</div>
-									</div>
+								<div class="card-header">
+									<h6 class="mb-0">Informações obrigatórias</h4>
 								</div>
-				
+								<div class="card-body">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label form-control-label">Grupo*</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="text" name="grp_nick" value="">
+										</div>
+									</div>
+
+									<hr>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label form-control-label">E-mail:</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="email" name="grp_email" value="">
+										</div>
+									</div>
+								</div>				
 
 								<div class="form-group row">
 									<div class="col-lg-12 text-right">
@@ -66,7 +64,7 @@
 				</div>
 			</form>
 		</div>
-	</body>
+	</body
 	<?php
 		if (isset($_POST['grp_nick']))
 		{

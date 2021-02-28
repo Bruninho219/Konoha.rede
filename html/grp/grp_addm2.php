@@ -28,25 +28,23 @@
 					<div class="row">
 						<div class="mx-auto col-sm-12">
 							<div class="card">
-									<div class="card-header">
-										<h6 class="mb-0">Informações obrigatórias</h4>
-									</div>
-									<div class="card-body">
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label form-control-label">Grupo*</label>
-											<div class="col-lg-9">
-												<input class="form-control" type="text" name="grp_nick" value="">
-											</div>
+								<div class="card-header">
+									<h6 class="mb-0">Informações obrigatórias</h4>
+								</div>
+								<div class="card-body">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label form-control-label">Grupo*</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="text" name="grp_nick" value="">
 										</div>
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label form-control-label">Membro*</label>
-											<div class="col-lg-9">
-												<input class="form-control" type="text" name="grp_usr" value="">
-											</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label form-control-label">Membro*</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="text" name="grp_usr" value="">
 										</div>
 									</div>
 								</div>
-				
 
 								<div class="form-group row">
 									<div class="col-lg-12 text-right">
@@ -65,7 +63,7 @@
 	<?php
 		if (isset($_POST['grp_nick']))
 		{
-			$f = "sudo samba-tool group addmembers {$_POST['grp_nick']} \"{$_POST['grp_usr']}\"";
+			$f = "sudo samba-tool group addmembers \"{$_POST['grp_nick']}\" \"{$_POST['grp_usr']}\"";
 			$comando = shell_exec($f);
 			echo "<pre>$comando</pre>";
 		}
