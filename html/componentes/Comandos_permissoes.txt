@@ -1,0 +1,48 @@
+# Zerar as permissões
+
+setfacl -b -k /mnt/files
+
+# Retirar permissões
+
+setfacl -x g:"Domain users" /samba/arquivos
+setfacl -x u:g:"usuario1" /samba/arquivos
+
+
+
+# Desative a concessão automática de grupos donos e outros e colcar como padrão
+
+setfacl -m group::--- /samba/arquivos
+setfacl -m other::--- /samba/arquivos
+setfacl -m d:group::--- /samba/arquivos
+setfacl -m d:other::--- /samba/arquivos
+
+
+
+setfacl -m g:"Domain Admins":rx /samba/arquivos
+setfacl -m g:"Domain Users":r-x /samba/arquivos
+
+
+# Se eu quiser que herde
+
+setfacl -m d:g:"Domain Admins":rwx /samba/arquivos
+setfacl -m d:g:"Domain Users":r-x /samba/arquivos
+
+
+
+
+# Quebrar herança
+
+1 - Zerar
+
+setfacl -b -k /samba/arquivos
+
+2 - Configurar pemissões
+setfacl -m g:"Domain Admins":rxw /samba/arquivos
+setfacl -m g:"rh":rxw /samba/arquivos
+
+3 - Configurar permissões default para serem herdadas
+setfacl -m d:g:"rh":rx /samba/arquivos
+setfacl -m d:g:"Domain Admins":rxw /samba/arquivos
+
+
+sudo samba-tool user setpassword Pain --newpassword=akatsuki2 --must-change-at-next-login
