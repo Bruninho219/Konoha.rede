@@ -39,11 +39,11 @@
 					</a>
 					<ul class="dropdown-menu">
 						<!--GRUPO-->
-						<li><a href="../grp/grp_addm.php">Adicionar membro</a></li>
+						<li><a href="../grp/grp_addm2.php">Adicionar membro</a></li>
 						<li><a href="../grp/grp_remm.php">Remover membro</a></li>
 						<li><a href="../grp/grp_add3.php">Criar</a></li>
 						<li><a href="../grp/grp_src2.php">Pesquisar</a></li>
-						<li><a href="../grp/grp_rem.php">Remover</a></li>
+						<li><a href="../grp/grp_rem2.php">Remover</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

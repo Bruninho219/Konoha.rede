@@ -90,7 +90,7 @@
 	<script type="text/javascript">
 		function AddGrpFunction()
 		{
-			if (document.getElementById('grp_nick').value == '')
+			if (document.getElementByName('grp_nick').value == '')
 			{
 				alert("Informe o nome do grupo!");
 			}
