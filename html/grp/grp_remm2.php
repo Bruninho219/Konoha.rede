@@ -21,7 +21,7 @@
 		?>
 
 		<div class="container">
-			<h2>Remoção de grupo:</h2>
+			<h2>Remoção de membros do grupo:</h2>
 			<form class="form" role="form" autocomplete="off" method="POST">
 
 				<div class="container py-3">
@@ -38,23 +38,20 @@
 											<input class="form-control" type="text" name="grp_nick" value="">
 										</div>
 									</div>
-									<!--
-									<hr>
 
 									<div class="form-group row">
-										<label class="col-lg-3 col-form-label form-control-label">Reescreva o nome do grupo que deseja remover*</label>
+										<label class="col-lg-3 col-form-label form-control-label">Membro*</label>
 										<div class="col-lg-9">
-											<input class="form-control" type="text" name="grp_nick2" value="">
+											<input class="form-control" type="text" name="grp_usr" value="">
 										</div>
 									</div>
-									-->
 								</div>				
 								
 								<div class="form-group row">
 									<div class="col-lg-12 text-right">
 										<input type="reset" class="btn btn-secondary" value="Cancelar">
 										<input type="submit" name="submit" class="btn btn-primary" value="Remover"
-											onclick="DelGrpFunction();">
+											onclick="GerGrpFunction();">
 									</div>
 								</div>
 							</div>
@@ -66,11 +63,9 @@
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
-				$f = "sudo samba-tool group delete {$_POST['grp_nick']}";
-				
+				$f = "sudo samba-tool group removemembers {$_POST['grp_nick']} {$_POST['grp_usr']}";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
-				echo "<pre>$f</pre>";
 			}
 		?>
 	</body>
@@ -78,13 +73,11 @@
 	<br>
 	<br>
 	<script type="text/javascript">
-		function AddGrpFunction()
+		function GerGrpFunction()
 		{
-			//if (document.getElementByName('grp_nick').value == '' ||
-			//	document.getElementByName('grp_nick').value != document.getElementByName('grp_nick2').value)
-			if (document.getElementByName('grp_nick').value == '')
+			if (document.getElementById('grp_nick').value == '')
 			{
-				alert("Verifique o nome do grupo!");
+				alert("Informe o nome do grupo!");
 			}
 			else
 			{ 
