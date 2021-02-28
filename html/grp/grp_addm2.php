@@ -66,10 +66,8 @@
 			$f = "sudo samba-tool group addmembers \"{$_POST['grp_nick']}\" \"{$_POST['grp_usr']}\"";
 			$comando = shell_exec($f);
 			echo "<pre>$comando</pre>";
-			echo "comando:<br>"
-			echo $comando;
-			echo "<br>f:<br>"
-			echo $f;
+
+			echo "<pre>$f</pre>";
 		}
 	?>
 	<br>
