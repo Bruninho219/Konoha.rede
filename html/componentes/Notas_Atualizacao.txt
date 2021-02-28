@@ -151,3 +151,5 @@ v 0.6.3...........................Melhorias em ./usr/usr_src3.php
                                   Melhorias em ./usr/usr_edt3.php
 v 0.6.4...........................Melhorias em ./usr/usr_edt3.php
                                   Adicionado arquivo ./usr/usr_edt4.php
+v 0.7.0...........................Adicionado arquivo ./grp/grp_add3.php
+                                  Melhorias em ./usr/usr_src3.php
