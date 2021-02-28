@@ -21,13 +21,12 @@
 		?>
 
 		<div class="container">
-			<h2>Criação de grupo:</h2>
+			<h2>Adicionar membro ao grupo:</h2>
 			<form class="form" role="form" autocomplete="off" method="POST">
 
 				<div class="container py-3">
 					<div class="row">
 						<div class="mx-auto col-sm-12">
-							<!-- form user info -->
 							<div class="card">
 									<div class="card-header">
 										<h6 class="mb-0">Informações obrigatórias</h4>
@@ -39,13 +38,10 @@
 												<input class="form-control" type="text" name="grp_nick" value="">
 											</div>
 										</div>
-
-										<hr>
-
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label form-control-label">E-mail:</label>
+											<label class="col-lg-3 col-form-label form-control-label">Membro*</label>
 											<div class="col-lg-9">
-												<input class="form-control" type="email" name="grp_email" value="">
+												<input class="form-control" type="text" name="grp_usr" value="">
 											</div>
 										</div>
 									</div>
@@ -55,12 +51,11 @@
 								<div class="form-group row">
 									<div class="col-lg-12 text-right">
 										<input type="reset" class="btn btn-secondary" value="Cancelar">
-										<input type="submit" name="submit" class="btn btn-primary" value="Criar"
-											onclick="AddGrpFunction();">
+										<input type="submit" name="submit" class="btn btn-primary" value="Adicionar"
+											onclick="GerGrpFunction();">
 									</div>
 								</div>
 							</div>
-							<!-- /form user info -->
 						</div>
 					</div>
 				</div>
@@ -70,18 +65,7 @@
 	<?php
 		if (isset($_POST['grp_nick']))
 		{
-			$f = "sudo samba-tool group add {$_POST['grp_nick']}";
-			
-			if ($_POST['grp_email'] != '')
-			{
-				$f=$f." --mail-address {$_POST['grp_email']}";
-			}
-			/*
-			if ($_POST['grp_desc'] != '')
-			{
-				$f=$f." --description {$_POST['grp_desc']}"."/0";
-			}
-			*/
+			$f = "sudo samba-tool group addmembers {$_POST['grp_nick']} \"{$_POST['grp_usr']}\"";
 			$comando = shell_exec($f);
 			echo "<pre>$comando</pre>";
 		}
@@ -90,7 +74,7 @@
 	<br>
 	<br>
 	<script type="text/javascript">
-		function AddGrpFunction()
+		function GerGrpFunction()
 		{
 			if (document.getElementById('grp_nick').value == '')
 			{
