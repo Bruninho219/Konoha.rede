@@ -35,7 +35,7 @@
 					<a class="dropdown-item" href="./../grp/grp_remm.php">Remover membro</a>
 					<a class="dropdown-item" href="./../grp/grp_add3.php">Criar</a>
 					<a class="dropdown-item" href="./../grp/grp_src2.php">Pesquisar</a>
-					<a class="dropdown-item" href="./../grp/grp_rem.php">Remover</a>
+					<a class="dropdown-item" href="./../grp/grp_rem2.php">Remover</a>
 					</div>
 			</li>
 			<li class="nav-item dropdown">
