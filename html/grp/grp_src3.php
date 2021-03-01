@@ -53,7 +53,7 @@
 				</div>
 			</form>
 		</div>
-		<!--
+		
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
@@ -68,8 +68,8 @@
 				echo "<pre>$comando</pre>";
 			}
 		?>
-		-->
 
+		<!--
 		<?php
 			echo "	<div class=\"container py-3\">";
 			echo "		<div class=\"row\">";
@@ -101,6 +101,7 @@
 			echo "		</div>";
 			echo "	</div>";
 		?>
+		-->
 	</body>
 	<br>
 	<br>
