@@ -155,6 +155,7 @@ v 0.7.0...........................Adicionado arquivo ./grp/grp_add3.php
                                   Adicionado arquivo ./grp/grp_addm2.php
                                   Adicionado arquivo ./grp/grp_rem2.php
                                   Adicionado arquivo ./grp/grp_remm2.php
+                                  Adicionado arquivo ./grp/grp_src3.php
                                   Adicionado arquivo ./componentes/Comandos_permissoes.txt
                                   Melhorias em ./usr/usr_src3.php
                                   Melhorias em ./componentes/navbar.php

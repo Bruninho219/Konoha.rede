@@ -38,13 +38,6 @@
 											<input class="form-control" type="text" name="grp_nick" value="">
 										</div>
 									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label form-control-label">Membro*</label>
-										<div class="col-lg-9">
-											<input class="form-control" type="text" name="grp_usr" value="">
-										</div>
-									</div>
 								</div>				
 								
 								<div class="form-group row">
@@ -63,9 +56,12 @@
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
-				$f = "sudo samba-tool group removemembers {$_POST['grp_nick']} {$_POST['grp_usr']}";
+				echo "<br><br><b>Dados:</b><br>";
+				$f = "sudo samba-tool group show {$_POST['grp_nick']}";
 				$comando = shell_exec($f);
-				echo "<pre>$comando</pre>";
+				echo "<br><br><b>Membros:</b><br>";
+				$f = "sudo samba-tool group listmembers {$_POST['grp_nick']}";
+				$comando = shell_exec($f);
 			}
 		?>
 	</body>
@@ -73,14 +69,14 @@
 	<br>
 	<br>
 	<script type="text/javascript">
-		function GerGrpFunction()
+		function SrcGrpFunction()
 		{
 			if (document.getElementByName('grp_nick').value == '')
 			{
 				alert("Informe o nome do grupo!");
 			}
 			else
-			{ 
+			{
 				document.formGrp.submit();
 			}
 		}
