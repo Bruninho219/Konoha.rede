@@ -53,6 +53,7 @@
 				</div>
 			</form>
 		</div>
+		<!--
 		<?php
 			if (isset($_POST['grp_nick']))
 			{
@@ -60,12 +61,45 @@
 				$f = "sudo samba-tool group show {$_POST['grp_nick']}";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
-				
+
 				echo "<br><br><b>Membros:</b><br>";
 				$f = "sudo samba-tool group listmembers {$_POST['grp_nick']}";
 				$comando = shell_exec($f);
 				echo "<pre>$comando</pre>";
 			}
+		?>
+		-->
+
+		<?php
+			echo "	<div class=\"container py-3\">";
+			echo "		<div class=\"row\">";
+			echo "			<div class=\"mx-auto col-sm-12\">";
+			echo "				<div class=\"card\">";
+			echo "					<div class=\"card-body\">";
+			echo "						<div class=\"form-group row\">";
+			echo "							<div class=\"card-header\">";
+			echo "								<h6 class=\"mb-0\">Dados:</h4>";
+			echo "							</div>";
+			echo "							<?php";
+			echo "								$f = \"sudo samba-tool group show {$_POST['grp_nick']}\";";
+			echo "								$comando = shell_exec($f);";
+			echo "								echo \"<pre>$comando</pre>\";";
+			echo "							?>";
+			echo "							<div class=\"col-lg-1\"></div>";
+			echo "							<div class=\"card-header\">";
+			echo "								<h6 class=\"mb-0\">Membros:</h4>";
+			echo "							</div>";
+			echo "							<?php";
+			echo "								$f = \"sudo samba-tool group listmembers {$_POST['grp_nick']}\";";
+			echo "								$comando = shell_exec($f);";
+			echo "								echo \"<pre>$comando</pre>\";";
+			echo "							?>";
+			echo "						</div>";
+			echo "					</div>";
+			echo "				</div>";
+			echo "			</div>";
+			echo "		</div>";
+			echo "	</div>";
 		?>
 	</body>
 	<br>
