@@ -59,9 +59,12 @@
 				echo "<br><br><b>Dados:</b><br>";
 				$f = "sudo samba-tool group show {$_POST['grp_nick']}";
 				$comando = shell_exec($f);
+				echo "<pre>$comando</pre>";
+				
 				echo "<br><br><b>Membros:</b><br>";
 				$f = "sudo samba-tool group listmembers {$_POST['grp_nick']}";
 				$comando = shell_exec($f);
+				echo "<pre>$comando</pre>";
 			}
 		?>
 	</body>
