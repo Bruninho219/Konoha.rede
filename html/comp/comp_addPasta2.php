@@ -49,9 +49,11 @@
 										<br>
 										
 										<div class="col-lg-3">
-											/Konoha/samba/
-											<input class="form-control" type="text" name="comp_dir" value="" placeholder="Ex.: PastaLocal">
-											/Pasta_a_ser_criada
+											<p>
+												/Konoha/samba/
+												<input class="form-control" type="text" name="comp_dir" value="" placeholder="Ex.: PastaLocal">
+												/Pasta_a_ser_criada
+											</p>
 										</div>
 									</div>
 									<div class="form-group row">
