@@ -52,9 +52,8 @@
 											<input class="form-control" type="text" name="comp_dir" value="" placeholder="Ex.: PastaLocal">
 										</div>
 										/Pasta_a_ser_criada
-
-										<div class="col-lg-1"></div>
-
+									</div>
+									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Permissão de acesso</label>
 										<br>
 										(deixar em branco para público)
