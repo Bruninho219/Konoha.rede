@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:16px;">
-	<a class="navbar-brand" href="./../html/index.php">
+	<a class="navbar-brand" href="./../index.php">
 		<img src="./../img/konoha.png" height="30" width="30" />
 		<sub style="font-size: 12px;">
 		Konoha</sup>
@@ -9,9 +9,11 @@
 	</button>
 	<div class="navbar-collapse collapse" id="navb">
 		<ul class="navbar-nav mr-auto">
+			<!--
 			<li class="nav-item">
 				<a class="nav-link" href="./../index.php">Home</a>
 			</li>
+			-->
 			<!-- Dropdown -->
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
