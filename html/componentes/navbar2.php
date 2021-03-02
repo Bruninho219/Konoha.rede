@@ -54,6 +54,7 @@
 					<a class="dropdown-item" href="./../comp/comp_delPasta.php">Remover pasta</a>
 					</div>
 			</li>
+			<!--
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Segurança
@@ -65,6 +66,7 @@
 					<a class="dropdown-item" href="#">.</a>
 					</div>
 			</li>
+			-->
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Configuração
@@ -78,6 +80,7 @@
 					</div>
 			</li>
 		</ul>
+		<!--
 		<ul class="navbar-nav">
 			<a class="nav-link">
 				<i class='fas fas fa-cog'></i>
@@ -88,5 +91,6 @@
 				Sair
 			</a>
 		</ul>
+		-->
 	</div>
 </nav>
