@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:16px;">
-	<a class="navbar-brand" href="#">
+	<a class="navbar-brand" href="./../html/index.php">
 		<img src="./../img/konoha.png" height="30" width="30" />
 		<sub style="font-size: 12px;">
 		Konoha</sup>
