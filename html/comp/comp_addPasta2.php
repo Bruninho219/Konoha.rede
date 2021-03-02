@@ -56,21 +56,22 @@
 										<div class="col-lg-1"></div>
 
 										<label class="col-lg-3 col-form-label form-control-label">Permissão de acesso</label>
-										<label class="col-lg-3 col-form-label form-control-label">(deixar em branco para público)</label>
+										<br>
+										(deixar em branco para público)
 										<div class="col-lg-3">
 											<input class="form-control" type="text" name="comp_perm" value="">
 										</div>
 									</div>
 
-									<hr/>
-									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Descrição</label>
 										<div class="col-lg-3">
 											<input class="form-control" type="text" name="comp_desc" value="">
 										</div>
 									</div>
-
+									
+									<hr/>
+									
 									<div class="form-group row">
 										<label class="col-lg-2 col-form-label form-control-label">Apenas leitura</label>
 										<div class="col-lg-1 text-center">
