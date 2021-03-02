@@ -46,7 +46,8 @@
 								<div class="card-body">
 									<div class="form-group row">
 										<label class="col-lg-2 col-form-label form-control-label">Diretório</label>
-										/Konoha/samba/ 
+										<br>
+										/Konoha/samba/
 										<div class="col-lg-3">
 											<input class="form-control" type="text" name="comp_dir" value="" placeholder="Ex.: PastaLocal">
 										</div>
@@ -61,6 +62,8 @@
 										</div>
 									</div>
 
+									<hr/>
+									
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">Descrição</label>
 										<div class="col-lg-3">

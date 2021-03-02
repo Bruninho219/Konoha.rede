@@ -57,7 +57,7 @@
 						<li><a href="../comp/comp_allImp.php">Comp.geral de impressora</a></li>
 						<li><a href="../comp/comp_edtImp.php">Editar impressora</a></li>
 						<li><a href="../comp/comp_delImp.php">Remover impressora</a></li>
-						<li><a href="../comp/comp_addPasta.php">Adicionar pasta</a></li>
+						<li><a href="../comp/comp_addPasta2.php">Adicionar pasta</a></li>
 						<li><a href="../comp/comp_edtPasta.php">Editar pasta</a></li>
 						<li><a href="../comp/comp_delPasta.php">Remover pasta</a></li>
 					</ul>

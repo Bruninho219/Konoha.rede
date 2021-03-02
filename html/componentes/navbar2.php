@@ -47,7 +47,7 @@
 					<a class="dropdown-item" href="./../comp/comp_allImp.php">Comp.geral de impressora</a>
 					<a class="dropdown-item" href="./../comp/comp_edtImp.php">Editar impressora</a>
 					<a class="dropdown-item" href="./../comp/comp_delImp.php">Remover impressora</a>
-					<a class="dropdown-item" href="./../comp/comp_addPasta.php">Adicionar pasta</a>
+					<a class="dropdown-item" href="./../comp/comp_addPasta2.php">Adicionar pasta</a>
 					<a class="dropdown-item" href="./../comp/comp_edtPasta.php">Editar pasta</a>
 					<a class="dropdown-item" href="./../comp/comp_delPasta.php">Remover pasta</a>
 					</div>
