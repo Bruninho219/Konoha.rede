@@ -52,6 +52,14 @@
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label form-control-label">
+											Diretório
+										</label>
+										<div class="col-lg-3">
+											<input class="form-control" type="text" name="comp_dir" value="" placeholder="Ex.: PastaLocal">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label form-control-label">
 											Permissão de acesso (deixar em branco para público)
 										</label>
 										<div class="col-lg-3">
